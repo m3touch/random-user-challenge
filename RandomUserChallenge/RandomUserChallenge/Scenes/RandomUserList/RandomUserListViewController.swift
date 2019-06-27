@@ -8,9 +8,23 @@
 
 import UIKit
 
-class RandomUserListViewController: UIViewController, UIInstantiable {
+class RandomUserListViewController: UIViewController, UIInstantiable, RandomUserListViewControllerProtocol {
+
+    var interactor: RandomUserListInteractorProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    func displayFetchRandomUsers(_ newUsers: [RandomUser], currentPage: Int, error: RandomUserListError?) {
+        // TODO
+    }
+
+    func displayFilterRandomUsers(_ fileteredUsers: [RandomUser], appliedFilter: RandomUserFilter) {
+        // TODO
+    }
+
+    func displayRemoveRandomUser(_ removedUser: RandomUser, updatedRandomUsers: [RandomUser], error: RandomUserListError?) {
+        // TODO
     }
 }

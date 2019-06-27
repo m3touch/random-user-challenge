@@ -16,7 +16,7 @@ protocol RandomUserListViewControllerProtocol: class {
          - currentPage: The page from where the random users have been provided.
          - error: An error that occurred while fetching the required users with the message that has to be shown to the user.
      */
-    func displayFetchRandomUsers(newUsers: [RandomUser], currentPage: Int, error: RandomUserListError?)
+    func displayFetchRandomUsers(_ newUsers: [RandomUser], currentPage: Int, error: RandomUserListError?)
 
     /**
      Displays the filtered random users to the user. If the filter has no matches to the random users provided, an empty
@@ -26,7 +26,7 @@ protocol RandomUserListViewControllerProtocol: class {
          - filteredUsers: The users that matched the provided filtering properties.
          - appliedFilter: The filter that has been applied to the resultant sequence.
      */
-    func displayFilterRandomUsers(fileteredUsers: [RandomUser], appliedFilter: RandomUserFilter)
+    func displayFilterRandomUsers(_ fileteredUsers: [RandomUser], appliedFilter: RandomUserFilter)
 
     /**
      Updates the UI after the random user has been removed.
