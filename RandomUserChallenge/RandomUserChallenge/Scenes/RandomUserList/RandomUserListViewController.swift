@@ -44,6 +44,7 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
         filteredRandomUsers = []
         randomUsers.append(contentsOf: newUsers)
         self.currentPage = currentPage
+        // TODO: If there is an applied filter, must filter the results, not reload the table view
         reloadTableView()
     }
 
@@ -160,16 +161,13 @@ extension RandomUserListViewController: InfiniteTableViewControllerDelegate {
     func getCellDataForRowAt(indexPath: IndexPath) -> RandomUser? {
         return getRandomUser(forIndex: indexPath)
     }
-}
 
-// MARK: - RandomUserCellDelegate Implementation
-
-extension RandomUserListViewController: RandomUserCellDelegate {
-    func deleteButtonSelected(forRowAt indexPath: IndexPath) {
+    func deleteUserAtRow(indexPath: IndexPath) {
         guard
             let userToDelete = getRandomUser(forIndex: indexPath)
         else { return }
 
+//        infiniteTableViewController.tableView.deleteRows(at: [indexPath], with: .fade)
         interactor?.doRemoveRandomUser(userToDelete, fromUsers: randomUsers)
     }
 }

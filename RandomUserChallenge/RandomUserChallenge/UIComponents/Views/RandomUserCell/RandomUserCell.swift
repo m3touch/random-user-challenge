@@ -11,7 +11,6 @@ import UIKit
 class RandomUserCell: UITableViewCell {
 
     private var indexPath: IndexPath?
-    weak var delegate: RandomUserCellDelegate?
 
     @IBOutlet weak var userThumbnail: UIImageView!
     @IBOutlet weak var userNameAndSurname: UILabel!
@@ -29,17 +28,5 @@ class RandomUserCell: UITableViewCell {
         userNameAndSurname.text = userCompleteName
         userEmail.text = email ?? "-"
         userPhoneNumber.text = "📞 \(phoneNumber ?? "")"
-    }
-
-    // MARK: - IB Actions
-
-    @IBAction func deleteButtonTapped(_ sender: Any) {
-        guard
-            let cellIndexPath = indexPath
-        else {
-            print("WARNING: User selected a cell without a known index path")
-            return
-        }
-        delegate?.deleteButtonSelected(forRowAt: cellIndexPath)
     }
 }

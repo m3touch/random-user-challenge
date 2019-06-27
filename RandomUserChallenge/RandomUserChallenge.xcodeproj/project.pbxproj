@@ -33,7 +33,6 @@
 		06FFBCC422C4DE0300979E5E /* RandomUserFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCC322C4DE0200979E5E /* RandomUserFilter.swift */; };
 		06FFBCCB22C4EF1600979E5E /* RandomUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCC922C4EF1600979E5E /* RandomUserCell.swift */; };
 		06FFBCCC22C4EF1600979E5E /* RandomUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06FFBCCA22C4EF1600979E5E /* RandomUserCell.xib */; };
-		06FFBCCF22C5045600979E5E /* RandomUserCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCCE22C5045600979E5E /* RandomUserCellDelegate.swift */; };
 		06FFBCD222C508FE00979E5E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCD122C508FE00979E5E /* UIViewController+Extensions.swift */; };
 		06FFBCD422C5122D00979E5E /* InfiniteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCD322C5122D00979E5E /* InfiniteTableViewController.swift */; };
 		06FFBCD622C519B600979E5E /* InfiniteTableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCD522C519B600979E5E /* InfiniteTableViewControllerDelegate.swift */; };
@@ -92,7 +91,6 @@
 		06FFBCC322C4DE0200979E5E /* RandomUserFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUserFilter.swift; sourceTree = "<group>"; };
 		06FFBCC922C4EF1600979E5E /* RandomUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserCell.swift; sourceTree = "<group>"; };
 		06FFBCCA22C4EF1600979E5E /* RandomUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomUserCell.xib; sourceTree = "<group>"; };
-		06FFBCCE22C5045600979E5E /* RandomUserCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserCellDelegate.swift; sourceTree = "<group>"; };
 		06FFBCD122C508FE00979E5E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		06FFBCD322C5122D00979E5E /* InfiniteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteTableViewController.swift; sourceTree = "<group>"; };
 		06FFBCD522C519B600979E5E /* InfiniteTableViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteTableViewControllerDelegate.swift; sourceTree = "<group>"; };
@@ -286,7 +284,6 @@
 			children = (
 				06FFBCC922C4EF1600979E5E /* RandomUserCell.swift */,
 				06FFBCCA22C4EF1600979E5E /* RandomUserCell.xib */,
-				06FFBCCE22C5045600979E5E /* RandomUserCellDelegate.swift */,
 			);
 			path = RandomUserCell;
 			sourceTree = "<group>";
@@ -629,7 +626,6 @@
 				06FFBCD622C519B600979E5E /* InfiniteTableViewControllerDelegate.swift in Sources */,
 				067F63E322C497E90023E31B /* AppDelegate+AppLifeCycle.swift in Sources */,
 				06FFBCC422C4DE0300979E5E /* RandomUserFilter.swift in Sources */,
-				06FFBCCF22C5045600979E5E /* RandomUserCellDelegate.swift in Sources */,
 				06FFBC9F22C4A31B00979E5E /* RandomUserLocation.swift in Sources */,
 				06FFBCD422C5122D00979E5E /* InfiniteTableViewController.swift in Sources */,
 				06FFBCB022C4BC0D00979E5E /* RandomUserListProtocols.swift in Sources */,
