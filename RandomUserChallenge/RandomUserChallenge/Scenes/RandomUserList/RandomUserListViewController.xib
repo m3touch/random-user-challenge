@@ -12,7 +12,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RandomUserListViewController" customModule="RandomUserChallenge" customModuleProvider="target">
             <connections>
+                <outlet property="filterSegmentedControl" destination="SDH-qI-xsb" id="kKZ-Uh-o26"/>
+                <outlet property="searchBar" destination="b77-HO-zOj" id="kjs-sr-4Cb"/>
                 <outlet property="searchDisplayController" destination="70q-3K-Md1" id="4sa-5J-qiE"/>
+                <outlet property="usersTableView" destination="m17-jL-MRQ" id="z68-dz-2z1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -29,10 +32,6 @@
                         <segment title="by email"/>
                     </segments>
                 </segmentedControl>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m17-jL-MRQ" userLabel="UsersTableView">
-                    <rect key="frame" x="0.0" y="178" width="414" height="718"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </tableView>
                 <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="b77-HO-zOj" userLabel="FilterText">
                     <rect key="frame" x="0.0" y="92" width="414" height="56"/>
                     <textInputTraits key="textInputTraits"/>
@@ -40,17 +39,45 @@
                         <outlet property="delegate" destination="-1" id="jJT-Zi-mMe"/>
                     </connections>
                 </searchBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uaK-3C-cSl" userLabel="EmptyState">
+                    <rect key="frame" x="0.0" y="148" width="414" height="748"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing to see yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WU1-1F-9uq">
+                            <rect key="frame" x="137" y="363.5" width="140" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="WU1-1F-9uq" firstAttribute="centerX" secondItem="uaK-3C-cSl" secondAttribute="centerX" id="BwP-dV-5L6"/>
+                        <constraint firstItem="WU1-1F-9uq" firstAttribute="centerY" secondItem="uaK-3C-cSl" secondAttribute="centerY" id="bEr-Cl-7dK"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m17-jL-MRQ" userLabel="UsersTableView">
+                    <rect key="frame" x="0.0" y="148" width="414" height="748"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Gao-SR-llY"/>
+                        <outlet property="delegate" destination="-1" id="xRX-aK-qxz"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="uaK-3C-cSl" firstAttribute="trailing" secondItem="m17-jL-MRQ" secondAttribute="trailing" id="08e-eN-JVT"/>
                 <constraint firstItem="SDH-qI-xsb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="7QS-3h-QWt"/>
                 <constraint firstItem="m17-jL-MRQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7yg-gK-S0I"/>
                 <constraint firstItem="b77-HO-zOj" firstAttribute="top" secondItem="SDH-qI-xsb" secondAttribute="bottom" constant="10" id="9R7-ET-27g"/>
                 <constraint firstItem="b77-HO-zOj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9y2-rn-cbg"/>
-                <constraint firstItem="m17-jL-MRQ" firstAttribute="top" secondItem="b77-HO-zOj" secondAttribute="bottom" constant="30" id="Ko6-Mt-00f"/>
+                <constraint firstItem="m17-jL-MRQ" firstAttribute="top" secondItem="b77-HO-zOj" secondAttribute="bottom" id="Ko6-Mt-00f"/>
                 <constraint firstAttribute="bottom" secondItem="m17-jL-MRQ" secondAttribute="bottom" id="Lm2-m0-cMe"/>
+                <constraint firstItem="uaK-3C-cSl" firstAttribute="top" secondItem="m17-jL-MRQ" secondAttribute="top" id="Uop-0B-8fC"/>
                 <constraint firstItem="SDH-qI-xsb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="VN5-d6-GPa"/>
+                <constraint firstItem="uaK-3C-cSl" firstAttribute="leading" secondItem="m17-jL-MRQ" secondAttribute="leading" id="X1p-TR-P33"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SDH-qI-xsb" secondAttribute="trailing" constant="30" id="eYs-GQ-aE1"/>
+                <constraint firstItem="uaK-3C-cSl" firstAttribute="bottom" secondItem="m17-jL-MRQ" secondAttribute="bottom" id="s68-eh-BEw"/>
                 <constraint firstItem="b77-HO-zOj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="sFj-Ue-cT2"/>
                 <constraint firstItem="m17-jL-MRQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tiY-fo-Psm"/>
             </constraints>
