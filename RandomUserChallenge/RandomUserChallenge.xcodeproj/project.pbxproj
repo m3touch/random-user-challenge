@@ -17,6 +17,10 @@
 		06CBAF2C22C493A700EE45DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CBAF2A22C493A700EE45DF /* LaunchScreen.storyboard */; };
 		06CBAF3722C493A700EE45DF /* RandomUserChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CBAF3622C493A700EE45DF /* RandomUserChallengeTests.swift */; };
 		06CBAF4222C493A700EE45DF /* RandomUserChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CBAF4122C493A700EE45DF /* RandomUserChallengeUITests.swift */; };
+		06FFBC9B22C4A1B300979E5E /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBC9A22C4A1B300979E5E /* RandomUser.swift */; };
+		06FFBC9F22C4A31B00979E5E /* RandomUserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBC9E22C4A31B00979E5E /* RandomUserLocation.swift */; };
+		06FFBCA122C4A44F00979E5E /* RandomUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCA022C4A44F00979E5E /* RandomUserTests.swift */; };
+		06FFBCA522C4AC7700979E5E /* RandomUserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCA422C4AC7700979E5E /* RandomUserError.swift */; };
 		2F6C7FCE691D6BD903F1CB4D /* Pods_defaults_RandomUserChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88765A613F21D2F382EB669E /* Pods_defaults_RandomUserChallenge.framework */; };
 		322335D12688688C6C9236B8 /* Pods_tests_RandomUserChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1FD59C7637BE9D66D1CAC6 /* Pods_tests_RandomUserChallengeUITests.framework */; };
 		5FFA32444981619FA3AF8497 /* Pods_tests_RandomUserChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E09763D5F3D20D612BD64D /* Pods_tests_RandomUserChallengeTests.framework */; };
@@ -56,6 +60,10 @@
 		06CBAF3D22C493A700EE45DF /* RandomUserChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUserChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CBAF4122C493A700EE45DF /* RandomUserChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserChallengeUITests.swift; sourceTree = "<group>"; };
 		06CBAF4322C493A700EE45DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06FFBC9A22C4A1B300979E5E /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
+		06FFBC9E22C4A31B00979E5E /* RandomUserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserLocation.swift; sourceTree = "<group>"; };
+		06FFBCA022C4A44F00979E5E /* RandomUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserTests.swift; sourceTree = "<group>"; };
+		06FFBCA422C4AC7700979E5E /* RandomUserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserError.swift; sourceTree = "<group>"; };
 		1E4203909016D4187E4507C7 /* Pods-tests-RandomUserChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tests-RandomUserChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tests-RandomUserChallengeTests/Pods-tests-RandomUserChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		28578C60AAA16A8213454109 /* Pods-defaults-RandomUserChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-RandomUserChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-RandomUserChallenge/Pods-defaults-RandomUserChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		52E33D3755BB2BFDF1D8FF19 /* Pods-tests-RandomUserChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tests-RandomUserChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tests-RandomUserChallengeTests/Pods-tests-RandomUserChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +138,7 @@
 		06CBAF1D22C493A600EE45DF /* RandomUserChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				06FFBC9922C4A1A500979E5E /* Entities */,
 				067F63E622C497FB0023E31B /* AppDelegate */,
 				06CBAF2022C493A600EE45DF /* ViewController.swift */,
 				06CBAF2222C493A600EE45DF /* Main.storyboard */,
@@ -144,6 +153,7 @@
 		06CBAF3522C493A700EE45DF /* RandomUserChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				06FFBCA022C4A44F00979E5E /* RandomUserTests.swift */,
 				06CBAF3622C493A700EE45DF /* RandomUserChallengeTests.swift */,
 				06CBAF3822C493A700EE45DF /* Info.plist */,
 			);
@@ -157,6 +167,16 @@
 				06CBAF4322C493A700EE45DF /* Info.plist */,
 			);
 			path = RandomUserChallengeUITests;
+			sourceTree = "<group>";
+		};
+		06FFBC9922C4A1A500979E5E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				06FFBC9A22C4A1B300979E5E /* RandomUser.swift */,
+				06FFBCA422C4AC7700979E5E /* RandomUserError.swift */,
+				06FFBC9E22C4A31B00979E5E /* RandomUserLocation.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		0A96E66DE7FE5B546662B176 /* Frameworks */ = {
@@ -480,9 +500,12 @@
 			files = (
 				06CBAF2722C493A600EE45DF /* RandomUserChallenge.xcdatamodeld in Sources */,
 				067F63E522C497F70023E31B /* AppDelegate+CoreData.swift in Sources */,
+				06FFBCA522C4AC7700979E5E /* RandomUserError.swift in Sources */,
 				067F63E322C497E90023E31B /* AppDelegate+AppLifeCycle.swift in Sources */,
+				06FFBC9F22C4A31B00979E5E /* RandomUserLocation.swift in Sources */,
 				06CBAF2122C493A600EE45DF /* ViewController.swift in Sources */,
 				06CBAF1F22C493A600EE45DF /* AppDelegate.swift in Sources */,
+				06FFBC9B22C4A1B300979E5E /* RandomUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +514,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06CBAF3722C493A700EE45DF /* RandomUserChallengeTests.swift in Sources */,
+				06FFBCA122C4A44F00979E5E /* RandomUserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
