@@ -1,0 +1,20 @@
+excluded:
+- RandomUserChallengeTests
+- Pods
+
+disabled_rules:
+- nesting
+
+line_length:
+- 230
+- 250
+#ignores_function_declarations: true
+#ignores_comments: true
+
+file_length:
+- 500
+- 800
+
+function_parameter_count:
+- 8
+- 10

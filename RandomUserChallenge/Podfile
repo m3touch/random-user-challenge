@@ -1,0 +1,31 @@
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+use_frameworks!
+
+# connectivity
+def connectivity
+  pod 'Alamofire', '~> 4.5'
+  pod 'AlamofireImage', '~> 3'
+end
+
+# Code styling
+def code_styling
+  pod 'SwiftLint'
+end
+
+# Default target has all frameworks
+abstract_target 'defaults' do
+  connectivity
+  code_styling
+
+  target 'RandomUserChallenge'
+end
+
+# Testing target only have internet fwks
+abstract_target 'tests' do
+  connectivity
+
+  target 'RandomUserChallengeTests'
+  target 'RandomUserChallengeUITests'
+end
