@@ -18,3 +18,7 @@ file_length:
 function_parameter_count:
 - 8
 - 10
+
+identifier_name:
+  excluded:
+    - id
