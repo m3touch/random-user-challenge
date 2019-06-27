@@ -32,11 +32,16 @@
                         <segment title="by email"/>
                     </segments>
                 </segmentedControl>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="b77-HO-zOj" userLabel="FilterText">
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="filter the random user results" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b77-HO-zOj" userLabel="FilterText">
                     <rect key="frame" x="0.0" y="92" width="414" height="56"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                    <scopeButtonTitles>
+                        <string>by name</string>
+                        <string>by surname</string>
+                        <string>by title</string>
+                    </scopeButtonTitles>
                     <connections>
-                        <outlet property="delegate" destination="-1" id="jJT-Zi-mMe"/>
+                        <outlet property="delegate" destination="-1" id="Uha-CF-ulw"/>
                     </connections>
                 </searchBar>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uaK-3C-cSl" userLabel="EmptyState">

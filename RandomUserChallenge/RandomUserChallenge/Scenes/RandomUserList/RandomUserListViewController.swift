@@ -21,6 +21,7 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
     fileprivate var isFilteringUsers: Bool {
         return filteredRandomUsers.count != 0
     }
+    fileprivate let filterButtonCategory: [RandomUserFilterCategory] = [.name, .surname, .email]
 
     @IBOutlet weak var usersTableViewContainer: UIView!
     @IBOutlet weak var searchBar: UISearchBar!
@@ -40,6 +41,7 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
     func displayFetchRandomUsers(_ newUsers: [RandomUser], currentPage: Int, error: RandomUserListError?) {
         guard error == nil else { return } // TODO -> Manage the errors after fetching users
 
+        filteredRandomUsers = []
         randomUsers.append(contentsOf: newUsers)
         self.currentPage = currentPage
         reloadTableView()
@@ -117,7 +119,18 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
             dismissButtonText: alertDismissText
         )
     }
+
+    fileprivate func hideKeyboard() {
+        searchBar.resignFirstResponder()
+    }
+
+    fileprivate func clearFilteredUsersResults() {
+        filteredRandomUsers = []
+        reloadTableView()
+    }
 }
+
+// MARK: - InfiniteTableViewControllerDelegate Implementation
 
 extension RandomUserListViewController: InfiniteTableViewControllerDelegate {
     var infiniteTableViewDataSource: [RandomUser] {
@@ -129,6 +142,8 @@ extension RandomUserListViewController: InfiniteTableViewControllerDelegate {
     }
 }
 
+// MARK: - RandomUserCellDelegate Implementation
+
 extension RandomUserListViewController: RandomUserCellDelegate {
     func deleteButtonSelected(forRowAt indexPath: IndexPath) {
         guard
@@ -136,5 +151,34 @@ extension RandomUserListViewController: RandomUserCellDelegate {
         else { return }
 
         interactor?.doRemoveRandomUser(userToDelete, fromUsers: randomUsers)
+    }
+}
+
+// MARK: - UISearchBarDelegate Implementation
+
+extension RandomUserListViewController: UISearchBarDelegate {
+
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        guard (searchBar.text ?? "").isEmpty else { return }
+
+        clearFilteredUsersResults()
+    }
+
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        hideKeyboard()
+        guard let typedText = searchBar.text else { return }
+
+        let searchFilter = RandomUserFilter(
+            category: filterButtonCategory[filterSegmentedControl.selectedSegmentIndex],
+            searchValue: typedText
+        )
+
+        interactor?.doFilterRandomUsers(randomUsers, withFilter: searchFilter)
+    }
+
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
+        hideKeyboard()
+        clearFilteredUsersResults()
     }
 }

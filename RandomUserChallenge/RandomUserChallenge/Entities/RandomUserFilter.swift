@@ -8,5 +8,5 @@
 
 struct RandomUserFilter {
     let category: RandomUserFilterCategory
-    let searchValue: String?
+    let searchValue: String
 }
