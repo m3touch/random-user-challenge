@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RandomUserListViewController" customModule="RandomUserChallenge" customModuleProvider="target">
             <connections>
+                <outlet property="searchDisplayController" destination="70q-3K-Md1" id="4sa-5J-qiE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,16 +21,58 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RandomUserList" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TH4-f3-Qa2">
-                    <rect key="frame" x="144" y="438" width="127" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SDH-qI-xsb" userLabel="FilterCategory">
+                    <rect key="frame" x="30" y="54" width="354" height="29"/>
+                    <segments>
+                        <segment title="by name"/>
+                        <segment title="by surname"/>
+                        <segment title="by email"/>
+                    </segments>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m17-jL-MRQ" userLabel="UsersTableView">
+                    <rect key="frame" x="0.0" y="178" width="414" height="718"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="b77-HO-zOj" userLabel="FilterText">
+                    <rect key="frame" x="0.0" y="92" width="414" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="jJT-Zi-mMe"/>
+                    </connections>
+                </searchBar>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="SDH-qI-xsb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="7QS-3h-QWt"/>
+                <constraint firstItem="m17-jL-MRQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7yg-gK-S0I"/>
+                <constraint firstItem="b77-HO-zOj" firstAttribute="top" secondItem="SDH-qI-xsb" secondAttribute="bottom" constant="10" id="9R7-ET-27g"/>
+                <constraint firstItem="b77-HO-zOj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9y2-rn-cbg"/>
+                <constraint firstItem="m17-jL-MRQ" firstAttribute="top" secondItem="b77-HO-zOj" secondAttribute="bottom" constant="30" id="Ko6-Mt-00f"/>
+                <constraint firstAttribute="bottom" secondItem="m17-jL-MRQ" secondAttribute="bottom" id="Lm2-m0-cMe"/>
+                <constraint firstItem="SDH-qI-xsb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="VN5-d6-GPa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SDH-qI-xsb" secondAttribute="trailing" constant="30" id="eYs-GQ-aE1"/>
+                <constraint firstItem="b77-HO-zOj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="sFj-Ue-cT2"/>
+                <constraint firstItem="m17-jL-MRQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tiY-fo-Psm"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="47.826086956521742" y="35.491071428571423"/>
         </view>
+        <searchDisplayController id="c1b-Y6-Onj">
+            <connections>
+                <outlet property="delegate" destination="-1" id="Lhv-xH-lRQ"/>
+                <outlet property="searchContentsController" destination="-1" id="K4a-Pb-fXg"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="8ui-l3-E3t"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="n7S-fC-l6M"/>
+            </connections>
+        </searchDisplayController>
+        <searchDisplayController id="70q-3K-Md1">
+            <connections>
+                <outlet property="delegate" destination="-1" id="MAh-2O-SUq"/>
+                <outlet property="searchBar" destination="b77-HO-zOj" id="jQx-mt-Vgh"/>
+                <outlet property="searchContentsController" destination="-1" id="rJa-f0-W7B"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="Vfh-oN-hnv"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="Cie-vU-bs5"/>
+            </connections>
+        </searchDisplayController>
     </objects>
 </document>

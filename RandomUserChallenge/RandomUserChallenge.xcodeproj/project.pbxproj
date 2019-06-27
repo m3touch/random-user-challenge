@@ -31,6 +31,8 @@
 		06FFBCBB22C4C00400979E5E /* RandomUserListError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCBA22C4C00400979E5E /* RandomUserListError.swift */; };
 		06FFBCC022C4CA7300979E5E /* RandomUserFilterCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCBF22C4CA7300979E5E /* RandomUserFilterCategory.swift */; };
 		06FFBCC422C4DE0300979E5E /* RandomUserFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCC322C4DE0200979E5E /* RandomUserFilter.swift */; };
+		06FFBCCB22C4EF1600979E5E /* RandomUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCC922C4EF1600979E5E /* RandomUserCell.swift */; };
+		06FFBCCC22C4EF1600979E5E /* RandomUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06FFBCCA22C4EF1600979E5E /* RandomUserCell.xib */; };
 		2F6C7FCE691D6BD903F1CB4D /* Pods_defaults_RandomUserChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88765A613F21D2F382EB669E /* Pods_defaults_RandomUserChallenge.framework */; };
 		322335D12688688C6C9236B8 /* Pods_tests_RandomUserChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1FD59C7637BE9D66D1CAC6 /* Pods_tests_RandomUserChallengeUITests.framework */; };
 		5FFA32444981619FA3AF8497 /* Pods_tests_RandomUserChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E09763D5F3D20D612BD64D /* Pods_tests_RandomUserChallengeTests.framework */; };
@@ -84,6 +86,8 @@
 		06FFBCBA22C4C00400979E5E /* RandomUserListError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserListError.swift; sourceTree = "<group>"; };
 		06FFBCBF22C4CA7300979E5E /* RandomUserFilterCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserFilterCategory.swift; sourceTree = "<group>"; };
 		06FFBCC322C4DE0200979E5E /* RandomUserFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUserFilter.swift; sourceTree = "<group>"; };
+		06FFBCC922C4EF1600979E5E /* RandomUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserCell.swift; sourceTree = "<group>"; };
+		06FFBCCA22C4EF1600979E5E /* RandomUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomUserCell.xib; sourceTree = "<group>"; };
 		1E4203909016D4187E4507C7 /* Pods-tests-RandomUserChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tests-RandomUserChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tests-RandomUserChallengeTests/Pods-tests-RandomUserChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		28578C60AAA16A8213454109 /* Pods-defaults-RandomUserChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-RandomUserChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-RandomUserChallenge/Pods-defaults-RandomUserChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		52E33D3755BB2BFDF1D8FF19 /* Pods-tests-RandomUserChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tests-RandomUserChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tests-RandomUserChallengeTests/Pods-tests-RandomUserChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -216,10 +220,10 @@
 			isa = PBXGroup;
 			children = (
 				06FFBCAF22C4BC0D00979E5E /* RandomUserListProtocols.swift */,
-				06FFBCB422C4BE2F00979E5E /* RandomUserListInteractor.swift */,
-				06FFBCB622C4BE6000979E5E /* RandomUserListPresenter.swift */,
 				06FFBCA822C4B94B00979E5E /* RandomUserListViewController.swift */,
 				06FFBCA922C4B94B00979E5E /* RandomUserListViewController.xib */,
+				06FFBCB422C4BE2F00979E5E /* RandomUserListInteractor.swift */,
+				06FFBCB622C4BE6000979E5E /* RandomUserListPresenter.swift */,
 			);
 			path = RandomUserList;
 			sourceTree = "<group>";
@@ -251,6 +255,8 @@
 		06FFBCB322C4BDD600979E5E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				06FFBCC922C4EF1600979E5E /* RandomUserCell.swift */,
+				06FFBCCA22C4EF1600979E5E /* RandomUserCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06FFBCAB22C4B94C00979E5E /* RandomUserListViewController.xib in Resources */,
+				06FFBCCC22C4EF1600979E5E /* RandomUserCell.xib in Resources */,
 				06CBAF2C22C493A700EE45DF /* LaunchScreen.storyboard in Resources */,
 				06CBAF2922C493A700EE45DF /* Assets.xcassets in Resources */,
 				06CBAF2422C493A600EE45DF /* Main.storyboard in Resources */,
@@ -600,6 +607,7 @@
 				06CBAF1F22C493A600EE45DF /* AppDelegate.swift in Sources */,
 				06FFBC9B22C4A1B300979E5E /* RandomUser.swift in Sources */,
 				06FFBCC022C4CA7300979E5E /* RandomUserFilterCategory.swift in Sources */,
+				06FFBCCB22C4EF1600979E5E /* RandomUserCell.swift in Sources */,
 				06FFBCAE22C4B98D00979E5E /* UIInstantiable.swift in Sources */,
 				06FFBCB922C4BF4C00979E5E /* APIError.swift in Sources */,
 			);
