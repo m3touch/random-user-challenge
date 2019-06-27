@@ -14,7 +14,7 @@ extension UIViewController {
         let alert = UIAlertController(title: titled, message: text, preferredStyle: .alert)
         let dismissAction = UIAlertAction(title: dismissButtonText, style: .default)
         alert.addAction(dismissAction)
-        
+
         self.present(alert, animated: true, completion: nil)
     }
 }

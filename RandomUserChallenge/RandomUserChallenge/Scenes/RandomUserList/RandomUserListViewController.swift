@@ -12,21 +12,17 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
 
     // MARK: - Properties
 
-    enum Constants {
-        static let cellIdentifier = String(describing: RandomUserCell.self)
-        static let rowHeight: CGFloat = 100
-    }
-
     var interactor: RandomUserListInteractorProtocol?
 
     private var currentPage = 0
+    fileprivate var infiniteTableViewController = InfiniteTableViewController(style: .plain)
     fileprivate var randomUsers: [RandomUser] = []
     fileprivate var filteredRandomUsers: [RandomUser] = []
     fileprivate var isFilteringUsers: Bool {
         return filteredRandomUsers.count != 0
     }
 
-    @IBOutlet weak var usersTableView: UITableView!
+    @IBOutlet weak var usersTableViewContainer: UIView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var filterSegmentedControl: UISegmentedControl!
 
@@ -39,19 +35,19 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
         interactor?.doFetchRandomUsers(forPage: currentPage+1)
     }
 
-    // MARK: - RandomUserListViewControllerProtocol Protocol Impelementation
+    // MARK: - VIP Impelementation
 
     func displayFetchRandomUsers(_ newUsers: [RandomUser], currentPage: Int, error: RandomUserListError?) {
         guard error == nil else { return } // TODO -> Manage the errors after fetching users
 
         randomUsers.append(contentsOf: newUsers)
         self.currentPage = currentPage
-        reloadUsersTableView()
+        reloadTableView()
     }
 
     func displayFilterRandomUsers(_ fileteredUsers: [RandomUser], appliedFilter: RandomUserFilter) {
         filteredRandomUsers = fileteredUsers
-        reloadUsersTableView()
+        reloadTableView()
     }
 
     func displayRemoveRandomUser(_ removedUser: RandomUser?, updatedRandomUsers: [RandomUser], error: RandomUserListError?) {
@@ -59,33 +55,52 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
         guard let removedUserData = removedUser else { return }
 
         randomUsers = updatedRandomUsers
-        reloadUsersTableView()
+        reloadTableView()
         showRemovedUserAlert(userData: removedUserData)
     }
 
     // MARK: - Private Interface
 
     private func setupUI() {
-        prepareTableView()
+        loadTableView()
         showEmptyScreen()
+    }
+
+    private func loadTableView() {
+        infiniteTableViewController.delegate = self
+        addChild(infiniteTableViewController)
+        infiniteTableViewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        infiniteTableViewController.view.frame = usersTableViewContainer.bounds
+        usersTableViewContainer.addSubview(infiniteTableViewController.tableView)
+        infiniteTableViewController.didMove(toParent: self)
+    }
+
+    private func reloadTableView() {
+        let dataSource = isFilteringUsers ? filteredRandomUsers : randomUsers
+        if dataSource.count != 0 {
+            hideEmptyScreen()
+            infiniteTableViewController.tableView.reloadData()
+        } else {
+            showEmptyScreen()
+        }
     }
 
     private func showEmptyScreen() {
         // TODO: Customize the message for the given filter?
-        usersTableView.isHidden = true
+        usersTableViewContainer.isHidden = true
     }
 
     private func hideEmptyScreen() {
-        usersTableView.isHidden = false
+        usersTableViewContainer.isHidden = false
     }
 
-    fileprivate func userData(forIndex dataIndex: IndexPath) -> RandomUser? {
-        if isFilteringUsers && filteredRandomUsers.count > dataIndex.row {
-            return filteredRandomUsers[dataIndex.row]
+    fileprivate func getRandomUser(forIndex indexPath: IndexPath) -> RandomUser? {
+        if isFilteringUsers && filteredRandomUsers.count > indexPath.row {
+            return filteredRandomUsers[indexPath.row]
         }
 
-        if !isFilteringUsers && randomUsers.count > dataIndex.row {
-            return randomUsers[dataIndex.row]
+        if !isFilteringUsers && randomUsers.count > indexPath.row {
+            return randomUsers[indexPath.row]
         }
 
         return nil
@@ -104,56 +119,20 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
     }
 }
 
-extension RandomUserListViewController: UITableViewDelegate, UITableViewDataSource {
-
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return Constants.rowHeight
+extension RandomUserListViewController: InfiniteTableViewControllerDelegate {
+    var infiniteTableViewDataSource: [RandomUser] {
+        return isFilteringUsers ? filteredRandomUsers : randomUsers
     }
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return isFilteringUsers ? filteredRandomUsers.count : randomUsers.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard
-            let userData = userData(forIndex: indexPath),
-            let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier, for: indexPath) as? RandomUserCell
-        else {
-            return UITableViewCell()
-        }
-
-        cell.delegate = self
-        cell.bindWithRandomUser(
-            name: userData.name,
-            surname: userData.surname,
-            email: userData.email,
-            phoneNumber: userData.phoneNumber,
-            indexPath: indexPath
-        )
-
-        return cell
-    }
-
-    fileprivate func prepareTableView() {
-        let randomUserCellNib = UINib(nibName: Constants.cellIdentifier, bundle: nil)
-        usersTableView.register(randomUserCellNib, forCellReuseIdentifier: Constants.cellIdentifier)
-    }
-
-    fileprivate func reloadUsersTableView() {
-        let dataSource = isFilteringUsers ? filteredRandomUsers : randomUsers
-        if dataSource.count != 0 {
-            hideEmptyScreen()
-            usersTableView.reloadData()
-        } else {
-            showEmptyScreen()
-        }
+    func getCellDataForRowAt(indexPath: IndexPath) -> RandomUser? {
+        return getRandomUser(forIndex: indexPath)
     }
 }
 
 extension RandomUserListViewController: RandomUserCellDelegate {
     func deleteButtonSelected(forRowAt indexPath: IndexPath) {
         guard
-            let userToDelete = userData(forIndex: indexPath)
+            let userToDelete = getRandomUser(forIndex: indexPath)
         else { return }
 
         interactor?.doRemoveRandomUser(userToDelete, fromUsers: randomUsers)

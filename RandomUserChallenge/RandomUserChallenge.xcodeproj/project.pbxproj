@@ -35,6 +35,8 @@
 		06FFBCCC22C4EF1600979E5E /* RandomUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06FFBCCA22C4EF1600979E5E /* RandomUserCell.xib */; };
 		06FFBCCF22C5045600979E5E /* RandomUserCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCCE22C5045600979E5E /* RandomUserCellDelegate.swift */; };
 		06FFBCD222C508FE00979E5E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCD122C508FE00979E5E /* UIViewController+Extensions.swift */; };
+		06FFBCD422C5122D00979E5E /* InfiniteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCD322C5122D00979E5E /* InfiniteTableViewController.swift */; };
+		06FFBCD622C519B600979E5E /* InfiniteTableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCD522C519B600979E5E /* InfiniteTableViewControllerDelegate.swift */; };
 		2F6C7FCE691D6BD903F1CB4D /* Pods_defaults_RandomUserChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88765A613F21D2F382EB669E /* Pods_defaults_RandomUserChallenge.framework */; };
 		322335D12688688C6C9236B8 /* Pods_tests_RandomUserChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1FD59C7637BE9D66D1CAC6 /* Pods_tests_RandomUserChallengeUITests.framework */; };
 		5FFA32444981619FA3AF8497 /* Pods_tests_RandomUserChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E09763D5F3D20D612BD64D /* Pods_tests_RandomUserChallengeTests.framework */; };
@@ -92,6 +94,8 @@
 		06FFBCCA22C4EF1600979E5E /* RandomUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomUserCell.xib; sourceTree = "<group>"; };
 		06FFBCCE22C5045600979E5E /* RandomUserCellDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserCellDelegate.swift; sourceTree = "<group>"; };
 		06FFBCD122C508FE00979E5E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		06FFBCD322C5122D00979E5E /* InfiniteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteTableViewController.swift; sourceTree = "<group>"; };
+		06FFBCD522C519B600979E5E /* InfiniteTableViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteTableViewControllerDelegate.swift; sourceTree = "<group>"; };
 		1E4203909016D4187E4507C7 /* Pods-tests-RandomUserChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tests-RandomUserChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tests-RandomUserChallengeTests/Pods-tests-RandomUserChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		28578C60AAA16A8213454109 /* Pods-defaults-RandomUserChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-RandomUserChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-RandomUserChallenge/Pods-defaults-RandomUserChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		52E33D3755BB2BFDF1D8FF19 /* Pods-tests-RandomUserChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tests-RandomUserChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tests-RandomUserChallengeTests/Pods-tests-RandomUserChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -253,6 +257,8 @@
 		06FFBCB222C4BDC100979E5E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				06FFBCD322C5122D00979E5E /* InfiniteTableViewController.swift */,
+				06FFBCD522C519B600979E5E /* InfiniteTableViewControllerDelegate.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -620,10 +626,12 @@
 				06FFBCA522C4AC7700979E5E /* RandomUserError.swift in Sources */,
 				06FFBCAA22C4B94B00979E5E /* RandomUserListViewController.swift in Sources */,
 				06FFBCB522C4BE2F00979E5E /* RandomUserListInteractor.swift in Sources */,
+				06FFBCD622C519B600979E5E /* InfiniteTableViewControllerDelegate.swift in Sources */,
 				067F63E322C497E90023E31B /* AppDelegate+AppLifeCycle.swift in Sources */,
 				06FFBCC422C4DE0300979E5E /* RandomUserFilter.swift in Sources */,
 				06FFBCCF22C5045600979E5E /* RandomUserCellDelegate.swift in Sources */,
 				06FFBC9F22C4A31B00979E5E /* RandomUserLocation.swift in Sources */,
+				06FFBCD422C5122D00979E5E /* InfiniteTableViewController.swift in Sources */,
 				06FFBCB022C4BC0D00979E5E /* RandomUserListProtocols.swift in Sources */,
 				06CBAF2122C493A600EE45DF /* ViewController.swift in Sources */,
 				06FFBCD222C508FE00979E5E /* UIViewController+Extensions.swift in Sources */,
