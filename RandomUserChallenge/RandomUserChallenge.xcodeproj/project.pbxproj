@@ -133,6 +133,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06143C8B22C52D36005527D8 /* InfiniteTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				06FFBCD322C5122D00979E5E /* InfiniteTableViewController.swift */,
+				06FFBCD522C519B600979E5E /* InfiniteTableViewControllerDelegate.swift */,
+			);
+			path = InfiniteTableViewController;
+			sourceTree = "<group>";
+		};
 		067F63E622C497FB0023E31B /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,8 +264,7 @@
 		06FFBCB222C4BDC100979E5E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				06FFBCD322C5122D00979E5E /* InfiniteTableViewController.swift */,
-				06FFBCD522C519B600979E5E /* InfiniteTableViewControllerDelegate.swift */,
+				06143C8B22C52D36005527D8 /* InfiniteTableViewController */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

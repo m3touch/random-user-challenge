@@ -24,34 +24,17 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SDH-qI-xsb" userLabel="FilterCategory">
-                    <rect key="frame" x="30" y="54" width="354" height="29"/>
-                    <segments>
-                        <segment title="by name"/>
-                        <segment title="by surname"/>
-                        <segment title="by email"/>
-                    </segments>
-                    <connections>
-                        <action selector="categoryFilterChanged:" destination="-1" eventType="valueChanged" id="24h-Ym-tnO"/>
-                    </connections>
-                </segmentedControl>
-                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="filter the random user results" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b77-HO-zOj" userLabel="FilterText">
-                    <rect key="frame" x="0.0" y="92" width="414" height="56"/>
-                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
-                    <scopeButtonTitles>
-                        <string>by name</string>
-                        <string>by surname</string>
-                        <string>by title</string>
-                    </scopeButtonTitles>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="Uha-CF-ulw"/>
-                    </connections>
-                </searchBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-VL-dU6">
+                    <rect key="frame" x="10" y="54" width="399" height="24"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <color key="textColor" red="0.054901960780000002" green="0.27058823529999998" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uaK-3C-cSl" userLabel="EmptyState">
-                    <rect key="frame" x="0.0" y="148" width="414" height="748"/>
+                    <rect key="frame" x="0.0" y="197" width="414" height="699"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing to see yet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WU1-1F-9uq">
-                            <rect key="frame" x="137" y="363.5" width="140" height="21"/>
+                            <rect key="frame" x="137" y="339" width="140" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -64,24 +47,52 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxD-7x-xbZ" userLabel="InfiniteTableviewContainer">
-                    <rect key="frame" x="0.0" y="148" width="414" height="748"/>
+                    <rect key="frame" x="0.0" y="197" width="414" height="699"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SDH-qI-xsb" userLabel="FilterCategory">
+                    <rect key="frame" x="10" y="88" width="394" height="29"/>
+                    <segments>
+                        <segment title="by name"/>
+                        <segment title="by surname"/>
+                        <segment title="by email"/>
+                    </segments>
+                    <color key="tintColor" red="0.054901960780000002" green="0.27058823529999998" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <action selector="categoryFilterChanged:" destination="-1" eventType="valueChanged" id="24h-Ym-tnO"/>
+                    </connections>
+                </segmentedControl>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="type the text to find..." showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b77-HO-zOj" userLabel="FilterText">
+                    <rect key="frame" x="0.0" y="121" width="414" height="56"/>
+                    <color key="tintColor" red="0.054901960780000002" green="0.27058823529999998" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                    <scopeButtonTitles>
+                        <string>by name</string>
+                        <string>by surname</string>
+                        <string>by title</string>
+                    </scopeButtonTitles>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Uha-CF-ulw"/>
+                    </connections>
+                </searchBar>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="nxD-7x-xbZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1O1-la-fpa"/>
-                <constraint firstItem="SDH-qI-xsb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="7QS-3h-QWt"/>
+                <constraint firstItem="SDH-qI-xsb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="7QS-3h-QWt"/>
                 <constraint firstAttribute="bottom" secondItem="nxD-7x-xbZ" secondAttribute="bottom" id="8uG-Lr-o7u"/>
-                <constraint firstItem="b77-HO-zOj" firstAttribute="top" secondItem="SDH-qI-xsb" secondAttribute="bottom" constant="10" id="9R7-ET-27g"/>
+                <constraint firstItem="b77-HO-zOj" firstAttribute="top" secondItem="SDH-qI-xsb" secondAttribute="bottom" constant="5" id="9R7-ET-27g"/>
                 <constraint firstItem="b77-HO-zOj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9y2-rn-cbg"/>
                 <constraint firstItem="uaK-3C-cSl" firstAttribute="top" secondItem="nxD-7x-xbZ" secondAttribute="top" id="GSQ-xZ-vh5"/>
-                <constraint firstItem="nxD-7x-xbZ" firstAttribute="top" secondItem="b77-HO-zOj" secondAttribute="bottom" id="RM9-t5-4iD"/>
+                <constraint firstItem="bzd-VL-dU6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="NMp-k0-tkg"/>
+                <constraint firstItem="nxD-7x-xbZ" firstAttribute="top" secondItem="b77-HO-zOj" secondAttribute="bottom" constant="20" id="RM9-t5-4iD"/>
                 <constraint firstItem="uaK-3C-cSl" firstAttribute="leading" secondItem="nxD-7x-xbZ" secondAttribute="leading" id="TCW-Gh-KSZ"/>
-                <constraint firstItem="SDH-qI-xsb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="VN5-d6-GPa"/>
+                <constraint firstItem="SDH-qI-xsb" firstAttribute="top" secondItem="bzd-VL-dU6" secondAttribute="bottom" constant="10" id="VN5-d6-GPa"/>
                 <constraint firstItem="uaK-3C-cSl" firstAttribute="bottom" secondItem="nxD-7x-xbZ" secondAttribute="bottom" id="XaT-e5-a4G"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SDH-qI-xsb" secondAttribute="trailing" constant="30" id="eYs-GQ-aE1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SDH-qI-xsb" secondAttribute="trailing" constant="10" id="eYs-GQ-aE1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bzd-VL-dU6" secondAttribute="trailing" constant="5" id="fky-3T-Oor"/>
                 <constraint firstItem="nxD-7x-xbZ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ilW-6X-yMV"/>
+                <constraint firstItem="bzd-VL-dU6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="jCp-kh-cle"/>
                 <constraint firstItem="b77-HO-zOj" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="sFj-Ue-cT2"/>
                 <constraint firstItem="uaK-3C-cSl" firstAttribute="trailing" secondItem="nxD-7x-xbZ" secondAttribute="trailing" id="vhW-ZI-gNt"/>
             </constraints>

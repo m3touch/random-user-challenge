@@ -36,6 +36,11 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
         interactor?.doFetchRandomUsers(forPage: currentPage+1)
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        hideKeyboard()
+        super.viewWillDisappear(animated)
+    }
+
     // MARK: - VIP Impelementation
 
     func displayFetchRandomUsers(_ newUsers: [RandomUser], currentPage: Int, error: RandomUserListError?) {
@@ -70,6 +75,7 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
     // MARK: - Private Interface
 
     private func setupUI() {
+        self.title = "Random User List"
         loadTableView()
         showEmptyScreen()
     }
