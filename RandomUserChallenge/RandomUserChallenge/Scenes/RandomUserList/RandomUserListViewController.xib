@@ -31,6 +31,9 @@
                         <segment title="by surname"/>
                         <segment title="by email"/>
                     </segments>
+                    <connections>
+                        <action selector="categoryFilterChanged:" destination="-1" eventType="valueChanged" id="24h-Ym-tnO"/>
+                    </connections>
                 </segmentedControl>
                 <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="filter the random user results" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b77-HO-zOj" userLabel="FilterText">
                     <rect key="frame" x="0.0" y="92" width="414" height="56"/>

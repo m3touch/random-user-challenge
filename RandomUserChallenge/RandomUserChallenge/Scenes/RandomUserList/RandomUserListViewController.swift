@@ -61,6 +61,11 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
         showRemovedUserAlert(userData: removedUserData)
     }
 
+    // MARK: - IB Actions
+    @IBAction func categoryFilterChanged(_ sender: Any) {
+        filterRandomUsers()
+    }
+
     // MARK: - Private Interface
 
     private func setupUI() {
@@ -96,6 +101,18 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
         usersTableViewContainer.isHidden = false
     }
 
+    private func showRemovedUserAlert(userData: RandomUser) {
+        let alertTitle = "Removed User"
+        let alertMessage = "\(userData.name ?? "-") \(userData.surname ?? "-"), with identifier: \(userData.id.uuidString), has been removed permanently."
+        let alertDismissText = "Ok"
+
+        showAlert(
+            titled: alertTitle,
+            text: alertMessage,
+            dismissButtonText: alertDismissText
+        )
+    }
+
     fileprivate func getRandomUser(forIndex indexPath: IndexPath) -> RandomUser? {
         if isFilteringUsers && filteredRandomUsers.count > indexPath.row {
             return filteredRandomUsers[indexPath.row]
@@ -108,18 +125,6 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
         return nil
     }
 
-    fileprivate func showRemovedUserAlert(userData: RandomUser) {
-        let alertTitle = "Removed User"
-        let alertMessage = "\(userData.name ?? "-") \(userData.surname ?? "-"), with identifier: \(userData.id.uuidString), has been removed permanently."
-        let alertDismissText = "Ok"
-
-        showAlert(
-            titled: alertTitle,
-            text: alertMessage,
-            dismissButtonText: alertDismissText
-        )
-    }
-
     fileprivate func hideKeyboard() {
         searchBar.resignFirstResponder()
     }
@@ -127,6 +132,21 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
     fileprivate func clearFilteredUsersResults() {
         filteredRandomUsers = []
         reloadTableView()
+    }
+
+    fileprivate func filterRandomUsers() {
+        hideKeyboard()
+        guard
+            let typedText = searchBar.text,
+            !typedText.isEmpty
+        else { return }
+
+        let searchFilter = RandomUserFilter(
+            category: filterButtonCategory[filterSegmentedControl.selectedSegmentIndex],
+            searchValue: typedText
+        )
+
+        interactor?.doFilterRandomUsers(randomUsers, withFilter: searchFilter)
     }
 }
 
@@ -165,15 +185,7 @@ extension RandomUserListViewController: UISearchBarDelegate {
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        hideKeyboard()
-        guard let typedText = searchBar.text else { return }
-
-        let searchFilter = RandomUserFilter(
-            category: filterButtonCategory[filterSegmentedControl.selectedSegmentIndex],
-            searchValue: typedText
-        )
-
-        interactor?.doFilterRandomUsers(randomUsers, withFilter: searchFilter)
+        filterRandomUsers()
     }
 
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
