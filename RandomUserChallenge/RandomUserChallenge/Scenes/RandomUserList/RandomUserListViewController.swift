@@ -18,9 +18,7 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
     fileprivate var infiniteTableViewController = InfiniteTableViewController(style: .plain)
     fileprivate var randomUsers: [RandomUser] = []
     fileprivate var filteredRandomUsers: [RandomUser] = []
-    fileprivate var isFilteringUsers: Bool {
-        return filteredRandomUsers.count != 0 // TODO >> This is wrong, should see if user is searching for something
-    }
+    fileprivate var isFilteringUsers: Bool = false
     fileprivate let filterButtonCategory: [RandomUserFilterCategory] = [.name, .surname, .email]
 
     @IBOutlet weak var usersTableViewContainer: UIView!
@@ -33,7 +31,7 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
         super.viewDidLoad()
 
         setupUI()
-        interactor?.doFetchRandomUsers(forPage: currentPage+1)
+        interactor?.doFetchRandomUsers(randomUsers, forPage: currentPage+1)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -43,13 +41,18 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
 
     // MARK: - VIP Impelementation
 
-    func displayFetchRandomUsers(_ newUsers: [RandomUser], currentPage: Int, error: RandomUserListError?) {
+    func displayFetchRandomUsers(_ updatedUsers: [RandomUser], currentPage: Int, error: RandomUserListError?) {
         guard error == nil else { return } // TODO -> Manage the errors after fetching users
 
         filteredRandomUsers = []
-        randomUsers.append(contentsOf: newUsers)
+        randomUsers = updatedUsers
         self.currentPage = currentPage
-        // TODO: If there is an applied filter, must filter the results, not reload the table view
+
+        if isFilteringUsers {
+            filterRandomUsers()
+            return
+        }
+
         reloadTableView()
     }
 
@@ -58,17 +61,18 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
         reloadTableView()
     }
 
-    func displayRemoveRandomUser(_ removedUser: RandomUser?, updatedRandomUsers: [RandomUser], error: RandomUserListError?) {
+    func displayRemoveRandomUser(_ removedUser: RandomUser?, updatedUsers: [RandomUser], error: RandomUserListError?) {
         // TODO --> MANAGE ERROR REMOVING USER
         guard let removedUserData = removedUser else { return }
 
-        randomUsers = updatedRandomUsers
+        randomUsers = updatedUsers
         reloadTableView()
         showRemovedUserAlert(userData: removedUserData)
     }
 
     // MARK: - IB Actions
     @IBAction func categoryFilterChanged(_ sender: Any) {
+        isFilteringUsers = true
         filterRandomUsers()
     }
 
@@ -138,6 +142,7 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
 
     fileprivate func clearFilteredUsersResults() {
         filteredRandomUsers = []
+        isFilteringUsers = false
         reloadTableView()
     }
 
@@ -173,7 +178,6 @@ extension RandomUserListViewController: InfiniteTableViewControllerDelegate {
             let userToDelete = getRandomUser(forIndex: indexPath)
         else { return }
 
-//        infiniteTableViewController.tableView.deleteRows(at: [indexPath], with: .fade)
         interactor?.doRemoveRandomUser(userToDelete, fromUsers: randomUsers)
     }
 }
@@ -183,12 +187,13 @@ extension RandomUserListViewController: InfiniteTableViewControllerDelegate {
 extension RandomUserListViewController: UISearchBarDelegate {
 
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
-        guard (searchBar.text ?? "").isEmpty else { return }
+        guard (searchBar.text ?? "").isEmpty && isFilteringUsers else { return }
 
         clearFilteredUsersResults()
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        isFilteringUsers = true
         filterRandomUsers()
     }
 

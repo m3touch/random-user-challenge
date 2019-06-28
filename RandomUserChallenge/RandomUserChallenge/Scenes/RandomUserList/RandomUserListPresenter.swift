@@ -14,9 +14,9 @@ final class RandomUserListPresenter: RandomUserListPresenterProcotol {
         self.viewController = viewController
     }
 
-    func presentFetchRandomUsers(_ newUsers: [RandomUser], currentPage: Int, error: APIError?) {
+    func presentFetchRandomUsers(_ updatedUsers: [RandomUser], currentPage: Int, error: APIError?) {
         // TODO >> Transform APIError to View error
-        viewController?.displayFetchRandomUsers(newUsers, currentPage: currentPage, error: nil)
+        viewController?.displayFetchRandomUsers(updatedUsers, currentPage: currentPage, error: nil)
     }
 
     func presentFilterRandomUsers(_ filteredUsers: [RandomUser], appliedFilter: RandomUserFilter) {
@@ -28,7 +28,7 @@ final class RandomUserListPresenter: RandomUserListPresenterProcotol {
         // TODO
         viewController?.displayRemoveRandomUser(
             removedUser,
-            updatedRandomUsers: updatedUsers.count > 0 ? updatedUsers.dropLast() : [],
+            updatedUsers: updatedUsers.count > 0 ? updatedUsers.dropLast() : [],
             error: nil
         )
     }

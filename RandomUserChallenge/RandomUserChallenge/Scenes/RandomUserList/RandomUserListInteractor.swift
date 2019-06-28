@@ -21,24 +21,30 @@ final class RandomUserListInteractor: RandomUserListInteractorProtocol {
         self.randomUserApiWorker = apiWorker
     }
 
-    func doFetchRandomUsers(forPage nextPage: Int) {
-        randomUserApiWorker.fetch(page: nextPage, resultsPerPage: resultsPerPage,
-        onSuccess: { [weak self] (users) in
-            let filteredUsers = RandomUserFilterWorker.removeRepetitions(fromUsers: users)
-            self?.presenter.presentFetchRandomUsers(filteredUsers, currentPage: nextPage, error: nil)
-        },
-        onError: { [weak self] error in
-            self?.presenter.presentFetchRandomUsers([], currentPage: nextPage-1, error: error)
-        })
+    func doFetchRandomUsers(_ currentUsers: [RandomUser], forPage nextPage: Int) {
+        randomUserApiWorker.fetch(
+            page: nextPage,
+            resultsPerPage: resultsPerPage,
+            onSuccess: { [weak self] (users) in
+                var totalUsers = currentUsers
+                totalUsers.append(contentsOf: users)
+                let totalUsersUnique = RandomUserFilterWorker.removeRepetitions(fromUsers: totalUsers)
+                self?.presenter.presentFetchRandomUsers(totalUsersUnique, currentPage: nextPage, error: nil)
+            },
+            onError: { [weak self] error in
+                let previousPage = nextPage > 0 ? nextPage-1 : 0
+                self?.presenter.presentFetchRandomUsers(currentUsers, currentPage: previousPage, error: error)
+            }
+        )
     }
 
-    func doFilterRandomUsers(_ users: [RandomUser], withFilter filter: RandomUserFilter) {
-        let filteredUsers = RandomUserFilterWorker.filterRandomUsers(users, byFilter: filter)
+    func doFilterRandomUsers(_ currentUsers: [RandomUser], withFilter filter: RandomUserFilter) {
+        let filteredUsers = RandomUserFilterWorker.filterRandomUsers(currentUsers, byFilter: filter)
         presenter.presentFilterRandomUsers(filteredUsers, appliedFilter: filter)
     }
 
-    func doRemoveRandomUser(_ user: RandomUser, fromUsers: [RandomUser]) {
+    func doRemoveRandomUser(_ user: RandomUser, fromUsers currentUsers: [RandomUser]) {
         // TODO
-        presenter.presentRemoveRandomUser(user, updatedUsers: fromUsers, error: nil)
+        presenter.presentRemoveRandomUser(user, updatedUsers: currentUsers, error: nil)
     }
 }
