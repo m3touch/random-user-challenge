@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0624E5F022C5ECDE0009CA85 /* Extensions+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E5EF22C5ECDE0009CA85 /* Extensions+UIImageView.swift */; };
+		0624E5F322C5F1610009CA85 /* APIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E5F222C5F1610009CA85 /* APIWorker.swift */; };
+		0624E5F522C5F17D0009CA85 /* RandomUserFilterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E5F422C5F17D0009CA85 /* RandomUserFilterWorker.swift */; };
+		0624E5F722C5F19C0009CA85 /* RandomUserPersistenceWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E5F622C5F19C0009CA85 /* RandomUserPersistenceWorker.swift */; };
+		0624E5FD22C5F7200009CA85 /* RandomUserFilterWorkerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E5FC22C5F7200009CA85 /* RandomUserFilterWorkerTest.swift */; };
 		067F63E322C497E90023E31B /* AppDelegate+AppLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F63E222C497E90023E31B /* AppDelegate+AppLifeCycle.swift */; };
 		067F63E522C497F70023E31B /* AppDelegate+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F63E422C497F70023E31B /* AppDelegate+CoreData.swift */; };
 		06CBAF1F22C493A600EE45DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CBAF1E22C493A600EE45DF /* AppDelegate.swift */; };
@@ -61,6 +65,10 @@
 
 /* Begin PBXFileReference section */
 		0624E5EF22C5ECDE0009CA85 /* Extensions+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIImageView.swift"; sourceTree = "<group>"; };
+		0624E5F222C5F1610009CA85 /* APIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWorker.swift; sourceTree = "<group>"; };
+		0624E5F422C5F17D0009CA85 /* RandomUserFilterWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserFilterWorker.swift; sourceTree = "<group>"; };
+		0624E5F622C5F19C0009CA85 /* RandomUserPersistenceWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserPersistenceWorker.swift; sourceTree = "<group>"; };
+		0624E5FC22C5F7200009CA85 /* RandomUserFilterWorkerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserFilterWorkerTest.swift; sourceTree = "<group>"; };
 		067F63E222C497E90023E31B /* AppDelegate+AppLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+AppLifeCycle.swift"; sourceTree = "<group>"; };
 		067F63E422C497F70023E31B /* AppDelegate+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CoreData.swift"; sourceTree = "<group>"; };
 		06CBAF1B22C493A600EE45DF /* RandomUserChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +152,16 @@
 			path = InfiniteTableViewController;
 			sourceTree = "<group>";
 		};
+		0624E5F122C5F1300009CA85 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				0624E5F222C5F1610009CA85 /* APIWorker.swift */,
+				0624E5F422C5F17D0009CA85 /* RandomUserFilterWorker.swift */,
+				0624E5F622C5F19C0009CA85 /* RandomUserPersistenceWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
 		067F63E622C497FB0023E31B /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +199,7 @@
 			children = (
 				06FFBCAC22C4B95E00979E5E /* Utils */,
 				06FFBC9922C4A1A500979E5E /* Entities */,
+				0624E5F122C5F1300009CA85 /* Workers */,
 				06FFBCA622C4B91C00979E5E /* Scenes */,
 				06FFBCB122C4BDB700979E5E /* UIComponents */,
 				067F63E622C497FB0023E31B /* AppDelegate */,
@@ -197,6 +216,7 @@
 		06CBAF3522C493A700EE45DF /* RandomUserChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				0624E5FC22C5F7200009CA85 /* RandomUserFilterWorkerTest.swift */,
 				06FFBCA022C4A44F00979E5E /* RandomUserTests.swift */,
 				06CBAF3622C493A700EE45DF /* RandomUserChallengeTests.swift */,
 				06CBAF3822C493A700EE45DF /* Info.plist */,
@@ -637,16 +657,19 @@
 				06FFBCB522C4BE2F00979E5E /* RandomUserListInteractor.swift in Sources */,
 				06FFBCD622C519B600979E5E /* InfiniteTableViewControllerDelegate.swift in Sources */,
 				067F63E322C497E90023E31B /* AppDelegate+AppLifeCycle.swift in Sources */,
+				0624E5F322C5F1610009CA85 /* APIWorker.swift in Sources */,
 				06FFBCC422C4DE0300979E5E /* RandomUserFilter.swift in Sources */,
 				06FFBC9F22C4A31B00979E5E /* RandomUserLocation.swift in Sources */,
 				06FFBCD422C5122D00979E5E /* InfiniteTableViewController.swift in Sources */,
 				06FFBCB022C4BC0D00979E5E /* RandomUserListProtocols.swift in Sources */,
 				06CBAF2122C493A600EE45DF /* ViewController.swift in Sources */,
+				0624E5F522C5F17D0009CA85 /* RandomUserFilterWorker.swift in Sources */,
 				06FFBCD222C508FE00979E5E /* Extensions+UIViewController.swift in Sources */,
 				06FFBCB722C4BE6000979E5E /* RandomUserListPresenter.swift in Sources */,
 				06CBAF1F22C493A600EE45DF /* AppDelegate.swift in Sources */,
 				06FFBC9B22C4A1B300979E5E /* RandomUser.swift in Sources */,
 				06FFBCC022C4CA7300979E5E /* RandomUserFilterCategory.swift in Sources */,
+				0624E5F722C5F19C0009CA85 /* RandomUserPersistenceWorker.swift in Sources */,
 				06FFBCCB22C4EF1600979E5E /* RandomUserCell.swift in Sources */,
 				06FFBCAE22C4B98D00979E5E /* UIInstantiable.swift in Sources */,
 				06FFBCB922C4BF4C00979E5E /* Error+APIError.swift in Sources */,
@@ -658,6 +681,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06CBAF3722C493A700EE45DF /* RandomUserChallengeTests.swift in Sources */,
+				0624E5FD22C5F7200009CA85 /* RandomUserFilterWorkerTest.swift in Sources */,
 				06FFBCA122C4A44F00979E5E /* RandomUserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
