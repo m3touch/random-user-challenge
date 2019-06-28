@@ -65,13 +65,10 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
         reloadTableView()
     }
 
-    func displayRemoveRandomUser(_ removedUser: RandomUser?, updatedUsers: [RandomUser], error: RandomUserListError?) {
-        // TODO --> MANAGE ERROR REMOVING USER
-        guard let removedUserData = removedUser else { return }
-
+    func displayRemoveRandomUser(_ removedUser: RandomUser, updatedUsers: [RandomUser]) {
         randomUsers = updatedUsers
         reloadTableView()
-        showRemovedUserAlert(userData: removedUserData)
+        showRemovedUserAlert(userData: removedUser)
     }
 
     // MARK: - IB Actions

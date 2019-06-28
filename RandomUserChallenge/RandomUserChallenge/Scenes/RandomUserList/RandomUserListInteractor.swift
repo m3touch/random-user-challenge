@@ -13,12 +13,13 @@ final class RandomUserListInteractor: RandomUserListInteractorProtocol {
     let presenter: RandomUserListPresenterProcotol
     let resultsPerPage: Int
     let randomUserApiWorker: APIWorkerProtocol
+    let dataPersistanceWorker: DataPersistanceProtocol
 
-    // TODO: Add filter worker & persistence worker injection to improve testability
-    init(resultsToLoad perPageResults: Int, presenter: RandomUserListPresenterProcotol, apiWorker: APIWorkerProtocol) {
+    init(resultsToLoad perPageResults: Int, presenter: RandomUserListPresenterProcotol, apiWorker: APIWorkerProtocol, dataPersistanceWorker: DataPersistanceProtocol) {
         self.resultsPerPage = perPageResults
         self.presenter = presenter
         self.randomUserApiWorker = apiWorker
+        self.dataPersistanceWorker = dataPersistanceWorker
     }
 
     func doFetchRandomUsers(_ currentUsers: [RandomUser], forPage nextPage: Int) {
@@ -26,10 +27,14 @@ final class RandomUserListInteractor: RandomUserListInteractorProtocol {
             page: nextPage,
             resultsPerPage: resultsPerPage,
             onSuccess: { [weak self] (users) in
+                guard let saveSelf = self else { return }
+
                 var totalUsers = currentUsers
                 totalUsers.append(contentsOf: users)
                 let totalUsersUnique = RandomUserFilterWorker.removeRepetitions(fromUsers: totalUsers)
-                self?.presenter.presentFetchRandomUsers(totalUsersUnique, currentPage: nextPage, error: nil)
+                let updatedUsers = saveSelf.dataPersistanceWorker.removeDeletedRandomUsersFrom(totalUsersUnique)
+
+                saveSelf.presenter.presentFetchRandomUsers(updatedUsers, currentPage: nextPage, error: nil)
             },
             onError: { [weak self] error in
                 let previousPage = nextPage > 0 ? nextPage-1 : 0
@@ -44,7 +49,9 @@ final class RandomUserListInteractor: RandomUserListInteractorProtocol {
     }
 
     func doRemoveRandomUser(_ user: RandomUser, fromUsers currentUsers: [RandomUser]) {
-        // TODO
-        presenter.presentRemoveRandomUser(user, updatedUsers: currentUsers, error: nil)
+        dataPersistanceWorker.deletePermanentlyRandomUser(user)
+        let updatedUsers = dataPersistanceWorker.removeDeletedRandomUsersFrom(currentUsers)
+
+        presenter.presentRemoveRandomUser(user, updatedUsers: updatedUsers)
     }
 }

@@ -24,12 +24,10 @@ final class RandomUserListPresenter: RandomUserListPresenterProcotol {
         viewController?.displayFilterRandomUsers(filteredUsers, appliedFilter: appliedFilter)
     }
 
-    func presentRemoveRandomUser(_ removedUser: RandomUser?, updatedUsers: [RandomUser], error: Error?) {
-        // TODO
+    func presentRemoveRandomUser(_ removedUser: RandomUser, updatedUsers: [RandomUser]) {
         viewController?.displayRemoveRandomUser(
             removedUser,
-            updatedUsers: updatedUsers.count > 0 ? updatedUsers.dropLast() : [],
-            error: nil
+            updatedUsers: updatedUsers.count > 0 ? updatedUsers.dropLast() : []
         )
     }
 }

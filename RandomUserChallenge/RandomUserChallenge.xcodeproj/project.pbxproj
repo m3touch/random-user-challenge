@@ -16,6 +16,12 @@
 		0624E60222C60C300009CA85 /* RandomUsersAPIUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E60122C60C300009CA85 /* RandomUsersAPIUrlBuilder.swift */; };
 		0624E60422C615380009CA85 /* APIRandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E60322C615380009CA85 /* APIRandomUser.swift */; };
 		0624E60622C6374A0009CA85 /* APIWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E60522C6374A0009CA85 /* APIWorkerProtocol.swift */; };
+		0624E60822C665450009CA85 /* DataPersistanceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E60722C665450009CA85 /* DataPersistanceProtocol.swift */; };
+		0624E60A22C667FC0009CA85 /* PlistEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E60922C667FC0009CA85 /* PlistEditor.swift */; };
+		0624E61022C6758E0009CA85 /* PlistEditorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E60F22C6758E0009CA85 /* PlistEditorProtocol.swift */; };
+		0624E61222C677140009CA85 /* RandomUserPersistenceWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61122C677140009CA85 /* RandomUserPersistenceWorkerTests.swift */; };
+		0624E61422C678630009CA85 /* RandomUserStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61322C678630009CA85 /* RandomUserStub.swift */; };
+		0624E61622C67A390009CA85 /* TestPlistEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61522C67A390009CA85 /* TestPlistEditor.swift */; };
 		067F63E322C497E90023E31B /* AppDelegate+AppLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F63E222C497E90023E31B /* AppDelegate+AppLifeCycle.swift */; };
 		067F63E522C497F70023E31B /* AppDelegate+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F63E422C497F70023E31B /* AppDelegate+CoreData.swift */; };
 		06CBAF1F22C493A600EE45DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CBAF1E22C493A600EE45DF /* AppDelegate.swift */; };
@@ -75,6 +81,12 @@
 		0624E60122C60C300009CA85 /* RandomUsersAPIUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersAPIUrlBuilder.swift; sourceTree = "<group>"; };
 		0624E60322C615380009CA85 /* APIRandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRandomUser.swift; sourceTree = "<group>"; };
 		0624E60522C6374A0009CA85 /* APIWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWorkerProtocol.swift; sourceTree = "<group>"; };
+		0624E60722C665450009CA85 /* DataPersistanceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistanceProtocol.swift; sourceTree = "<group>"; };
+		0624E60922C667FC0009CA85 /* PlistEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistEditor.swift; sourceTree = "<group>"; };
+		0624E60F22C6758E0009CA85 /* PlistEditorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistEditorProtocol.swift; sourceTree = "<group>"; };
+		0624E61122C677140009CA85 /* RandomUserPersistenceWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserPersistenceWorkerTests.swift; sourceTree = "<group>"; };
+		0624E61322C678630009CA85 /* RandomUserStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserStub.swift; sourceTree = "<group>"; };
+		0624E61522C67A390009CA85 /* TestPlistEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPlistEditor.swift; sourceTree = "<group>"; };
 		067F63E222C497E90023E31B /* AppDelegate+AppLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+AppLifeCycle.swift"; sourceTree = "<group>"; };
 		067F63E422C497F70023E31B /* AppDelegate+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CoreData.swift"; sourceTree = "<group>"; };
 		06CBAF1B22C493A600EE45DF /* RandomUserChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +175,7 @@
 				0624E5F422C5F17D0009CA85 /* RandomUserFilterWorker.swift */,
 				0624E5F622C5F19C0009CA85 /* RandomUserPersistenceWorker.swift */,
 				0624E60522C6374A0009CA85 /* APIWorkerProtocol.swift */,
+				0624E60722C665450009CA85 /* DataPersistanceProtocol.swift */,
 			);
 			path = Workers;
 			sourceTree = "<group>";
@@ -174,6 +187,15 @@
 				0624E60122C60C300009CA85 /* RandomUsersAPIUrlBuilder.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		0624E61722C67A4F0009CA85 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0624E61322C678630009CA85 /* RandomUserStub.swift */,
+				0624E61522C67A390009CA85 /* TestPlistEditor.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		067F63E622C497FB0023E31B /* AppDelegate */ = {
@@ -229,9 +251,11 @@
 		06CBAF3522C493A700EE45DF /* RandomUserChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				0624E61122C677140009CA85 /* RandomUserPersistenceWorkerTests.swift */,
 				0624E5FC22C5F7200009CA85 /* RandomUserFilterWorkerTest.swift */,
 				06FFBCA022C4A44F00979E5E /* RandomUserTests.swift */,
 				06CBAF3622C493A700EE45DF /* RandomUserChallengeTests.swift */,
+				0624E61722C67A4F0009CA85 /* Utils */,
 				06CBAF3822C493A700EE45DF /* Info.plist */,
 			);
 			path = RandomUserChallengeTests;
@@ -284,6 +308,8 @@
 			children = (
 				06FFBCD022C508EC00979E5E /* Extensions */,
 				06FFBCAD22C4B98D00979E5E /* UIInstantiable.swift */,
+				0624E60922C667FC0009CA85 /* PlistEditor.swift */,
+				0624E60F22C6758E0009CA85 /* PlistEditorProtocol.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -661,6 +687,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0624E60822C665450009CA85 /* DataPersistanceProtocol.swift in Sources */,
 				06CBAF2722C493A600EE45DF /* RandomUserChallenge.xcdatamodeld in Sources */,
 				06FFBCBB22C4C00400979E5E /* Error+RandomUserListError.swift in Sources */,
 				0624E5F022C5ECDE0009CA85 /* Extensions+UIImageView.swift in Sources */,
@@ -681,6 +708,8 @@
 				0624E5F522C5F17D0009CA85 /* RandomUserFilterWorker.swift in Sources */,
 				06FFBCD222C508FE00979E5E /* Extensions+UIViewController.swift in Sources */,
 				06FFBCB722C4BE6000979E5E /* RandomUserListPresenter.swift in Sources */,
+				0624E61022C6758E0009CA85 /* PlistEditorProtocol.swift in Sources */,
+				0624E60A22C667FC0009CA85 /* PlistEditor.swift in Sources */,
 				06CBAF1F22C493A600EE45DF /* AppDelegate.swift in Sources */,
 				06FFBC9B22C4A1B300979E5E /* RandomUser.swift in Sources */,
 				06FFBCC022C4CA7300979E5E /* RandomUserFilterCategory.swift in Sources */,
@@ -696,9 +725,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0624E61422C678630009CA85 /* RandomUserStub.swift in Sources */,
 				06CBAF3722C493A700EE45DF /* RandomUserChallengeTests.swift in Sources */,
 				0624E5FD22C5F7200009CA85 /* RandomUserFilterWorkerTest.swift in Sources */,
 				06FFBCA122C4A44F00979E5E /* RandomUserTests.swift in Sources */,
+				0624E61222C677140009CA85 /* RandomUserPersistenceWorkerTests.swift in Sources */,
+				0624E61622C67A390009CA85 /* TestPlistEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

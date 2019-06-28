@@ -20,7 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let listInteractor = RandomUserListInteractor(
             resultsToLoad: 10,
             presenter: listPresenter,
-            apiWorker: RandomUserAPIWorker()
+            apiWorker: RandomUserAPIWorker(),
+            dataPersistanceWorker: RandomUserPersistenceWorker(plistEditor: PlistEditor())
         )
         listViewController.interactor = listInteractor
 

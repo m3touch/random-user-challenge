@@ -34,9 +34,8 @@ protocol RandomUserListViewControllerProtocol: class {
      - parameters:
         - removedUser: The user that was asked to be removed.
         - updatedUsers: The resulting list after removing the users.
-        - error: Any error that occurred during the remove user process.
      */
-    func displayRemoveRandomUser(_ removedUser: RandomUser?, updatedUsers: [RandomUser], error: RandomUserListError?)
+    func displayRemoveRandomUser(_ removedUser: RandomUser, updatedUsers: [RandomUser])
 }
 
 protocol RandomUserListInteractorProtocol {
@@ -106,7 +105,7 @@ protocol RandomUserListPresenterProcotol {
 
      - parameters:
          - removedUser: The user that has been asked to be removed.
-         - error: The error that occurred while removing the random user if any.
+         - updatedUsers: The resulting array of random users after removing the user.
      */
-    func presentRemoveRandomUser(_ removedUser: RandomUser?, updatedUsers: [RandomUser], error: Error?)
+    func presentRemoveRandomUser(_ removedUser: RandomUser, updatedUsers: [RandomUser])
 }
