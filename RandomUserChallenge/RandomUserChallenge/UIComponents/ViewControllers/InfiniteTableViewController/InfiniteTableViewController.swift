@@ -41,6 +41,10 @@ class InfiniteTableViewController: UITableViewController {
             return UITableViewCell()
         }
 
+        if loadedTheLastRowCell(currentIndexPath: indexPath) {
+            delegate?.loadMoreData()
+        }
+
         cell.bindWithRandomUserAt(
             indexPath: indexPath,
             name: userData.name,
@@ -68,5 +72,9 @@ class InfiniteTableViewController: UITableViewController {
     private func prepareTableView() {
         let randomUserCellNib = UINib(nibName: Constants.cellIdentifier, bundle: nil)
         tableView.register(randomUserCellNib, forCellReuseIdentifier: Constants.cellIdentifier)
+    }
+
+    private func loadedTheLastRowCell(currentIndexPath: IndexPath) -> Bool {
+        return currentIndexPath.row == tableView.numberOfRows(inSection: 0)-1
     }
 }

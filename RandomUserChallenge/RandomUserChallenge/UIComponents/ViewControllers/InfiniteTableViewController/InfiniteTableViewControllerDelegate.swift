@@ -14,6 +14,6 @@ protocol InfiniteTableViewControllerDelegate: class {
 
     func getCellDataForRowAt(indexPath: IndexPath) -> RandomUser?
     func deleteUserAtRow(indexPath: IndexPath)
-    // TODO: --> Ask to load more elements if last row has been shown
+    func loadMoreData()
     // TODO: --> Notify of a selected item
 }

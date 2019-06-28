@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RandomUserListViewController" customModule="RandomUserChallenge" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="33S-Gt-YJv" id="diq-VK-2ga"/>
                 <outlet property="filterSegmentedControl" destination="SDH-qI-xsb" id="kKZ-Uh-o26"/>
                 <outlet property="searchBar" destination="b77-HO-zOj" id="kjs-sr-4Cb"/>
                 <outlet property="searchDisplayController" destination="70q-3K-Md1" id="4sa-5J-qiE"/>
@@ -75,6 +76,10 @@
                         <outlet property="delegate" destination="-1" id="Uha-CF-ulw"/>
                     </connections>
                 </searchBar>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="33S-Gt-YJv">
+                    <rect key="frame" x="188.5" y="528" width="37" height="37"/>
+                    <color key="color" red="0.054901960780000002" green="0.27058823529999998" blue="0.49019607840000001" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -84,8 +89,10 @@
                 <constraint firstItem="b77-HO-zOj" firstAttribute="top" secondItem="SDH-qI-xsb" secondAttribute="bottom" constant="5" id="9R7-ET-27g"/>
                 <constraint firstItem="b77-HO-zOj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9y2-rn-cbg"/>
                 <constraint firstItem="uaK-3C-cSl" firstAttribute="top" secondItem="nxD-7x-xbZ" secondAttribute="top" id="GSQ-xZ-vh5"/>
+                <constraint firstItem="33S-Gt-YJv" firstAttribute="centerX" secondItem="nxD-7x-xbZ" secondAttribute="centerX" id="L6i-fM-sQB"/>
                 <constraint firstItem="bzd-VL-dU6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="NMp-k0-tkg"/>
                 <constraint firstItem="nxD-7x-xbZ" firstAttribute="top" secondItem="b77-HO-zOj" secondAttribute="bottom" constant="20" id="RM9-t5-4iD"/>
+                <constraint firstItem="33S-Gt-YJv" firstAttribute="centerY" secondItem="nxD-7x-xbZ" secondAttribute="centerY" id="Sa9-lF-24N"/>
                 <constraint firstItem="uaK-3C-cSl" firstAttribute="leading" secondItem="nxD-7x-xbZ" secondAttribute="leading" id="TCW-Gh-KSZ"/>
                 <constraint firstItem="SDH-qI-xsb" firstAttribute="top" secondItem="bzd-VL-dU6" secondAttribute="bottom" constant="10" id="VN5-d6-GPa"/>
                 <constraint firstItem="uaK-3C-cSl" firstAttribute="bottom" secondItem="nxD-7x-xbZ" secondAttribute="bottom" id="XaT-e5-a4G"/>

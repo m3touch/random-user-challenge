@@ -28,7 +28,7 @@ class RandomUserCell: UITableViewCell {
     func bindWithRandomUserAt(indexPath: IndexPath, name: String?, surname: String?, email: String?, phoneNumber: String?, thumbnail: URL?) {
         self.indexPath = indexPath
 
-        let userCompleteName = "\(name ?? "-") \(surname ?? "-")"
+        let userCompleteName = "\(name?.capitalized ?? "-") \(surname?.capitalized ?? "-")"
         userNameAndSurname.text = userCompleteName
         userEmail.text = email ?? "-"
         userPhoneNumber.text = "📞 \(phoneNumber ?? "")"

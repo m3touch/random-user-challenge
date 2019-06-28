@@ -24,6 +24,7 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
     @IBOutlet weak var usersTableViewContainer: UIView!
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var filterSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
     // MARK: - View Life Cycle
 
@@ -31,6 +32,7 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
         super.viewDidLoad()
 
         setupUI()
+        showLoadingIndicator()
         interactor?.doFetchRandomUsers(randomUsers, forPage: currentPage+1)
     }
 
@@ -53,11 +55,13 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
             return
         }
 
+        hideLoadingIndicator()
         reloadTableView()
     }
 
     func displayFilterRandomUsers(_ fileteredUsers: [RandomUser], appliedFilter: RandomUserFilter) {
         filteredRandomUsers = fileteredUsers
+        hideLoadingIndicator()
         reloadTableView()
     }
 
@@ -71,6 +75,7 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
     }
 
     // MARK: - IB Actions
+
     @IBAction func categoryFilterChanged(_ sender: Any) {
         isFilteringUsers = true
         filterRandomUsers()
@@ -122,6 +127,14 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
             text: alertMessage,
             dismissButtonText: alertDismissText
         )
+    }
+
+    private func showLoadingIndicator() {
+        activityIndicator.startAnimating()
+    }
+
+    private func hideLoadingIndicator() {
+        activityIndicator.stopAnimating()
     }
 
     fileprivate func getRandomUser(forIndex indexPath: IndexPath) -> RandomUser? {
@@ -179,6 +192,11 @@ extension RandomUserListViewController: InfiniteTableViewControllerDelegate {
         else { return }
 
         interactor?.doRemoveRandomUser(userToDelete, fromUsers: randomUsers)
+    }
+
+    func loadMoreData() {
+        showLoadingIndicator()
+        interactor?.doFetchRandomUsers(randomUsers, forPage: currentPage+1)
     }
 }
 
