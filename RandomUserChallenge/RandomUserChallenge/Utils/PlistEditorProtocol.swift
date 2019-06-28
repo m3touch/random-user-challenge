@@ -16,7 +16,7 @@ protocol PlistEditorProtocol {
 
      - returns: Array of strings inside the plist.
      */
-    func loadPlist(withName plistName: String) -> [String]
+    func loadPlist(named plistName: String) -> [String]
 
     /**
      Stores the given string to a plist located in the devices Documents folder.
@@ -25,5 +25,5 @@ protocol PlistEditorProtocol {
          - plistName: The name of the plist to write.
          - stringToAdd: The string that has to be added to that plist.
      */
-    func addStringToPlist(withName plistName: String, value stringToAdd: String)
+    func addStringToPlist(named plistName: String, value stringToAdd: String)
 }

@@ -10,7 +10,7 @@ import Foundation
 
 struct PlistEditor: PlistEditorProtocol {
 
-    func loadPlist(withName plistName: String) -> [String] {
+    func loadPlist(named plistName: String) -> [String] {
         let documentsDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
         let readPath = "\(documentsDirectory)/\(plistName).plist"
 
@@ -23,11 +23,11 @@ struct PlistEditor: PlistEditorProtocol {
         return (try? PropertyListSerialization.propertyList(from: xml, options: .mutableContainersAndLeaves, format: nil)) as? [String] ?? []
     }
 
-    func addStringToPlist(withName plistName: String, value stringToAdd: String) {
+    func addStringToPlist(named plistName: String, value stringToAdd: String) {
         let documentsDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
         let writePath = "\(documentsDirectory)/\(plistName).plist"
 
-        var allPlistStrings = loadPlist(withName: plistName)
+        var allPlistStrings = loadPlist(named: plistName)
         allPlistStrings.append(stringToAdd)
 
         let data = NSArray(array: allPlistStrings)

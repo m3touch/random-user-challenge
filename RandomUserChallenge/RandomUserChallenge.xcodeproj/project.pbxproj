@@ -22,6 +22,10 @@
 		0624E61222C677140009CA85 /* RandomUserPersistenceWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61122C677140009CA85 /* RandomUserPersistenceWorkerTests.swift */; };
 		0624E61422C678630009CA85 /* RandomUserStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61322C678630009CA85 /* RandomUserStub.swift */; };
 		0624E61622C67A390009CA85 /* TestPlistEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61522C67A390009CA85 /* TestPlistEditor.swift */; };
+		0624E61922C67FB80009CA85 /* RandomUserListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61822C67FB80009CA85 /* RandomUserListInteractorTests.swift */; };
+		0624E61B22C68A600009CA85 /* TestRandomUserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61A22C68A600009CA85 /* TestRandomUserListPresenter.swift */; };
+		0624E61D22C68A820009CA85 /* TestAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61C22C68A820009CA85 /* TestAPIWorker.swift */; };
+		0624E61F22C68AA00009CA85 /* TestDataPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61E22C68AA00009CA85 /* TestDataPersistance.swift */; };
 		067F63E322C497E90023E31B /* AppDelegate+AppLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F63E222C497E90023E31B /* AppDelegate+AppLifeCycle.swift */; };
 		067F63E522C497F70023E31B /* AppDelegate+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F63E422C497F70023E31B /* AppDelegate+CoreData.swift */; };
 		06CBAF1F22C493A600EE45DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CBAF1E22C493A600EE45DF /* AppDelegate.swift */; };
@@ -87,6 +91,10 @@
 		0624E61122C677140009CA85 /* RandomUserPersistenceWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserPersistenceWorkerTests.swift; sourceTree = "<group>"; };
 		0624E61322C678630009CA85 /* RandomUserStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserStub.swift; sourceTree = "<group>"; };
 		0624E61522C67A390009CA85 /* TestPlistEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPlistEditor.swift; sourceTree = "<group>"; };
+		0624E61822C67FB80009CA85 /* RandomUserListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserListInteractorTests.swift; sourceTree = "<group>"; };
+		0624E61A22C68A600009CA85 /* TestRandomUserListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRandomUserListPresenter.swift; sourceTree = "<group>"; };
+		0624E61C22C68A820009CA85 /* TestAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPIWorker.swift; sourceTree = "<group>"; };
+		0624E61E22C68AA00009CA85 /* TestDataPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataPersistance.swift; sourceTree = "<group>"; };
 		067F63E222C497E90023E31B /* AppDelegate+AppLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+AppLifeCycle.swift"; sourceTree = "<group>"; };
 		067F63E422C497F70023E31B /* AppDelegate+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CoreData.swift"; sourceTree = "<group>"; };
 		06CBAF1B22C493A600EE45DF /* RandomUserChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -194,6 +202,9 @@
 			children = (
 				0624E61322C678630009CA85 /* RandomUserStub.swift */,
 				0624E61522C67A390009CA85 /* TestPlistEditor.swift */,
+				0624E61A22C68A600009CA85 /* TestRandomUserListPresenter.swift */,
+				0624E61C22C68A820009CA85 /* TestAPIWorker.swift */,
+				0624E61E22C68AA00009CA85 /* TestDataPersistance.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -251,6 +262,7 @@
 		06CBAF3522C493A700EE45DF /* RandomUserChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				0624E61822C67FB80009CA85 /* RandomUserListInteractorTests.swift */,
 				0624E61122C677140009CA85 /* RandomUserPersistenceWorkerTests.swift */,
 				0624E5FC22C5F7200009CA85 /* RandomUserFilterWorkerTest.swift */,
 				06FFBCA022C4A44F00979E5E /* RandomUserTests.swift */,
@@ -725,10 +737,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0624E61B22C68A600009CA85 /* TestRandomUserListPresenter.swift in Sources */,
 				0624E61422C678630009CA85 /* RandomUserStub.swift in Sources */,
 				06CBAF3722C493A700EE45DF /* RandomUserChallengeTests.swift in Sources */,
+				0624E61F22C68AA00009CA85 /* TestDataPersistance.swift in Sources */,
 				0624E5FD22C5F7200009CA85 /* RandomUserFilterWorkerTest.swift in Sources */,
+				0624E61922C67FB80009CA85 /* RandomUserListInteractorTests.swift in Sources */,
 				06FFBCA122C4A44F00979E5E /* RandomUserTests.swift in Sources */,
+				0624E61D22C68A820009CA85 /* TestAPIWorker.swift in Sources */,
 				0624E61222C677140009CA85 /* RandomUserPersistenceWorkerTests.swift in Sources */,
 				0624E61622C67A390009CA85 /* TestPlistEditor.swift in Sources */,
 			);

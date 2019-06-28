@@ -22,6 +22,18 @@ final class RandomUserListInteractor: RandomUserListInteractorProtocol {
         self.dataPersistanceWorker = dataPersistanceWorker
     }
 
+    /**
+     Fetches random users for the given page.
+
+     After fetching the data, the results will be filtered to avoid duplicities and remove the permanently
+     deleted random users.
+
+     If an error occurs the resulting page should be the previous one to indicate the current page.
+
+     - parameters:
+         - currentUsers: The current users sequence to be updated with the new downloaded ones.
+         - nextPage: The page to be fetched.
+     */
     func doFetchRandomUsers(_ currentUsers: [RandomUser], forPage nextPage: Int) {
         randomUserApiWorker.fetch(
             page: nextPage,
@@ -44,6 +56,11 @@ final class RandomUserListInteractor: RandomUserListInteractorProtocol {
     }
 
     func doFilterRandomUsers(_ currentUsers: [RandomUser], withFilter filter: RandomUserFilter) {
+        guard filter.searchValue != "" else {
+            presenter.presentFilterRandomUsers(currentUsers, appliedFilter: filter)
+            return
+        }
+
         let filteredUsers = RandomUserFilterWorker.filterRandomUsers(currentUsers, byFilter: filter)
         presenter.presentFilterRandomUsers(filteredUsers, appliedFilter: filter)
     }

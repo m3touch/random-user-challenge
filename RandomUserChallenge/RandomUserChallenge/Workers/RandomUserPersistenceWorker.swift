@@ -20,11 +20,11 @@ final class RandomUserPersistenceWorker: DataPersistanceProtocol {
         static let randomUserPlistName = "deletedRandomUsers"
     }
 
-    func deletePermanentlyRandomUser(_ randomUser: RandomUser) { // TODO: ADD TESTS
-        plistEditor.addStringToPlist(withName: Constants.randomUserPlistName, value: randomUser.id.uuidString)
+    func deletePermanentlyRandomUser(_ randomUser: RandomUser) {
+        plistEditor.addStringToPlist(named: Constants.randomUserPlistName, value: randomUser.id.uuidString)
     }
 
-    func removeDeletedRandomUsersFrom(_ randomUsers: [RandomUser]) -> [RandomUser] { // TODO: ADD TEST
+    func removeDeletedRandomUsersFrom(_ randomUsers: [RandomUser]) -> [RandomUser] {
         let deletedIds = loadDeletedRandomUserIds()
         var cleanedUpRandomUsers: [RandomUser] = []
 
@@ -40,6 +40,6 @@ final class RandomUserPersistenceWorker: DataPersistanceProtocol {
     // MARK: - Private Interface
 
     private func loadDeletedRandomUserIds() -> [String] {
-        return plistEditor.loadPlist(withName: Constants.randomUserPlistName)
+        return plistEditor.loadPlist(named: Constants.randomUserPlistName)
     }
 }

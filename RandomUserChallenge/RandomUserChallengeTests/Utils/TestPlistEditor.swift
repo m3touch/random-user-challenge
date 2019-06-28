@@ -11,11 +11,11 @@
 class TestPlistEditor: PlistEditorProtocol {
     var savedIds: [String] = []
 
-    func loadPlist(withName plistName: String) -> [String] {
+    func loadPlist(named plistName: String) -> [String] {
         return savedIds
     }
 
-    func addStringToPlist(withName plistName: String, value stringToAdd: String) {
+    func addStringToPlist(named plistName: String, value stringToAdd: String) {
         savedIds.append(stringToAdd)
     }
 }
