@@ -204,6 +204,12 @@ extension RandomUserListViewController: InfiniteTableViewControllerDelegate {
         guard let selectedRandomUser = getRandomUser(forIndex: indexPath) else { return }
 
         print("Show detail for \(selectedRandomUser.name ?? "") \(selectedRandomUser.surname ?? "")")
+        // TODO: FIXME!!!!! ROUTER
+        let detailViewController = RandomUserDetailViewController.instiantate()
+        let detailPresenter = RandomUserDetailPresenter(presentable: detailViewController)
+        detailViewController.interactor = RandomUserDetailInteractor(presenter: detailPresenter)
+        detailViewController.randomUserData = selectedRandomUser
+        self.navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
 
