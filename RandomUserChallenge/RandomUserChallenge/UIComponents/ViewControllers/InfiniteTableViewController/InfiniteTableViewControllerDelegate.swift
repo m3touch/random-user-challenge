@@ -8,10 +8,12 @@
 
 import UIKit
 
-protocol InfiniteTableViewControllerDelegate: class { // TODO: AssociatedType instead of RandomUser
+// TODO: AssociatedType instead of RandomUser. Add abstraction of the required cell to be shown to make it cell adnostic, it only manages cells.
+protocol InfiniteTableViewControllerDelegate: class {
     var infiniteTableViewDataSource: [RandomUser] { get }
 
     func getCellDataForRowAt(indexPath: IndexPath) -> RandomUser?
     func deleteUserAtRow(indexPath: IndexPath)
     // TODO: --> Ask to load more elements if last row has been shown
+    // TODO: --> Notify of a selected item
 }

@@ -39,20 +39,20 @@ final class RandomUserFilterWorker {
          - users: The initial sequence of users to apply the filter.
      */
     static func removeUnwantedUsers(_ unwantedUserIds: [UUID], fromUsers users: [RandomUser]) -> [RandomUser] {
-        return users.filter { randomUser in !unwantedUserIds.contains(randomUser.id) }
+        return users.filter { user in !unwantedUserIds.contains(user.id) }
     }
 
     // MARK: - Private Interface
 
     private static func filterByName(_ users: [RandomUser], searchValue: String) -> [RandomUser] {
-        return users.filter { randomUser in (randomUser.name ?? "").contains(searchValue) }
+        return users.filter { user in (user.name ?? "").lowercased().contains(searchValue.lowercased()) }
     }
 
     private static func filterByEmail(_ users: [RandomUser], searchValue: String) -> [RandomUser] {
-        return users.filter { randomUser in (randomUser.email ?? "").contains(searchValue) }
+        return users.filter { user in (user.email ?? "").lowercased().contains(searchValue.lowercased()) }
     }
 
     private static func filterBySurname(_ users: [RandomUser], searchValue: String) -> [RandomUser] {
-        return users.filter { randomUser in (randomUser.surname ?? "").contains(searchValue) }
+        return users.filter { user in (user.surname ?? "").lowercased().contains(searchValue.lowercased()) }
     }
 }

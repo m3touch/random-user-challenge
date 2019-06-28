@@ -15,7 +15,7 @@ final class RandomUserListPresenter: RandomUserListPresenterProcotol {
     }
 
     func presentFetchRandomUsers(_ newUsers: [RandomUser], currentPage: Int, error: APIError?) {
-        // TODO
+        // TODO >> Transform APIError to View error
         viewController?.displayFetchRandomUsers(newUsers, currentPage: currentPage, error: nil)
     }
 

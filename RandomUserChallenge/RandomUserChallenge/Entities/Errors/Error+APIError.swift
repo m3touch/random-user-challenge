@@ -7,4 +7,8 @@
 //
 
 enum APIError: Error {
+    case
+    unableToBuildCall,
+    serviceCallFailed,
+    unexpectedServiceAnswerFormat
 }

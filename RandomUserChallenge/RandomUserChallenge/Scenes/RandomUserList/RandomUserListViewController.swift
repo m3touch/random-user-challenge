@@ -19,7 +19,7 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
     fileprivate var randomUsers: [RandomUser] = []
     fileprivate var filteredRandomUsers: [RandomUser] = []
     fileprivate var isFilteringUsers: Bool {
-        return filteredRandomUsers.count != 0
+        return filteredRandomUsers.count != 0 // TODO >> This is wrong, should see if user is searching for something
     }
     fileprivate let filterButtonCategory: [RandomUserFilterCategory] = [.name, .surname, .email]
 

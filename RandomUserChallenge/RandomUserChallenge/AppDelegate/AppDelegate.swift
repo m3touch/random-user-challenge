@@ -19,7 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let listPresenter = RandomUserListPresenter(presentable: listViewController)
         let listInteractor = RandomUserListInteractor(
             resultsToLoad: 10,
-            presenter: listPresenter
+            presenter: listPresenter,
+            apiWorker: RandomUserAPIWorker()
         )
         listViewController.interactor = listInteractor
 
