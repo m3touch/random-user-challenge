@@ -41,12 +41,13 @@ class InfiniteTableViewController: UITableViewController {
             return UITableViewCell()
         }
 
-        cell.bindWithRandomUser(
+        cell.bindWithRandomUserAt(
+            indexPath: indexPath,
             name: userData.name,
             surname: userData.surname,
             email: userData.email,
             phoneNumber: userData.phoneNumber,
-            indexPath: indexPath
+            thumbnail: userData.thumbnail
         )
 
         return cell

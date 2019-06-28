@@ -10,6 +10,10 @@ import UIKit
 
 class RandomUserCell: UITableViewCell {
 
+    enum Constants {
+        static let placeholderImage = UIImage(named: "user_placeholder")
+    }
+
     private var indexPath: IndexPath?
 
     @IBOutlet weak var userThumbnail: UIImageView!
@@ -21,12 +25,16 @@ class RandomUserCell: UITableViewCell {
         super.awakeFromNib()
     }
 
-    func bindWithRandomUser(name: String?, surname: String?, email: String?, phoneNumber: String?, indexPath: IndexPath) {
+    func bindWithRandomUserAt(indexPath: IndexPath, name: String?, surname: String?, email: String?, phoneNumber: String?, thumbnail: URL?) {
         self.indexPath = indexPath
 
         let userCompleteName = "\(name ?? "-") \(surname ?? "-")"
         userNameAndSurname.text = userCompleteName
         userEmail.text = email ?? "-"
         userPhoneNumber.text = "📞 \(phoneNumber ?? "")"
+        userThumbnail.setImage(
+            fromURL: thumbnail,
+            placeholder: Constants.placeholderImage
+        )
     }
 }

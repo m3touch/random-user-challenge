@@ -113,8 +113,8 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
         let alertMessage = "\(userData.name ?? "-") \(userData.surname ?? "-"), with identifier: \(userData.id.uuidString), has been removed permanently."
         let alertDismissText = "Ok"
 
-        showAlert(
-            titled: alertTitle,
+        showAlertTiteled(
+            alertTitle,
             text: alertMessage,
             dismissButtonText: alertDismissText
         )

@@ -47,8 +47,8 @@ final class RandomUserListInteractor: RandomUserListInteractorProtocol {
                 state: "State 1",
                 phoneNumber: "+34 111",
                 email: "111@111.com",
-                thumbnail: "todo.com",
-                picture: "todo.com",
+                thumbnail: "https://react.semantic-ui.com/images/avatar/large/molly.png",
+                picture: "https://react.semantic-ui.com/images/avatar/large/molly.png",
                 registeredDate: "11:11:11 11/11/11"
             ),
             //swiftlint:disable:next force_try
@@ -62,8 +62,8 @@ final class RandomUserListInteractor: RandomUserListInteractorProtocol {
                 state: "State 2",
                 phoneNumber: "+34 222",
                 email: "222@222.com",
-                thumbnail: "todo.com",
-                picture: "todo.com",
+                thumbnail: "https://semantic-ui.com/images/avatar2/large/kristy.png",
+                picture: "https://semantic-ui.com/images/avatar2/large/kristy.png",
                 registeredDate: "22:22:22 22/22/22"
             ),
             //swiftlint:disable:next force_try
@@ -77,8 +77,8 @@ final class RandomUserListInteractor: RandomUserListInteractorProtocol {
                 state: "State 3",
                 phoneNumber: "+34 333",
                 email: "333@333.com",
-                thumbnail: "todo.com",
-                picture: "todo.com",
+                thumbnail: "https://semantic-ui.com/images/avatar2/large/mark.png",
+                picture: "https://semantic-ui.com/images/avatar2/large/mark.png",
                 registeredDate: "33:33:33 33/33/33"
             )
         ]
