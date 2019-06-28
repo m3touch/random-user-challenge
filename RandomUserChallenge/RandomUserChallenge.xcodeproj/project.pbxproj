@@ -19,8 +19,6 @@
 		067F63E322C497E90023E31B /* AppDelegate+AppLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F63E222C497E90023E31B /* AppDelegate+AppLifeCycle.swift */; };
 		067F63E522C497F70023E31B /* AppDelegate+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F63E422C497F70023E31B /* AppDelegate+CoreData.swift */; };
 		06CBAF1F22C493A600EE45DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CBAF1E22C493A600EE45DF /* AppDelegate.swift */; };
-		06CBAF2122C493A600EE45DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CBAF2022C493A600EE45DF /* ViewController.swift */; };
-		06CBAF2422C493A600EE45DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CBAF2222C493A600EE45DF /* Main.storyboard */; };
 		06CBAF2722C493A600EE45DF /* RandomUserChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06CBAF2522C493A600EE45DF /* RandomUserChallenge.xcdatamodeld */; };
 		06CBAF2922C493A700EE45DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CBAF2822C493A700EE45DF /* Assets.xcassets */; };
 		06CBAF2C22C493A700EE45DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CBAF2A22C493A700EE45DF /* LaunchScreen.storyboard */; };
@@ -81,8 +79,6 @@
 		067F63E422C497F70023E31B /* AppDelegate+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CoreData.swift"; sourceTree = "<group>"; };
 		06CBAF1B22C493A600EE45DF /* RandomUserChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CBAF1E22C493A600EE45DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		06CBAF2022C493A600EE45DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		06CBAF2322C493A600EE45DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06CBAF2622C493A600EE45DF /* RandomUserChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RandomUserChallenge.xcdatamodel; sourceTree = "<group>"; };
 		06CBAF2822C493A700EE45DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06CBAF2B22C493A700EE45DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -222,8 +218,6 @@
 				06FFBCA622C4B91C00979E5E /* Scenes */,
 				06FFBCB122C4BDB700979E5E /* UIComponents */,
 				067F63E622C497FB0023E31B /* AppDelegate */,
-				06CBAF2022C493A600EE45DF /* ViewController.swift */,
-				06CBAF2222C493A600EE45DF /* Main.storyboard */,
 				06CBAF2822C493A700EE45DF /* Assets.xcassets */,
 				06CBAF2A22C493A700EE45DF /* LaunchScreen.storyboard */,
 				06CBAF2D22C493A700EE45DF /* Info.plist */,
@@ -485,7 +479,6 @@
 				06FFBCCC22C4EF1600979E5E /* RandomUserCell.xib in Resources */,
 				06CBAF2C22C493A700EE45DF /* LaunchScreen.storyboard in Resources */,
 				06CBAF2922C493A700EE45DF /* Assets.xcassets in Resources */,
-				06CBAF2422C493A600EE45DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,7 +678,6 @@
 				0624E60022C6015A0009CA85 /* HttpClientBuilder.swift in Sources */,
 				06FFBCD422C5122D00979E5E /* InfiniteTableViewController.swift in Sources */,
 				06FFBCB022C4BC0D00979E5E /* RandomUserListProtocols.swift in Sources */,
-				06CBAF2122C493A600EE45DF /* ViewController.swift in Sources */,
 				0624E5F522C5F17D0009CA85 /* RandomUserFilterWorker.swift in Sources */,
 				06FFBCD222C508FE00979E5E /* Extensions+UIViewController.swift in Sources */,
 				06FFBCB722C4BE6000979E5E /* RandomUserListPresenter.swift in Sources */,
@@ -734,14 +726,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		06CBAF2222C493A600EE45DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06CBAF2322C493A600EE45DF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		06CBAF2A22C493A700EE45DF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
