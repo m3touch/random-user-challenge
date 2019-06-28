@@ -198,6 +198,12 @@ extension RandomUserListViewController: InfiniteTableViewControllerDelegate {
         showLoadingIndicator()
         interactor?.doFetchRandomUsers(randomUsers, forPage: currentPage+1)
     }
+
+    func selectedCellAt(indexPath: IndexPath) {
+        guard let selectedRandomUser = getRandomUser(forIndex: indexPath) else { return }
+
+        print("Show detail for \(selectedRandomUser.name ?? "") \(selectedRandomUser.surname ?? "")")
+    }
 }
 
 // MARK: - UISearchBarDelegate Implementation

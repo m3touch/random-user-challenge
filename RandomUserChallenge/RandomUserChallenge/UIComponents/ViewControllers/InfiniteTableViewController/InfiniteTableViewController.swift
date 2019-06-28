@@ -67,6 +67,11 @@ class InfiniteTableViewController: UITableViewController {
         delegate?.deleteUserAtRow(indexPath: indexPath)
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        delegate?.selectedCellAt(indexPath: indexPath)
+    }
+
     // MARK: - Private interface
 
     private func prepareTableView() {
