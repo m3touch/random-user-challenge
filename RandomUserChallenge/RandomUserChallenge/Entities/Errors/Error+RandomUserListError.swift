@@ -20,7 +20,7 @@ enum RandomUserListError: UIError {
         }
     }
 
-    case anyUserFound(userMessage: String)
-    case unableToLoadUsers(userMessage: String)
-    case noMoreUsersToLoad(userMessage: String)
+    case anyUserFound(userMessage: String?)
+    case unableToLoadUsers(userMessage: String?)
+    case noMoreUsersToLoad(userMessage: String?)
 }

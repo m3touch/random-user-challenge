@@ -44,7 +44,12 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
     // MARK: - VIP Impelementation
 
     func displayFetchRandomUsers(_ updatedUsers: [RandomUser], currentPage: Int, error: RandomUserListError?) {
-        guard error == nil else { return } // TODO -> Manage the errors after fetching users
+        guard error == nil else {
+            if let errorMessage = error?.userMessage {
+                showAlertTiteled(nil, text: errorMessage, dismissButtonText: "Dismiss")
+            }
+            return
+        }
 
         filteredRandomUsers = []
         randomUsers = updatedUsers
@@ -106,7 +111,6 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
     }
 
     private func showEmptyScreen() {
-        // TODO: Customize the message for the given filter?
         usersTableViewContainer.isHidden = true
     }
 

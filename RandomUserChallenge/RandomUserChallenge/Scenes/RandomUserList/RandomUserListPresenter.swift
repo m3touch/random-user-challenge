@@ -15,12 +15,14 @@ final class RandomUserListPresenter: RandomUserListPresenterProcotol {
     }
 
     func presentFetchRandomUsers(_ updatedUsers: [RandomUser], currentPage: Int, error: APIError?) {
-        // TODO >> Transform APIError to View error
-        viewController?.displayFetchRandomUsers(updatedUsers, currentPage: currentPage, error: nil)
+        viewController?.displayFetchRandomUsers(
+            updatedUsers,
+            currentPage: currentPage,
+            error: assemble(apiError: error)
+        )
     }
 
     func presentFilterRandomUsers(_ filteredUsers: [RandomUser], appliedFilter: RandomUserFilter) {
-        // TODO
         viewController?.displayFilterRandomUsers(filteredUsers, appliedFilter: appliedFilter)
     }
 
@@ -29,5 +31,18 @@ final class RandomUserListPresenter: RandomUserListPresenterProcotol {
             removedUser,
             updatedUsers: updatedUsers.count > 0 ? updatedUsers.dropLast() : []
         )
+    }
+
+    // MARK: - Private Interface
+
+    private func assemble(apiError: APIError?) -> RandomUserListError? {
+        guard let error = apiError else { return nil }
+
+        switch error {
+        case .serviceCallFailed:
+            return .unableToLoadUsers(userMessage: "Ups! We couldn't connect with the server to load users.")
+        case .unexpectedServiceAnswerFormat, .unableToBuildCall:
+            return .unableToLoadUsers(userMessage: nil)
+        }
     }
 }

@@ -16,5 +16,5 @@ protocol APIWorkerProtocol {
          - onSuccess: Callback with the resultant array of RandomUser.
          - onError: Callback for a failure in the fetching process with the explaination.
      */
-    func fetch(page: Int, resultsPerPage: Int, onSuccess: @escaping (_ users: [RandomUser])->(), onError: @escaping (_ error: APIError?) -> Void)
+    func fetch(page: Int, resultsPerPage: Int, onSuccess: @escaping (_ users: [RandomUser]) -> Void, onError: @escaping (_ error: APIError?) -> Void)
 }
