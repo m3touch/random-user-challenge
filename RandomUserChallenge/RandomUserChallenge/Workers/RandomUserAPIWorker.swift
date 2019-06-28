@@ -40,8 +40,7 @@ final class RandomUserAPIWorker: APIWorkerProtocol {
                 return
             }
 
-            let assembledRandomUsers = fetchedData.results.compactMap { rawRandomUser in rawRandomUser.assembleRandomUser() }
-            onSuccess(RandomUserAPIWorker.removeRepetitions(inRandomUsersSequence: assembledRandomUsers))
+            onSuccess(fetchedData.results.compactMap { rawRandomUser in rawRandomUser.assembleRandomUser() })
         }
     }
 
@@ -49,17 +48,10 @@ final class RandomUserAPIWorker: APIWorkerProtocol {
 
     fileprivate func getRandomUsersCall(page: Int, resultsPerPage: Int) -> URL? {
         return RandomUsersAPIUrlBuilder(
-            requestInfo: false,
+            requestMetadata: false,
             page: page,
             results: resultsPerPage,
             includedProperties: [.login, .gender, .name, .location, .email, .registered, .phone, .picture]
         ).build()
-    }
-
-    fileprivate static func removeRepetitions(inRandomUsersSequence users: [RandomUser]) -> [RandomUser] {
-        var uniqueRandomUsers: [UUID: RandomUser] = [:]
-        users.forEach { user in uniqueRandomUsers[user.id] = user }
-
-        return Array(uniqueRandomUsers.values)
     }
 }

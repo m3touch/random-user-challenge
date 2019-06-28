@@ -74,10 +74,27 @@ class RandomUserFilterWorkerTest: XCTestCase {
         XCTAssertTrue(filteredRandomUsers.elementsEqual([firstUser]))
     }
 
-    // MARK: - Remove
+    // MARK: - Duplicates
 
-    // elimina be uuids
-    // si no troba match retorna el mateix array al eliminar uuids
+    func testRandomUserFilterWorker_filterDuplicatesWithoutRepetition_returnsSameSequence() {
+        let randomUsers = randomUsersStub
+
+        let filteredRandomUsers = RandomUserFilterWorker.removeRepetitions(fromUsers: randomUsers)
+
+        XCTAssertTrue(randomUsers.elementsEqual(filteredRandomUsers))
+    }
+
+    func testRandomUserFilterWorker_filterDuplicatesWithRepetition_returnsClearedSequence() {
+        let randomUsers = [firstUser, secondUser, firstUser]
+        let withoutDuplicationUsers = [firstUser, secondUser]
+
+        let filteredRandomUsers = RandomUserFilterWorker.removeRepetitions(fromUsers: randomUsers)
+
+        XCTAssertTrue(filteredRandomUsers.count == randomUsers.count-1)
+        XCTAssertTrue(filteredRandomUsers.elementsEqual(withoutDuplicationUsers))
+    }
+
+    // MARK: - Remove
 
     func testRandomUserFilterWorker_removeWithNotFoundRandomUserIds_returnsSameSequence() {
         let randomUsers = randomUsersStub

@@ -24,7 +24,8 @@ final class RandomUserListInteractor: RandomUserListInteractorProtocol {
     func doFetchRandomUsers(forPage nextPage: Int) {
         randomUserApiWorker.fetch(page: nextPage, resultsPerPage: resultsPerPage,
         onSuccess: { [weak self] (users) in
-            self?.presenter.presentFetchRandomUsers(users, currentPage: nextPage, error: nil)
+            let filteredUsers = RandomUserFilterWorker.removeRepetitions(fromUsers: users)
+            self?.presenter.presentFetchRandomUsers(filteredUsers, currentPage: nextPage, error: nil)
         },
         onError: { [weak self] error in
             self?.presenter.presentFetchRandomUsers([], currentPage: nextPage-1, error: error)

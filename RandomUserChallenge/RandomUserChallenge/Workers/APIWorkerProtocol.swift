@@ -8,7 +8,7 @@
 
 protocol APIWorkerProtocol {
     /**
-     Requests unique random users information from the API.
+     Downloads the provided number of RandomUsers for the given page from the API. The provided random users will be filtered to be unique.
 
      - parameters:
          - page: The page to be loaded

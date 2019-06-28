@@ -42,6 +42,13 @@ final class RandomUserFilterWorker {
         return users.filter { user in !unwantedUserIds.contains(user.id) }
     }
 
+    static func removeRepetitions(fromUsers users: [RandomUser]) -> [RandomUser] {
+        var uniqueRandomUsers: [UUID: RandomUser] = [:]
+        users.forEach { user in uniqueRandomUsers[user.id] = user }
+
+        return Array(uniqueRandomUsers.values)
+    }
+
     // MARK: - Private Interface
 
     private static func filterByName(_ users: [RandomUser], searchValue: String) -> [RandomUser] {

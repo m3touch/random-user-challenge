@@ -9,7 +9,6 @@
 import Foundation
 
 struct RandomUsersAPIUrlBuilder {
-    //https://randomuser.me/api/?noinfo&page=1&results=3&inc=login,gender,name,location,email,registered,phone,picture
 
     enum RandomUsersProperties: String {
         case gender, name, location, email, login, registered, dob, phone, cell, id, picture, nat
@@ -17,7 +16,7 @@ struct RandomUsersAPIUrlBuilder {
 
     private let noInfo: String = "noinfo"
     private let baseUrl: String = "https://randomuser.me/api"
-    var requestInfo = false
+    var requestMetadata = false
     var page: Int?
     var results: Int?
     var includedProperties: [RandomUsersProperties]?
@@ -30,11 +29,11 @@ struct RandomUsersAPIUrlBuilder {
     func build() -> URL? {
         var url = baseUrl
 
-        if !requestInfo || page != nil || results != nil || includedProperties != nil {
+        if !requestMetadata || page != nil || results != nil || includedProperties != nil {
             url += "/?"
         }
 
-        if !requestInfo {
+        if !requestMetadata {
             url += "\(noInfo)"
         }
 
