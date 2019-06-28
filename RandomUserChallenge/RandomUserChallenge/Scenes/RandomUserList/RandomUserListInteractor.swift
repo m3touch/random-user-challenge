@@ -24,9 +24,8 @@ final class RandomUserListInteractor: RandomUserListInteractorProtocol {
     }
 
     func doFilterRandomUsers(_ users: [RandomUser], withFilter filter: RandomUserFilter) {
-        // TODO
-        guard users.count > 0 else { return }
-        presenter.presentFilterRandomUsers([users[0]], appliedFilter: filter)
+        let filteredUsers = RandomUserFilterWorker.filterRandomUsers(users, byFilter: filter)
+        presenter.presentFilterRandomUsers(filteredUsers, appliedFilter: filter)
     }
 
     func doRemoveRandomUser(_ user: RandomUser, fromUsers: [RandomUser]) {
