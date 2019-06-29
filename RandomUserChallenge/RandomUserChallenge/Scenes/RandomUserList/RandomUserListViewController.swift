@@ -180,8 +180,8 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
 // MARK: - InfiniteTableViewControllerDelegate Implementation
 
 extension RandomUserListViewController: InfiniteTableViewControllerDelegate {
-    var infiniteTableViewDataSource: [RandomUser] {
-        return isFilteringUsers ? filteredRandomUsers : randomUsers
+    var dataSourceCount: Int {
+        return isFilteringUsers ? filteredRandomUsers.count : randomUsers.count
     }
 
     func getCellDataForRowAt(indexPath: IndexPath) -> RandomUser? {
