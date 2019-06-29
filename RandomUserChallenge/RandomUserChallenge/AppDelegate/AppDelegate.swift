@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let listViewController = RandomUserListViewController.instiantate()
         let listPresenter = RandomUserListPresenter(presentable: listViewController)
+        let listRouter = RandomUserListRouter(viewController: listViewController)
         let listInteractor = RandomUserListInteractor(
             resultsToLoad: 10,
             presenter: listPresenter,
@@ -24,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             dataPersistanceWorker: RandomUserPersistenceWorker(plistEditor: PlistEditor())
         )
         listViewController.interactor = listInteractor
+        listViewController.router = listRouter
 
         let rootNavigationController = UINavigationController(rootViewController: listViewController)
         window = UIWindow(frame: UIScreen.main.bounds)

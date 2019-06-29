@@ -109,3 +109,7 @@ protocol RandomUserListPresenterProcotol {
      */
     func presentRemoveRandomUser(_ removedUser: RandomUser, updatedUsers: [RandomUser])
 }
+
+protocol RandomUserListRouterProcotol {
+    func navigateToDetail(ofRandomUser userData: RandomUser)
+}

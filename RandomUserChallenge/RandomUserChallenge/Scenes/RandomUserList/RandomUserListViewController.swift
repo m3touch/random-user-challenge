@@ -13,6 +13,7 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
     // MARK: - Properties
 
     var interactor: RandomUserListInteractorProtocol?
+    var router: RandomUserListRouterProcotol?
 
     private var currentPage = 0
     fileprivate var infiniteTableViewController = InfiniteTableViewController(style: .plain)
@@ -202,14 +203,7 @@ extension RandomUserListViewController: InfiniteTableViewControllerDelegate {
 
     func selectedCellAt(indexPath: IndexPath) {
         guard let selectedRandomUser = getRandomUser(forIndex: indexPath) else { return }
-
-        print("Show detail for \(selectedRandomUser.name ?? "") \(selectedRandomUser.surname ?? "")")
-        // TODO: FIXME!!!!! ROUTER
-        let detailViewController = RandomUserDetailViewController.instiantate()
-        let detailPresenter = RandomUserDetailPresenter(presentable: detailViewController)
-        detailViewController.interactor = RandomUserDetailInteractor(presenter: detailPresenter)
-        detailViewController.randomUserData = selectedRandomUser
-        self.navigationController?.pushViewController(detailViewController, animated: true)
+        router?.navigateToDetail(ofRandomUser: selectedRandomUser)
     }
 }
 
