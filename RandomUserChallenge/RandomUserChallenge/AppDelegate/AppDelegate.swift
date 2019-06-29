@@ -16,14 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
         let listViewController = RandomUserListViewController.instiantate()
-        let listPresenter = RandomUserListPresenter(presentable: listViewController)
-        let listInteractor = RandomUserListInteractor(
-            resultsToLoad: 10,
-            presenter: listPresenter,
-            apiWorker: RandomUserAPIWorker(),
-            dataPersistanceWorker: RandomUserPersistenceWorker(plistEditor: PlistEditor())
-        )
-        listViewController.interactor = listInteractor
+        listViewController.configureVIP()
 
         let rootNavigationController = UINavigationController(rootViewController: listViewController)
         window = UIWindow(frame: UIScreen.main.bounds)

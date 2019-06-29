@@ -30,7 +30,7 @@ class InfiniteTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return delegate?.infiniteTableViewDataSource.count ?? 0
+        return delegate?.dataSourceCount ?? 0
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

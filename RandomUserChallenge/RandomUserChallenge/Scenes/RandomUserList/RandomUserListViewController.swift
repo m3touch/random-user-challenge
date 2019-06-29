@@ -8,11 +8,12 @@
 
 import UIKit
 
-class RandomUserListViewController: UIViewController, UIInstantiable, RandomUserListViewControllerProtocol {
+class RandomUserListViewController: UIViewController, RandomUserListViewControllerProtocol, UIInstantiable, VIPConfigurable {
 
     // MARK: - Properties
 
     var interactor: RandomUserListInteractorProtocol?
+    var router: RandomUserListRouterProcotol?
 
     private var currentPage = 0
     fileprivate var infiniteTableViewController = InfiniteTableViewController(style: .plain)
@@ -179,8 +180,8 @@ class RandomUserListViewController: UIViewController, UIInstantiable, RandomUser
 // MARK: - InfiniteTableViewControllerDelegate Implementation
 
 extension RandomUserListViewController: InfiniteTableViewControllerDelegate {
-    var infiniteTableViewDataSource: [RandomUser] {
-        return isFilteringUsers ? filteredRandomUsers : randomUsers
+    var dataSourceCount: Int {
+        return isFilteringUsers ? filteredRandomUsers.count : randomUsers.count
     }
 
     func getCellDataForRowAt(indexPath: IndexPath) -> RandomUser? {
@@ -202,8 +203,7 @@ extension RandomUserListViewController: InfiniteTableViewControllerDelegate {
 
     func selectedCellAt(indexPath: IndexPath) {
         guard let selectedRandomUser = getRandomUser(forIndex: indexPath) else { return }
-
-        print("Show detail for \(selectedRandomUser.name ?? "") \(selectedRandomUser.surname ?? "")")
+        router?.navigateToDetail(ofRandomUser: selectedRandomUser)
     }
 }
 
