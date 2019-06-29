@@ -6,9 +6,11 @@
 //  Copyright © 2019 mtarrago. All rights reserved.
 //
 
+import UIKit
+
 final class RandomUserListRouter: RandomUserListRouterProcotol {
 
-    weak var viewController: RandomUserListViewController?
+    weak var viewController: RandomUserListViewControllerProtocol?
 
     init(viewController: RandomUserListViewController) {
         self.viewController = viewController
@@ -19,6 +21,9 @@ final class RandomUserListRouter: RandomUserListRouterProcotol {
         let detailPresenter = RandomUserDetailPresenter(presentable: detailViewController)
         detailViewController.interactor = RandomUserDetailInteractor(presenter: detailPresenter)
         detailViewController.randomUser = userData
-        viewController?.navigationController?.pushViewController(detailViewController, animated: true)
+
+        if let viewController = viewController as? UIViewController {
+            viewController.navigationController?.pushViewController(detailViewController, animated: true)
+        }
     }
 }
