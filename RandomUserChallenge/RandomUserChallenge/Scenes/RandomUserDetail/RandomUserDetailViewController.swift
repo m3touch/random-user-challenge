@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RandomUserDetailViewController: UIViewController, UIInstantiable, RandomUserDetailViewControllerProtocol {
+class RandomUserDetailViewController: UIViewController, RandomUserDetailViewControllerProtocol, UIInstantiable, VIPConfigurable {
 
     private enum Constants {
         static let imagePlaceholder = UIImage(named: "user_placeholder")

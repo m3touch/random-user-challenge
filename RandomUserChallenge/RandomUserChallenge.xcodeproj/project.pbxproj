@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0621038822C7D6DF00EC9CCC /* RandomUserListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621038722C7D6DF00EC9CCC /* RandomUserListRouter.swift */; };
+		0621038F22C7E5C900EC9CCC /* VIPConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621038E22C7E5C900EC9CCC /* VIPConfigurator.swift */; };
+		0621039522C7F08E00EC9CCC /* InfiniteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621039322C7F08E00EC9CCC /* InfiniteTableViewController.swift */; };
+		0621039622C7F08E00EC9CCC /* InfiniteTableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621039422C7F08E00EC9CCC /* InfiniteTableViewControllerDelegate.swift */; };
 		0624E5F022C5ECDE0009CA85 /* Extensions+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E5EF22C5ECDE0009CA85 /* Extensions+UIImageView.swift */; };
 		0624E5F322C5F1610009CA85 /* RandomUserAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E5F222C5F1610009CA85 /* RandomUserAPIWorker.swift */; };
 		0624E5F522C5F17D0009CA85 /* RandomUserFilterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E5F422C5F17D0009CA85 /* RandomUserFilterWorker.swift */; };
@@ -56,8 +59,6 @@
 		06FFBCCB22C4EF1600979E5E /* RandomUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCC922C4EF1600979E5E /* RandomUserCell.swift */; };
 		06FFBCCC22C4EF1600979E5E /* RandomUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06FFBCCA22C4EF1600979E5E /* RandomUserCell.xib */; };
 		06FFBCD222C508FE00979E5E /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCD122C508FE00979E5E /* Extensions+UIViewController.swift */; };
-		06FFBCD422C5122D00979E5E /* InfiniteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCD322C5122D00979E5E /* InfiniteTableViewController.swift */; };
-		06FFBCD622C519B600979E5E /* InfiniteTableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCD522C519B600979E5E /* InfiniteTableViewControllerDelegate.swift */; };
 		2F6C7FCE691D6BD903F1CB4D /* Pods_defaults_RandomUserChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88765A613F21D2F382EB669E /* Pods_defaults_RandomUserChallenge.framework */; };
 		322335D12688688C6C9236B8 /* Pods_tests_RandomUserChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1FD59C7637BE9D66D1CAC6 /* Pods_tests_RandomUserChallengeUITests.framework */; };
 		5FFA32444981619FA3AF8497 /* Pods_tests_RandomUserChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E09763D5F3D20D612BD64D /* Pods_tests_RandomUserChallengeTests.framework */; };
@@ -82,6 +83,9 @@
 
 /* Begin PBXFileReference section */
 		0621038722C7D6DF00EC9CCC /* RandomUserListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserListRouter.swift; sourceTree = "<group>"; };
+		0621038E22C7E5C900EC9CCC /* VIPConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPConfigurator.swift; sourceTree = "<group>"; };
+		0621039322C7F08E00EC9CCC /* InfiniteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteTableViewController.swift; sourceTree = "<group>"; };
+		0621039422C7F08E00EC9CCC /* InfiniteTableViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteTableViewControllerDelegate.swift; sourceTree = "<group>"; };
 		0624E5EF22C5ECDE0009CA85 /* Extensions+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIImageView.swift"; sourceTree = "<group>"; };
 		0624E5F222C5F1610009CA85 /* RandomUserAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserAPIWorker.swift; sourceTree = "<group>"; };
 		0624E5F422C5F17D0009CA85 /* RandomUserFilterWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserFilterWorker.swift; sourceTree = "<group>"; };
@@ -136,8 +140,6 @@
 		06FFBCC922C4EF1600979E5E /* RandomUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserCell.swift; sourceTree = "<group>"; };
 		06FFBCCA22C4EF1600979E5E /* RandomUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomUserCell.xib; sourceTree = "<group>"; };
 		06FFBCD122C508FE00979E5E /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
-		06FFBCD322C5122D00979E5E /* InfiniteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteTableViewController.swift; sourceTree = "<group>"; };
-		06FFBCD522C519B600979E5E /* InfiniteTableViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteTableViewControllerDelegate.swift; sourceTree = "<group>"; };
 		1E4203909016D4187E4507C7 /* Pods-tests-RandomUserChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tests-RandomUserChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tests-RandomUserChallengeTests/Pods-tests-RandomUserChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		28578C60AAA16A8213454109 /* Pods-defaults-RandomUserChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-RandomUserChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-RandomUserChallenge/Pods-defaults-RandomUserChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		52E33D3755BB2BFDF1D8FF19 /* Pods-tests-RandomUserChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tests-RandomUserChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tests-RandomUserChallengeTests/Pods-tests-RandomUserChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,10 +182,18 @@
 		06143C8B22C52D36005527D8 /* InfiniteTableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				06FFBCD322C5122D00979E5E /* InfiniteTableViewController.swift */,
-				06FFBCD522C519B600979E5E /* InfiniteTableViewControllerDelegate.swift */,
+				0621039322C7F08E00EC9CCC /* InfiniteTableViewController.swift */,
+				0621039422C7F08E00EC9CCC /* InfiniteTableViewControllerDelegate.swift */,
 			);
 			path = InfiniteTableViewController;
+			sourceTree = "<group>";
+		};
+		0621038D22C7E5B800EC9CCC /* Infrasturcture */ = {
+			isa = PBXGroup;
+			children = (
+				0621038E22C7E5C900EC9CCC /* VIPConfigurator.swift */,
+			);
+			path = Infrasturcture;
 			sourceTree = "<group>";
 		};
 		0624E5F122C5F1300009CA85 /* Workers */ = {
@@ -265,6 +275,7 @@
 		06CBAF1D22C493A600EE45DF /* RandomUserChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				0621038D22C7E5B800EC9CCC /* Infrasturcture */,
 				0624E5FE22C600A00009CA85 /* Services */,
 				06FFBCAC22C4B95E00979E5E /* Utils */,
 				06FFBC9922C4A1A500979E5E /* Entities */,
@@ -727,13 +738,14 @@
 				0624E62322C68E930009CA85 /* RandomUserDetailViewController.swift in Sources */,
 				06CBAF2722C493A600EE45DF /* RandomUserChallenge.xcdatamodeld in Sources */,
 				06FFBCBB22C4C00400979E5E /* Error+RandomUserListError.swift in Sources */,
+				0621039622C7F08E00EC9CCC /* InfiniteTableViewControllerDelegate.swift in Sources */,
 				0624E5F022C5ECDE0009CA85 /* Extensions+UIImageView.swift in Sources */,
 				0624E62622C68EA40009CA85 /* RandomUserDetailProtocols.swift in Sources */,
+				0621038F22C7E5C900EC9CCC /* VIPConfigurator.swift in Sources */,
 				0624E60622C6374A0009CA85 /* APIWorkerProtocol.swift in Sources */,
 				06FFBCA522C4AC7700979E5E /* Error+RandomUserError.swift in Sources */,
 				06FFBCAA22C4B94B00979E5E /* RandomUserListViewController.swift in Sources */,
 				06FFBCB522C4BE2F00979E5E /* RandomUserListInteractor.swift in Sources */,
-				06FFBCD622C519B600979E5E /* InfiniteTableViewControllerDelegate.swift in Sources */,
 				067F63E322C497E90023E31B /* AppDelegate+AppLifeCycle.swift in Sources */,
 				0624E5F322C5F1610009CA85 /* RandomUserAPIWorker.swift in Sources */,
 				06FFBCC422C4DE0300979E5E /* RandomUserFilter.swift in Sources */,
@@ -741,7 +753,6 @@
 				0624E62822C68EB30009CA85 /* RandomUserDetailInteractor.swift in Sources */,
 				0624E60222C60C300009CA85 /* RandomUsersAPIUrlBuilder.swift in Sources */,
 				0624E60022C6015A0009CA85 /* HttpClientBuilder.swift in Sources */,
-				06FFBCD422C5122D00979E5E /* InfiniteTableViewController.swift in Sources */,
 				0624E62A22C68EBE0009CA85 /* RandomUserDetailPresenter.swift in Sources */,
 				06FFBCB022C4BC0D00979E5E /* RandomUserListProtocols.swift in Sources */,
 				0624E5F522C5F17D0009CA85 /* RandomUserFilterWorker.swift in Sources */,
@@ -756,6 +767,7 @@
 				0624E60422C615380009CA85 /* APIRandomUser.swift in Sources */,
 				06FFBCCB22C4EF1600979E5E /* RandomUserCell.swift in Sources */,
 				06FFBCAE22C4B98D00979E5E /* UIInstantiable.swift in Sources */,
+				0621039522C7F08E00EC9CCC /* InfiniteTableViewController.swift in Sources */,
 				0621038822C7D6DF00EC9CCC /* RandomUserListRouter.swift in Sources */,
 				06FFBCB922C4BF4C00979E5E /* Error+APIError.swift in Sources */,
 			);

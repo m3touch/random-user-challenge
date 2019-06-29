@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RandomUserListViewController: UIViewController, UIInstantiable, RandomUserListViewControllerProtocol {
+class RandomUserListViewController: UIViewController, RandomUserListViewControllerProtocol, UIInstantiable, VIPConfigurable {
 
     // MARK: - Properties
 

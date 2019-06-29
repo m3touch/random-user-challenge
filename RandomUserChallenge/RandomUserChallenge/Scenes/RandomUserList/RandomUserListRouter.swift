@@ -12,14 +12,13 @@ final class RandomUserListRouter: RandomUserListRouterProcotol {
 
     weak var viewController: RandomUserListViewControllerProtocol?
 
-    init(viewController: RandomUserListViewController) {
+    init(viewController: RandomUserListViewControllerProtocol) {
         self.viewController = viewController
     }
 
     func navigateToDetail(ofRandomUser userData: RandomUser) {
         let detailViewController = RandomUserDetailViewController.instiantate()
-        let detailPresenter = RandomUserDetailPresenter(presentable: detailViewController)
-        detailViewController.interactor = RandomUserDetailInteractor(presenter: detailPresenter)
+        detailViewController.configureVIP()
         detailViewController.randomUser = userData
 
         if let viewController = viewController as? UIViewController {
