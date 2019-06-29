@@ -18,7 +18,7 @@ final class RandomUserListRouter: RandomUserListRouterProcotol {
         let detailViewController = RandomUserDetailViewController.instiantate()
         let detailPresenter = RandomUserDetailPresenter(presentable: detailViewController)
         detailViewController.interactor = RandomUserDetailInteractor(presenter: detailPresenter)
-        detailViewController.randomUserData = userData
+        detailViewController.randomUser = userData
         viewController?.navigationController?.pushViewController(detailViewController, animated: true)
     }
 }

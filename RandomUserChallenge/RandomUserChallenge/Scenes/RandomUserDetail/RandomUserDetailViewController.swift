@@ -14,7 +14,7 @@ class RandomUserDetailViewController: UIViewController, UIInstantiable, RandomUs
         static let imagePlaceholder = UIImage(named: "user_placeholder")
     }
 
-    var randomUserData: RandomUser?
+    var randomUser: RandomUser?
     var interactor: RandomUserDetailInteractorProtocol?
 
     @IBOutlet weak var userImage: UIImageView!
@@ -26,25 +26,30 @@ class RandomUserDetailViewController: UIViewController, UIInstantiable, RandomUs
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guard let randomUser = randomUserData else {
-            self.dismiss(animated: true, completion: nil) // TODO -> router
-            return
-        }
-
-        setupUI(forUser: randomUser)
+        setupUI()
     }
 
     // MARK: - Private Interface
 
-    private func setupUI(forUser user: RandomUser) {
-        self.title = "\((user.name ?? "").capitalized) \((user.surname ?? "").capitalized)"
+    private func setupUI() {
+        self.title = "\((randomUser?.name ?? "-").capitalized) \((randomUser?.surname ?? "-").capitalized)"
 
-        userImage.setImage(fromURL: user.picture, placeholder: Constants.imagePlaceholder)
+        if let randomUserPicture = randomUser?.picture {
+            userImage.setImage(fromURL: randomUserPicture, placeholder: Constants.imagePlaceholder)
+        }
         userImage.layer.cornerRadius = userImage.bounds.height/2
 
-        userGender.text = user.gender?.uppercased()
-        userRegistrationDate.text = user.registeredDate
-        userLocation.text = "\((user.location.street ?? "").capitalized), \((user.location.city ?? "").capitalized) (\((user.location.state ?? "").uppercased()))"
-        userEmail.text = user.email ?? ""
+        userGender.text = (randomUser?.gender ?? "-").uppercased()
+        userRegistrationDate.text = randomUser?.registeredDate ?? ""
+        userLocation.text = locationTextFrom(
+            street: (randomUser?.location.street ?? "-").capitalized,
+            city: (randomUser?.location.city ?? "-").capitalized,
+            state: (randomUser?.location.state ?? "-").uppercased()
+        )
+        userEmail.text = randomUser?.email ?? "-"
+    }
+
+    private func locationTextFrom(street: String, city: String, state: String) -> String {
+        return "\(street), \(city) (\(state))"
     }
 }
