@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+ Persists app data through all launches.
+ */
 protocol DataPersistanceProtocol {
 
     /**

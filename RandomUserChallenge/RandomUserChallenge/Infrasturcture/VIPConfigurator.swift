@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ Setups VIP cycle configuration.
+ */
 protocol VIPConfigurable {
     func configureVIP()
 }

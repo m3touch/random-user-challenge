@@ -6,6 +6,9 @@
 //  Copyright © 2019 mtarrago. All rights reserved.
 //
 
+/**
+ Random User API service to fetch users.
+ */
 protocol APIWorkerProtocol {
     /**
      Downloads the provided number of RandomUsers for the given page from the API. The provided random users will be filtered to be unique.

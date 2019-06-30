@@ -8,6 +8,9 @@
 
 import UIKit
 
+/**
+ Enables automatic instantiation from a xib file.
+ */
 protocol UIInstantiable {
     static func instiantate() -> Self
 }

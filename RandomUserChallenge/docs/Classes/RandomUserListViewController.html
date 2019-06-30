@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RandomUserListViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/RandomUserListViewController" class="dashAnchor"></a>
+    <a title="RandomUserListViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (23% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RandomUserListViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HttpClientBuilder.html">HttpClientBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HttpClientBuilder/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HttpClientBuilder/HttpProtocol.html">– HttpProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InfiniteTableViewController.html">InfiniteTableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InfiniteTableViewController/Constants.html">– Constants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserAPIWorker.html">RandomUserAPIWorker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserCell.html">RandomUserCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserCell/Constants.html">– Constants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserDetailInteractor.html">RandomUserDetailInteractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserDetailPresenter.html">RandomUserDetailPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserDetailViewController.html">RandomUserDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserFilterWorker.html">RandomUserFilterWorker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserListInteractor.html">RandomUserListInteractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserListPresenter.html">RandomUserListPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserListRouter.html">RandomUserListRouter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserListViewController.html">RandomUserListViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserPersistenceWorker.html">RandomUserPersistenceWorker</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/APIError.html">APIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RandomUserError.html">RandomUserError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RandomUserFilterCategory.html">RandomUserFilterCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RandomUserListError.html">RandomUserListError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImageView.html">UIImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/APIWorkerProtocol.html">APIWorkerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DataPersistanceProtocol.html">DataPersistanceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InfiniteTableViewControllerDelegate.html">InfiniteTableViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlistEditorProtocol.html">PlistEditorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:19RandomUserChallenge0aB24DetailInteractorProtocolP">RandomUserDetailInteractorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:19RandomUserChallenge0aB23DetailPresenterProtocolP">RandomUserDetailPresenterProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:19RandomUserChallenge0aB28DetailViewControllerProtocolP">RandomUserDetailViewControllerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RandomUserListInteractorProtocol.html">RandomUserListInteractorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RandomUserListPresenterProcotol.html">RandomUserListPresenterProcotol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RandomUserListRouterProcotol.html">RandomUserListRouterProcotol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RandomUserListViewControllerProtocol.html">RandomUserListViewControllerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UIInstantiable.html">UIInstantiable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VIPConfigurable.html">VIPConfigurable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/APIRandomUser.html">APIRandomUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIRandomUser/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIRandomUser/Location.html">– Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIRandomUser/Login.html">– Login</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIRandomUser/Registered.html">– Registered</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIRandomUser/Picture.html">– Picture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Globals.html">Globals</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Globals/LaunchArgument.html">– LaunchArgument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Globals/Persistance.html">– Persistance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Globals/Image.html">– Image</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PlistEditor.html">PlistEditor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RandomUser.html">RandomUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RandomUserFilter.html">RandomUserFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RandomUserLocation.html">RandomUserLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RandomUsersAPIUrlBuilder.html">RandomUsersAPIUrlBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RandomUsersAPIUrlBuilder/RandomUsersProperties.html">– RandomUsersProperties</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RandomUserListViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">RandomUserListViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="kt"><a href="../Protocols/RandomUserListViewControllerProtocol.html">RandomUserListViewControllerProtocol</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/UIInstantiable.html">UIInstantiable</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/VIPConfigurable.html">VIPConfigurable</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB18ListViewControllerC10interactorAA0abD18InteractorProtocol_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/interactor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB18ListViewControllerC10interactorAA0abD18InteractorProtocol_pSgvp">interactor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">interactor</span><span class="p">:</span> <span class="kt"><a href="../Protocols/RandomUserListInteractorProtocol.html">RandomUserListInteractorProtocol</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB18ListViewControllerC6routerAA0abD14RouterProcotol_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/router" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB18ListViewControllerC6routerAA0abD14RouterProcotol_pSgvp">router</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">router</span><span class="p">:</span> <span class="kt"><a href="../Protocols/RandomUserListRouterProcotol.html">RandomUserListRouterProcotol</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RandomUserChallenge@objc(cs)RandomUserListViewController(py)usersTableViewContainer"></a>
+                    <a name="//apple_ref/swift/Property/usersTableViewContainer" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RandomUserChallenge@objc(cs)RandomUserListViewController(py)usersTableViewContainer">usersTableViewContainer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">usersTableViewContainer</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RandomUserChallenge@objc(cs)RandomUserListViewController(py)searchBar"></a>
+                    <a name="//apple_ref/swift/Property/searchBar" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RandomUserChallenge@objc(cs)RandomUserListViewController(py)searchBar">searchBar</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RandomUserChallenge@objc(cs)RandomUserListViewController(py)filterSegmentedControl"></a>
+                    <a name="//apple_ref/swift/Property/filterSegmentedControl" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RandomUserChallenge@objc(cs)RandomUserListViewController(py)filterSegmentedControl">filterSegmentedControl</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">filterSegmentedControl</span><span class="p">:</span> <span class="kt">UISegmentedControl</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RandomUserChallenge@objc(cs)RandomUserListViewController(py)activityIndicator"></a>
+                    <a name="//apple_ref/swift/Property/activityIndicator" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RandomUserChallenge@objc(cs)RandomUserListViewController(py)activityIndicator">activityIndicator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">activityIndicator</span><span class="p">:</span> <span class="kt">UIActivityIndicatorView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/View%20Life%20Cycle"></a>
+                <a name="//apple_ref/swift/Section/View Life Cycle" class="dashAnchor"></a>
+                <a href="#/View%20Life%20Cycle">
+                  <h3 class="section-name">View Life Cycle</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RandomUserChallenge@objc(cs)RandomUserListViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RandomUserChallenge@objc(cs)RandomUserListViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RandomUserChallenge@objc(cs)RandomUserListViewController(im)viewWillDisappear:"></a>
+                    <a name="//apple_ref/swift/Method/viewWillDisappear(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RandomUserChallenge@objc(cs)RandomUserListViewController(im)viewWillDisappear:">viewWillDisappear(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewWillDisappear</span><span class="p">(</span><span class="n">_</span> <span class="nv">animated</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/VIP%20Impelementation"></a>
+                <a name="//apple_ref/swift/Section/VIP Impelementation" class="dashAnchor"></a>
+                <a href="#/VIP%20Impelementation">
+                  <h3 class="section-name">VIP Impelementation</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB26ListViewControllerProtocolP012displayFetchA5Users_11currentPage5errorySayAA0aB0VG_SiAA0abD5ErrorOSgtF"></a>
+                    <a name="//apple_ref/swift/Method/displayFetchRandomUsers(_:currentPage:error:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB26ListViewControllerProtocolP012displayFetchA5Users_11currentPage5errorySayAA0aB0VG_SiAA0abD5ErrorOSgtF">displayFetchRandomUsers(_:currentPage:error:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">displayFetchRandomUsers</span><span class="p">(</span><span class="n">_</span> <span class="nv">updatedUsers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RandomUser.html">RandomUser</a></span><span class="p">],</span> <span class="nv">currentPage</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt"><a href="../Enums/RandomUserListError.html">RandomUserListError</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB26ListViewControllerProtocolP013displayFilterA5Users_07appliedI0ySayAA0aB0VG_AA0abI0VtF"></a>
+                    <a name="//apple_ref/swift/Method/displayFilterRandomUsers(_:appliedFilter:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB26ListViewControllerProtocolP013displayFilterA5Users_07appliedI0ySayAA0aB0VG_AA0abI0VtF">displayFilterRandomUsers(_:appliedFilter:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">displayFilterRandomUsers</span><span class="p">(</span><span class="n">_</span> <span class="nv">fileteredUsers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RandomUser.html">RandomUser</a></span><span class="p">],</span> <span class="nv">appliedFilter</span><span class="p">:</span> <span class="kt"><a href="../Structs/RandomUserFilter.html">RandomUserFilter</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB26ListViewControllerProtocolP013displayRemoveaB0_12updatedUsersyAA0aB0V_SayAGGtF"></a>
+                    <a name="//apple_ref/swift/Method/displayRemoveRandomUser(_:updatedUsers:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB26ListViewControllerProtocolP013displayRemoveaB0_12updatedUsersyAA0aB0V_SayAGGtF">displayRemoveRandomUser(_:updatedUsers:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">displayRemoveRandomUser</span><span class="p">(</span><span class="n">_</span> <span class="nv">removedUser</span><span class="p">:</span> <span class="kt"><a href="../Structs/RandomUser.html">RandomUser</a></span><span class="p">,</span> <span class="nv">updatedUsers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RandomUser.html">RandomUser</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/IB%20Actions"></a>
+                <a name="//apple_ref/swift/Section/IB Actions" class="dashAnchor"></a>
+                <a href="#/IB%20Actions">
+                  <h3 class="section-name">IB Actions</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@RandomUserChallenge@objc(cs)RandomUserListViewController(im)categoryFilterChanged:"></a>
+                    <a name="//apple_ref/swift/Method/categoryFilterChanged(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@RandomUserChallenge@objc(cs)RandomUserListViewController(im)categoryFilterChanged:">categoryFilterChanged(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">categoryFilterChanged</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/InfiniteTableViewControllerDelegate%20Implementation"></a>
+                <a name="//apple_ref/swift/Section/InfiniteTableViewControllerDelegate Implementation" class="dashAnchor"></a>
+                <a href="#/InfiniteTableViewControllerDelegate%20Implementation">
+                  <h3 class="section-name">InfiniteTableViewControllerDelegate Implementation</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB18ListViewControllerC15dataSourceCountSivp"></a>
+                    <a name="//apple_ref/swift/Property/dataSourceCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB18ListViewControllerC15dataSourceCountSivp">dataSourceCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">dataSourceCount</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB18ListViewControllerC19getCellDataForRowAt9indexPathAA0aB0VSg10Foundation05IndexN0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/getCellDataForRowAt(indexPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB18ListViewControllerC19getCellDataForRowAt9indexPathAA0aB0VSg10Foundation05IndexN0V_tF">getCellDataForRowAt(indexPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getCellDataForRowAt</span><span class="p">(</span><span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/RandomUser.html">RandomUser</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB18ListViewControllerC06deleteB5AtRow9indexPathy10Foundation05IndexK0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/deleteUserAtRow(indexPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB18ListViewControllerC06deleteB5AtRow9indexPathy10Foundation05IndexK0V_tF">deleteUserAtRow(indexPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteUserAtRow</span><span class="p">(</span><span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB18ListViewControllerC12loadMoreDatayyF"></a>
+                    <a name="//apple_ref/swift/Method/loadMoreData()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB18ListViewControllerC12loadMoreDatayyF">loadMoreData()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">loadMoreData</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB18ListViewControllerC14selectedCellAt9indexPathy10Foundation05IndexK0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/selectedCellAt(indexPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB18ListViewControllerC14selectedCellAt9indexPathy10Foundation05IndexK0V_tF">selectedCellAt(indexPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">selectedCellAt</span><span class="p">(</span><span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UISearchBarDelegate%20Implementation"></a>
+                <a name="//apple_ref/swift/Section/UISearchBarDelegate Implementation" class="dashAnchor"></a>
+                <a href="#/UISearchBarDelegate%20Implementation">
+                  <h3 class="section-name">UISearchBarDelegate Implementation</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RandomUserChallenge@objc(cs)RandomUserListViewController(im)searchBarTextDidBeginEditing:"></a>
+                    <a name="//apple_ref/swift/Method/searchBarTextDidBeginEditing(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RandomUserChallenge@objc(cs)RandomUserListViewController(im)searchBarTextDidBeginEditing:">searchBarTextDidBeginEditing(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">searchBarTextDidBeginEditing</span><span class="p">(</span><span class="n">_</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RandomUserChallenge@objc(cs)RandomUserListViewController(im)searchBarSearchButtonClicked:"></a>
+                    <a name="//apple_ref/swift/Method/searchBarSearchButtonClicked(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RandomUserChallenge@objc(cs)RandomUserListViewController(im)searchBarSearchButtonClicked:">searchBarSearchButtonClicked(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">searchBarSearchButtonClicked</span><span class="p">(</span><span class="n">_</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@RandomUserChallenge@objc(cs)RandomUserListViewController(im)searchBarCancelButtonClicked:"></a>
+                    <a name="//apple_ref/swift/Method/searchBarCancelButtonClicked(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@RandomUserChallenge@objc(cs)RandomUserListViewController(im)searchBarCancelButtonClicked:">searchBarCancelButtonClicked(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">searchBarCancelButtonClicked</span><span class="p">(</span><span class="n">_</span> <span class="nv">searchBar</span><span class="p">:</span> <span class="kt">UISearchBar</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-06-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.10.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

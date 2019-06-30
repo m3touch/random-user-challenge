@@ -6,6 +6,9 @@
 //  Copyright © 2019 mtarrago. All rights reserved.
 //
 
+/**
+ Manages plist write/read inside Documents direcotry.
+ */
 protocol PlistEditorProtocol {
 
     /**

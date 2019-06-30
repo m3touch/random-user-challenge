@@ -6,8 +6,17 @@
 //  Copyright © 2019 mtarrago. All rights reserved.
 //
 
+/**
+ RandomUserDetail view logic.
+ */
 protocol RandomUserDetailViewControllerProtocol: class { }
 
+/**
+ RandomUserDetail business logic.
+ */
 protocol RandomUserDetailInteractorProtocol { }
 
+/**
+ RandomUserDetail presentation logic.
+ */
 protocol RandomUserDetailPresenterProtocol { }

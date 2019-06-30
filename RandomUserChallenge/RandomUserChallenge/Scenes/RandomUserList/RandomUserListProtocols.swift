@@ -6,6 +6,9 @@
 //  Copyright © 2019 mtarrago. All rights reserved.
 //
 
+/**
+ RandomUserList view logic.
+ */
 protocol RandomUserListViewControllerProtocol: class {
 
     /**
@@ -38,6 +41,9 @@ protocol RandomUserListViewControllerProtocol: class {
     func displayRemoveRandomUser(_ removedUser: RandomUser, updatedUsers: [RandomUser])
 }
 
+/**
+ RandomUserList business logic.
+ */
 protocol RandomUserListInteractorProtocol {
     /**
      Defines the number of random users that the interactor should fetch per page.
@@ -75,6 +81,9 @@ protocol RandomUserListInteractorProtocol {
     func doRemoveRandomUser(_ user: RandomUser, fromUsers currentUsers: [RandomUser])
 }
 
+/**
+ RandomUserList presentation logic.
+ */
 protocol RandomUserListPresenterProcotol {
 
     /**
@@ -110,6 +119,15 @@ protocol RandomUserListPresenterProcotol {
     func presentRemoveRandomUser(_ removedUser: RandomUser, updatedUsers: [RandomUser])
 }
 
+/**
+ RandomUserList router logic.
+ */
 protocol RandomUserListRouterProcotol {
+    /**
+     Routes to the random user detail.
+
+     - parameters:
+         - userData: The user information to feed the user detail.
+     */
     func navigateToDetail(ofRandomUser userData: RandomUser)
 }
