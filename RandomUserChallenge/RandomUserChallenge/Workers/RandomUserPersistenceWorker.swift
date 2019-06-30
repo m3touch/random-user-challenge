@@ -16,12 +16,8 @@ final class RandomUserPersistenceWorker: DataPersistanceProtocol {
         self.plistEditor = plistEditor
     }
 
-    private enum Constants {
-        static let randomUserPlistName = "deletedRandomUsers"
-    }
-
     func deletePermanentlyRandomUser(_ randomUser: RandomUser) {
-        plistEditor.addStringToPlist(named: Constants.randomUserPlistName, value: randomUser.id.uuidString)
+        plistEditor.addStringToPlist(named: Globals.Persistance.plistName, value: randomUser.id.uuidString)
     }
 
     func removeDeletedRandomUsersFrom(_ randomUsers: [RandomUser]) -> [RandomUser] {
@@ -40,6 +36,6 @@ final class RandomUserPersistenceWorker: DataPersistanceProtocol {
     // MARK: - Private Interface
 
     private func loadDeletedRandomUserIds() -> [String] {
-        return plistEditor.loadPlist(named: Constants.randomUserPlistName)
+        return plistEditor.loadPlist(named: Globals.Persistance.plistName)
     }
 }

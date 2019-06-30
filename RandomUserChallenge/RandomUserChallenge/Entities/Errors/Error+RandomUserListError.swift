@@ -6,20 +6,8 @@
 //  Copyright © 2019 mtarrago. All rights reserved.
 //
 
-protocol UIError: Error {
-    var userMessage: String? { get }
-}
-
-enum RandomUserListError: UIError {
-    var userMessage: String? {
-        switch self {
-        case .anyUserFound(userMessage: let message):
-            return message
-        default:
-            return nil
-        }
-    }
-
+// MARK: - Review this!!!!!
+enum RandomUserListError: Error {
     case anyUserFound(userMessage: String?)
     case unableToLoadUsers(userMessage: String?)
     case noMoreUsersToLoad(userMessage: String?)
