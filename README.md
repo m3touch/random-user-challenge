@@ -31,13 +31,13 @@ The followed approach has been to store a sequence of Random User unique identif
 The project includes unit testing for the main classes and UI tests for the use cases of the app.
 
 ## Project Depenedencies
-This project uses the following pod dependencies:
-  • [Alamofire](https://github.com/Alamofire/Alamofire): HTTP client service management simplification.
-  • [Alamofire Image](https://github.com/Alamofire/AlamofireImage): Asynchron image load from an url.
-  • [Swiftlint](https://github.com/realm/SwiftLint): Code styling.
-  • [OHTTPStubs](https://github.com/AliSoftware/OHHTTPStubs): Connection response stubbing.
+This project uses the following pod dependencies:<br>
+  • [Alamofire](https://github.com/Alamofire/Alamofire): HTTP client service management simplification.<br>
+  • [Alamofire Image](https://github.com/Alamofire/AlamofireImage): Asynchron image load from an url.<br>
+  • [Swiftlint](https://github.com/realm/SwiftLint): Code styling.<br>
+  • [OHTTPStubs](https://github.com/AliSoftware/OHHTTPStubs): Connection response stubbing.<br>
 
-<b>XCode</b>: Version 10.2 (10E125)
+<b>XCode</b>: Version 10.2 (10E125)<br>
 <b>Swift</b>: Version 5.0
 
 ## Documentation
