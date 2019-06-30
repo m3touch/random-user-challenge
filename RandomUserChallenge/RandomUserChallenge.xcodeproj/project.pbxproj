@@ -7,16 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		067F63E322C497E90023E31B /* AppDelegate+AppLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F63E222C497E90023E31B /* AppDelegate+AppLifeCycle.swift */; };
-		067F63E522C497F70023E31B /* AppDelegate+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F63E422C497F70023E31B /* AppDelegate+CoreData.swift */; };
+		061CE42C22C880F400D3ABC8 /* fetch_random_users.json in Resources */ = {isa = PBXBuildFile; fileRef = 0621039822C7F3E800EC9CCC /* fetch_random_users.json */; };
+		061CE42E22C8995A00D3ABC8 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061CE42D22C8995A00D3ABC8 /* Globals.swift */; };
+		061CE43022C89D7E00D3ABC8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061CE42F22C89D7E00D3ABC8 /* Utils.swift */; };
+		0621038822C7D6DF00EC9CCC /* RandomUserListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621038722C7D6DF00EC9CCC /* RandomUserListRouter.swift */; };
+		0621038F22C7E5C900EC9CCC /* VIPConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621038E22C7E5C900EC9CCC /* VIPConfigurator.swift */; };
+		0621039522C7F08E00EC9CCC /* InfiniteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621039322C7F08E00EC9CCC /* InfiniteTableViewController.swift */; };
+		0621039622C7F08E00EC9CCC /* InfiniteTableViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621039422C7F08E00EC9CCC /* InfiniteTableViewControllerDelegate.swift */; };
+		0624E5F022C5ECDE0009CA85 /* Extensions+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E5EF22C5ECDE0009CA85 /* Extensions+UIImageView.swift */; };
+		0624E5F322C5F1610009CA85 /* RandomUserAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E5F222C5F1610009CA85 /* RandomUserAPIWorker.swift */; };
+		0624E5F522C5F17D0009CA85 /* RandomUserFilterWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E5F422C5F17D0009CA85 /* RandomUserFilterWorker.swift */; };
+		0624E5F722C5F19C0009CA85 /* RandomUserPersistenceWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E5F622C5F19C0009CA85 /* RandomUserPersistenceWorker.swift */; };
+		0624E5FD22C5F7200009CA85 /* RandomUserFilterWorkerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E5FC22C5F7200009CA85 /* RandomUserFilterWorkerTest.swift */; };
+		0624E60022C6015A0009CA85 /* HttpClientBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E5FF22C6015A0009CA85 /* HttpClientBuilder.swift */; };
+		0624E60222C60C300009CA85 /* RandomUsersAPIUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E60122C60C300009CA85 /* RandomUsersAPIUrlBuilder.swift */; };
+		0624E60422C615380009CA85 /* APIRandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E60322C615380009CA85 /* APIRandomUser.swift */; };
+		0624E60622C6374A0009CA85 /* APIWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E60522C6374A0009CA85 /* APIWorkerProtocol.swift */; };
+		0624E60822C665450009CA85 /* DataPersistanceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E60722C665450009CA85 /* DataPersistanceProtocol.swift */; };
+		0624E60A22C667FC0009CA85 /* PlistEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E60922C667FC0009CA85 /* PlistEditor.swift */; };
+		0624E61022C6758E0009CA85 /* PlistEditorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E60F22C6758E0009CA85 /* PlistEditorProtocol.swift */; };
+		0624E61222C677140009CA85 /* RandomUserPersistenceWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61122C677140009CA85 /* RandomUserPersistenceWorkerTests.swift */; };
+		0624E61422C678630009CA85 /* RandomUserStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61322C678630009CA85 /* RandomUserStub.swift */; };
+		0624E61622C67A390009CA85 /* TestPlistEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61522C67A390009CA85 /* TestPlistEditor.swift */; };
+		0624E61922C67FB80009CA85 /* RandomUserListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61822C67FB80009CA85 /* RandomUserListInteractorTests.swift */; };
+		0624E61B22C68A600009CA85 /* TestRandomUserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61A22C68A600009CA85 /* TestRandomUserListPresenter.swift */; };
+		0624E61D22C68A820009CA85 /* TestAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61C22C68A820009CA85 /* TestAPIWorker.swift */; };
+		0624E61F22C68AA00009CA85 /* TestDataPersistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E61E22C68AA00009CA85 /* TestDataPersistance.swift */; };
+		0624E62322C68E930009CA85 /* RandomUserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E62122C68E930009CA85 /* RandomUserDetailViewController.swift */; };
+		0624E62422C68E930009CA85 /* RandomUserDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0624E62222C68E930009CA85 /* RandomUserDetailViewController.xib */; };
+		0624E62622C68EA40009CA85 /* RandomUserDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E62522C68EA40009CA85 /* RandomUserDetailProtocols.swift */; };
+		0624E62822C68EB30009CA85 /* RandomUserDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E62722C68EB30009CA85 /* RandomUserDetailInteractor.swift */; };
+		0624E62A22C68EBE0009CA85 /* RandomUserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E62922C68EBE0009CA85 /* RandomUserDetailPresenter.swift */; };
+		067F63E322C497E90023E31B /* AppDelegate+UITestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F63E222C497E90023E31B /* AppDelegate+UITestConfig.swift */; };
 		06CBAF1F22C493A600EE45DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CBAF1E22C493A600EE45DF /* AppDelegate.swift */; };
-		06CBAF2122C493A600EE45DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CBAF2022C493A600EE45DF /* ViewController.swift */; };
-		06CBAF2422C493A600EE45DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CBAF2222C493A600EE45DF /* Main.storyboard */; };
-		06CBAF2722C493A600EE45DF /* RandomUserChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06CBAF2522C493A600EE45DF /* RandomUserChallenge.xcdatamodeld */; };
 		06CBAF2922C493A700EE45DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CBAF2822C493A700EE45DF /* Assets.xcassets */; };
 		06CBAF2C22C493A700EE45DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CBAF2A22C493A700EE45DF /* LaunchScreen.storyboard */; };
 		06CBAF3722C493A700EE45DF /* RandomUserChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CBAF3622C493A700EE45DF /* RandomUserChallengeTests.swift */; };
 		06CBAF4222C493A700EE45DF /* RandomUserChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CBAF4122C493A700EE45DF /* RandomUserChallengeUITests.swift */; };
+		06FFBC9B22C4A1B300979E5E /* RandomUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBC9A22C4A1B300979E5E /* RandomUser.swift */; };
+		06FFBC9F22C4A31B00979E5E /* RandomUserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBC9E22C4A31B00979E5E /* RandomUserLocation.swift */; };
+		06FFBCA122C4A44F00979E5E /* RandomUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCA022C4A44F00979E5E /* RandomUserTests.swift */; };
+		06FFBCA522C4AC7700979E5E /* Error+RandomUserError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCA422C4AC7700979E5E /* Error+RandomUserError.swift */; };
+		06FFBCAA22C4B94B00979E5E /* RandomUserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCA822C4B94B00979E5E /* RandomUserListViewController.swift */; };
+		06FFBCAB22C4B94C00979E5E /* RandomUserListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06FFBCA922C4B94B00979E5E /* RandomUserListViewController.xib */; };
+		06FFBCAE22C4B98D00979E5E /* UIInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCAD22C4B98D00979E5E /* UIInstantiable.swift */; };
+		06FFBCB022C4BC0D00979E5E /* RandomUserListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCAF22C4BC0D00979E5E /* RandomUserListProtocols.swift */; };
+		06FFBCB522C4BE2F00979E5E /* RandomUserListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCB422C4BE2F00979E5E /* RandomUserListInteractor.swift */; };
+		06FFBCB722C4BE6000979E5E /* RandomUserListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCB622C4BE6000979E5E /* RandomUserListPresenter.swift */; };
+		06FFBCB922C4BF4C00979E5E /* Error+APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCB822C4BF4C00979E5E /* Error+APIError.swift */; };
+		06FFBCBB22C4C00400979E5E /* Error+RandomUserListError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCBA22C4C00400979E5E /* Error+RandomUserListError.swift */; };
+		06FFBCC022C4CA7300979E5E /* RandomUserFilterCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCBF22C4CA7300979E5E /* RandomUserFilterCategory.swift */; };
+		06FFBCC422C4DE0300979E5E /* RandomUserFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCC322C4DE0200979E5E /* RandomUserFilter.swift */; };
+		06FFBCCB22C4EF1600979E5E /* RandomUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCC922C4EF1600979E5E /* RandomUserCell.swift */; };
+		06FFBCCC22C4EF1600979E5E /* RandomUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06FFBCCA22C4EF1600979E5E /* RandomUserCell.xib */; };
+		06FFBCD222C508FE00979E5E /* Extensions+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FFBCD122C508FE00979E5E /* Extensions+UIViewController.swift */; };
 		2F6C7FCE691D6BD903F1CB4D /* Pods_defaults_RandomUserChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88765A613F21D2F382EB669E /* Pods_defaults_RandomUserChallenge.framework */; };
 		322335D12688688C6C9236B8 /* Pods_tests_RandomUserChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E1FD59C7637BE9D66D1CAC6 /* Pods_tests_RandomUserChallengeUITests.framework */; };
 		5FFA32444981619FA3AF8497 /* Pods_tests_RandomUserChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E09763D5F3D20D612BD64D /* Pods_tests_RandomUserChallengeTests.framework */; };
@@ -40,13 +84,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		067F63E222C497E90023E31B /* AppDelegate+AppLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+AppLifeCycle.swift"; sourceTree = "<group>"; };
-		067F63E422C497F70023E31B /* AppDelegate+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+CoreData.swift"; sourceTree = "<group>"; };
+		061CE42D22C8995A00D3ABC8 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		061CE42F22C89D7E00D3ABC8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		0621038722C7D6DF00EC9CCC /* RandomUserListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserListRouter.swift; sourceTree = "<group>"; };
+		0621038E22C7E5C900EC9CCC /* VIPConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPConfigurator.swift; sourceTree = "<group>"; };
+		0621039322C7F08E00EC9CCC /* InfiniteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteTableViewController.swift; sourceTree = "<group>"; };
+		0621039422C7F08E00EC9CCC /* InfiniteTableViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteTableViewControllerDelegate.swift; sourceTree = "<group>"; };
+		0621039822C7F3E800EC9CCC /* fetch_random_users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fetch_random_users.json; sourceTree = "<group>"; };
+		0624E5EF22C5ECDE0009CA85 /* Extensions+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIImageView.swift"; sourceTree = "<group>"; };
+		0624E5F222C5F1610009CA85 /* RandomUserAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserAPIWorker.swift; sourceTree = "<group>"; };
+		0624E5F422C5F17D0009CA85 /* RandomUserFilterWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserFilterWorker.swift; sourceTree = "<group>"; };
+		0624E5F622C5F19C0009CA85 /* RandomUserPersistenceWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserPersistenceWorker.swift; sourceTree = "<group>"; };
+		0624E5FC22C5F7200009CA85 /* RandomUserFilterWorkerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserFilterWorkerTest.swift; sourceTree = "<group>"; };
+		0624E5FF22C6015A0009CA85 /* HttpClientBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClientBuilder.swift; sourceTree = "<group>"; };
+		0624E60122C60C300009CA85 /* RandomUsersAPIUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUsersAPIUrlBuilder.swift; sourceTree = "<group>"; };
+		0624E60322C615380009CA85 /* APIRandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRandomUser.swift; sourceTree = "<group>"; };
+		0624E60522C6374A0009CA85 /* APIWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWorkerProtocol.swift; sourceTree = "<group>"; };
+		0624E60722C665450009CA85 /* DataPersistanceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistanceProtocol.swift; sourceTree = "<group>"; };
+		0624E60922C667FC0009CA85 /* PlistEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistEditor.swift; sourceTree = "<group>"; };
+		0624E60F22C6758E0009CA85 /* PlistEditorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistEditorProtocol.swift; sourceTree = "<group>"; };
+		0624E61122C677140009CA85 /* RandomUserPersistenceWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserPersistenceWorkerTests.swift; sourceTree = "<group>"; };
+		0624E61322C678630009CA85 /* RandomUserStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserStub.swift; sourceTree = "<group>"; };
+		0624E61522C67A390009CA85 /* TestPlistEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPlistEditor.swift; sourceTree = "<group>"; };
+		0624E61822C67FB80009CA85 /* RandomUserListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserListInteractorTests.swift; sourceTree = "<group>"; };
+		0624E61A22C68A600009CA85 /* TestRandomUserListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRandomUserListPresenter.swift; sourceTree = "<group>"; };
+		0624E61C22C68A820009CA85 /* TestAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAPIWorker.swift; sourceTree = "<group>"; };
+		0624E61E22C68AA00009CA85 /* TestDataPersistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDataPersistance.swift; sourceTree = "<group>"; };
+		0624E62122C68E930009CA85 /* RandomUserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDetailViewController.swift; sourceTree = "<group>"; };
+		0624E62222C68E930009CA85 /* RandomUserDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomUserDetailViewController.xib; sourceTree = "<group>"; };
+		0624E62522C68EA40009CA85 /* RandomUserDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDetailProtocols.swift; sourceTree = "<group>"; };
+		0624E62722C68EB30009CA85 /* RandomUserDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDetailInteractor.swift; sourceTree = "<group>"; };
+		0624E62922C68EBE0009CA85 /* RandomUserDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDetailPresenter.swift; sourceTree = "<group>"; };
+		067F63E222C497E90023E31B /* AppDelegate+UITestConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+UITestConfig.swift"; sourceTree = "<group>"; };
 		06CBAF1B22C493A600EE45DF /* RandomUserChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CBAF1E22C493A600EE45DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		06CBAF2022C493A600EE45DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		06CBAF2322C493A600EE45DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		06CBAF2622C493A600EE45DF /* RandomUserChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RandomUserChallenge.xcdatamodel; sourceTree = "<group>"; };
 		06CBAF2822C493A700EE45DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06CBAF2B22C493A700EE45DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		06CBAF2D22C493A700EE45DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +127,23 @@
 		06CBAF3D22C493A700EE45DF /* RandomUserChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUserChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CBAF4122C493A700EE45DF /* RandomUserChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserChallengeUITests.swift; sourceTree = "<group>"; };
 		06CBAF4322C493A700EE45DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06FFBC9A22C4A1B300979E5E /* RandomUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUser.swift; sourceTree = "<group>"; };
+		06FFBC9E22C4A31B00979E5E /* RandomUserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserLocation.swift; sourceTree = "<group>"; };
+		06FFBCA022C4A44F00979E5E /* RandomUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserTests.swift; sourceTree = "<group>"; };
+		06FFBCA422C4AC7700979E5E /* Error+RandomUserError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+RandomUserError.swift"; sourceTree = "<group>"; };
+		06FFBCA822C4B94B00979E5E /* RandomUserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserListViewController.swift; sourceTree = "<group>"; };
+		06FFBCA922C4B94B00979E5E /* RandomUserListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomUserListViewController.xib; sourceTree = "<group>"; };
+		06FFBCAD22C4B98D00979E5E /* UIInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIInstantiable.swift; sourceTree = "<group>"; };
+		06FFBCAF22C4BC0D00979E5E /* RandomUserListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserListProtocols.swift; sourceTree = "<group>"; };
+		06FFBCB422C4BE2F00979E5E /* RandomUserListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserListInteractor.swift; sourceTree = "<group>"; };
+		06FFBCB622C4BE6000979E5E /* RandomUserListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserListPresenter.swift; sourceTree = "<group>"; };
+		06FFBCB822C4BF4C00979E5E /* Error+APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+APIError.swift"; sourceTree = "<group>"; };
+		06FFBCBA22C4C00400979E5E /* Error+RandomUserListError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+RandomUserListError.swift"; sourceTree = "<group>"; };
+		06FFBCBF22C4CA7300979E5E /* RandomUserFilterCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserFilterCategory.swift; sourceTree = "<group>"; };
+		06FFBCC322C4DE0200979E5E /* RandomUserFilter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomUserFilter.swift; sourceTree = "<group>"; };
+		06FFBCC922C4EF1600979E5E /* RandomUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserCell.swift; sourceTree = "<group>"; };
+		06FFBCCA22C4EF1600979E5E /* RandomUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomUserCell.xib; sourceTree = "<group>"; };
+		06FFBCD122C508FE00979E5E /* Extensions+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIViewController.swift"; sourceTree = "<group>"; };
 		1E4203909016D4187E4507C7 /* Pods-tests-RandomUserChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tests-RandomUserChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tests-RandomUserChallengeTests/Pods-tests-RandomUserChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		28578C60AAA16A8213454109 /* Pods-defaults-RandomUserChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-RandomUserChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-RandomUserChallenge/Pods-defaults-RandomUserChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		52E33D3755BB2BFDF1D8FF19 /* Pods-tests-RandomUserChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tests-RandomUserChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-tests-RandomUserChallengeTests/Pods-tests-RandomUserChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,12 +183,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06143C8B22C52D36005527D8 /* InfiniteTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0621039322C7F08E00EC9CCC /* InfiniteTableViewController.swift */,
+				0621039422C7F08E00EC9CCC /* InfiniteTableViewControllerDelegate.swift */,
+			);
+			path = InfiniteTableViewController;
+			sourceTree = "<group>";
+		};
+		0621038D22C7E5B800EC9CCC /* Infrasturcture */ = {
+			isa = PBXGroup;
+			children = (
+				0621038E22C7E5C900EC9CCC /* VIPConfigurator.swift */,
+				061CE42D22C8995A00D3ABC8 /* Globals.swift */,
+			);
+			path = Infrasturcture;
+			sourceTree = "<group>";
+		};
+		0621039722C7F3B500EC9CCC /* StubFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0621039822C7F3E800EC9CCC /* fetch_random_users.json */,
+			);
+			path = StubFiles;
+			sourceTree = "<group>";
+		};
+		0624E5F122C5F1300009CA85 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				0624E5F222C5F1610009CA85 /* RandomUserAPIWorker.swift */,
+				0624E5F422C5F17D0009CA85 /* RandomUserFilterWorker.swift */,
+				0624E5F622C5F19C0009CA85 /* RandomUserPersistenceWorker.swift */,
+				0624E60522C6374A0009CA85 /* APIWorkerProtocol.swift */,
+				0624E60722C665450009CA85 /* DataPersistanceProtocol.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		0624E5FE22C600A00009CA85 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0624E5FF22C6015A0009CA85 /* HttpClientBuilder.swift */,
+				0624E60122C60C300009CA85 /* RandomUsersAPIUrlBuilder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0624E61722C67A4F0009CA85 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0624E61322C678630009CA85 /* RandomUserStub.swift */,
+				0624E61522C67A390009CA85 /* TestPlistEditor.swift */,
+				0624E61A22C68A600009CA85 /* TestRandomUserListPresenter.swift */,
+				0624E61C22C68A820009CA85 /* TestAPIWorker.swift */,
+				0624E61E22C68AA00009CA85 /* TestDataPersistance.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0624E62022C68E6E0009CA85 /* RandomUserDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0624E62522C68EA40009CA85 /* RandomUserDetailProtocols.swift */,
+				0624E62122C68E930009CA85 /* RandomUserDetailViewController.swift */,
+				0624E62222C68E930009CA85 /* RandomUserDetailViewController.xib */,
+				0624E62722C68EB30009CA85 /* RandomUserDetailInteractor.swift */,
+				0624E62922C68EBE0009CA85 /* RandomUserDetailPresenter.swift */,
+			);
+			path = RandomUserDetail;
+			sourceTree = "<group>";
+		};
 		067F63E622C497FB0023E31B /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
 				06CBAF1E22C493A600EE45DF /* AppDelegate.swift */,
-				067F63E222C497E90023E31B /* AppDelegate+AppLifeCycle.swift */,
-				067F63E422C497F70023E31B /* AppDelegate+CoreData.swift */,
+				067F63E222C497E90023E31B /* AppDelegate+UITestConfig.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -130,13 +288,18 @@
 		06CBAF1D22C493A600EE45DF /* RandomUserChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				0621038D22C7E5B800EC9CCC /* Infrasturcture */,
+				0624E5FE22C600A00009CA85 /* Services */,
+				06FFBCAC22C4B95E00979E5E /* Utils */,
+				06FFBC9922C4A1A500979E5E /* Entities */,
+				0624E5F122C5F1300009CA85 /* Workers */,
+				06FFBCA622C4B91C00979E5E /* Scenes */,
+				06FFBCB122C4BDB700979E5E /* UIComponents */,
 				067F63E622C497FB0023E31B /* AppDelegate */,
-				06CBAF2022C493A600EE45DF /* ViewController.swift */,
-				06CBAF2222C493A600EE45DF /* Main.storyboard */,
 				06CBAF2822C493A700EE45DF /* Assets.xcassets */,
+				0621039722C7F3B500EC9CCC /* StubFiles */,
 				06CBAF2A22C493A700EE45DF /* LaunchScreen.storyboard */,
 				06CBAF2D22C493A700EE45DF /* Info.plist */,
-				06CBAF2522C493A600EE45DF /* RandomUserChallenge.xcdatamodeld */,
 			);
 			path = RandomUserChallenge;
 			sourceTree = "<group>";
@@ -144,7 +307,12 @@
 		06CBAF3522C493A700EE45DF /* RandomUserChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				0624E61822C67FB80009CA85 /* RandomUserListInteractorTests.swift */,
+				0624E61122C677140009CA85 /* RandomUserPersistenceWorkerTests.swift */,
+				0624E5FC22C5F7200009CA85 /* RandomUserFilterWorkerTest.swift */,
+				06FFBCA022C4A44F00979E5E /* RandomUserTests.swift */,
 				06CBAF3622C493A700EE45DF /* RandomUserChallengeTests.swift */,
+				0624E61722C67A4F0009CA85 /* Utils */,
 				06CBAF3822C493A700EE45DF /* Info.plist */,
 			);
 			path = RandomUserChallengeTests;
@@ -155,8 +323,108 @@
 			children = (
 				06CBAF4122C493A700EE45DF /* RandomUserChallengeUITests.swift */,
 				06CBAF4322C493A700EE45DF /* Info.plist */,
+				061CE42F22C89D7E00D3ABC8 /* Utils.swift */,
 			);
 			path = RandomUserChallengeUITests;
+			sourceTree = "<group>";
+		};
+		06FFBC9922C4A1A500979E5E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				06FFBCBC22C4C40D00979E5E /* Errors */,
+				06FFBC9A22C4A1B300979E5E /* RandomUser.swift */,
+				06FFBC9E22C4A31B00979E5E /* RandomUserLocation.swift */,
+				06FFBCBF22C4CA7300979E5E /* RandomUserFilterCategory.swift */,
+				06FFBCC322C4DE0200979E5E /* RandomUserFilter.swift */,
+				0624E60322C615380009CA85 /* APIRandomUser.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		06FFBCA622C4B91C00979E5E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				06FFBCA722C4B93300979E5E /* RandomUserList */,
+				0624E62022C68E6E0009CA85 /* RandomUserDetail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		06FFBCA722C4B93300979E5E /* RandomUserList */ = {
+			isa = PBXGroup;
+			children = (
+				06FFBCAF22C4BC0D00979E5E /* RandomUserListProtocols.swift */,
+				06FFBCA822C4B94B00979E5E /* RandomUserListViewController.swift */,
+				06FFBCA922C4B94B00979E5E /* RandomUserListViewController.xib */,
+				06FFBCB422C4BE2F00979E5E /* RandomUserListInteractor.swift */,
+				06FFBCB622C4BE6000979E5E /* RandomUserListPresenter.swift */,
+				0621038722C7D6DF00EC9CCC /* RandomUserListRouter.swift */,
+			);
+			path = RandomUserList;
+			sourceTree = "<group>";
+		};
+		06FFBCAC22C4B95E00979E5E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				06FFBCD022C508EC00979E5E /* Extensions */,
+				06FFBCAD22C4B98D00979E5E /* UIInstantiable.swift */,
+				0624E60922C667FC0009CA85 /* PlistEditor.swift */,
+				0624E60F22C6758E0009CA85 /* PlistEditorProtocol.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		06FFBCB122C4BDB700979E5E /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				06FFBCB322C4BDD600979E5E /* Views */,
+				06FFBCB222C4BDC100979E5E /* ViewControllers */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		06FFBCB222C4BDC100979E5E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				06143C8B22C52D36005527D8 /* InfiniteTableViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		06FFBCB322C4BDD600979E5E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06FFBCCD22C5044300979E5E /* RandomUserCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06FFBCBC22C4C40D00979E5E /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				06FFBCA422C4AC7700979E5E /* Error+RandomUserError.swift */,
+				06FFBCB822C4BF4C00979E5E /* Error+APIError.swift */,
+				06FFBCBA22C4C00400979E5E /* Error+RandomUserListError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		06FFBCCD22C5044300979E5E /* RandomUserCell */ = {
+			isa = PBXGroup;
+			children = (
+				06FFBCC922C4EF1600979E5E /* RandomUserCell.swift */,
+				06FFBCCA22C4EF1600979E5E /* RandomUserCell.xib */,
+			);
+			path = RandomUserCell;
+			sourceTree = "<group>";
+		};
+		06FFBCD022C508EC00979E5E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				06FFBCD122C508FE00979E5E /* Extensions+UIViewController.swift */,
+				0624E5EF22C5ECDE0009CA85 /* Extensions+UIImageView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		0A96E66DE7FE5B546662B176 /* Frameworks */ = {
@@ -293,9 +561,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0624E62422C68E930009CA85 /* RandomUserDetailViewController.xib in Resources */,
+				06FFBCAB22C4B94C00979E5E /* RandomUserListViewController.xib in Resources */,
+				06FFBCCC22C4EF1600979E5E /* RandomUserCell.xib in Resources */,
 				06CBAF2C22C493A700EE45DF /* LaunchScreen.storyboard in Resources */,
+				061CE42C22C880F400D3ABC8 /* fetch_random_users.json in Resources */,
 				06CBAF2922C493A700EE45DF /* Assets.xcassets in Resources */,
-				06CBAF2422C493A600EE45DF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +615,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-tests-RandomUserChallengeUITests/Pods-tests-RandomUserChallengeUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -351,6 +623,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -368,6 +641,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-tests-RandomUserChallengeTests/Pods-tests-RandomUserChallengeTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -375,6 +649,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -414,6 +689,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-defaults-RandomUserChallenge/Pods-defaults-RandomUserChallenge-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -421,6 +697,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -478,11 +755,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06CBAF2722C493A600EE45DF /* RandomUserChallenge.xcdatamodeld in Sources */,
-				067F63E522C497F70023E31B /* AppDelegate+CoreData.swift in Sources */,
-				067F63E322C497E90023E31B /* AppDelegate+AppLifeCycle.swift in Sources */,
-				06CBAF2122C493A600EE45DF /* ViewController.swift in Sources */,
+				0624E60822C665450009CA85 /* DataPersistanceProtocol.swift in Sources */,
+				0624E62322C68E930009CA85 /* RandomUserDetailViewController.swift in Sources */,
+				06FFBCBB22C4C00400979E5E /* Error+RandomUserListError.swift in Sources */,
+				0621039622C7F08E00EC9CCC /* InfiniteTableViewControllerDelegate.swift in Sources */,
+				0624E5F022C5ECDE0009CA85 /* Extensions+UIImageView.swift in Sources */,
+				0624E62622C68EA40009CA85 /* RandomUserDetailProtocols.swift in Sources */,
+				0621038F22C7E5C900EC9CCC /* VIPConfigurator.swift in Sources */,
+				0624E60622C6374A0009CA85 /* APIWorkerProtocol.swift in Sources */,
+				061CE42E22C8995A00D3ABC8 /* Globals.swift in Sources */,
+				06FFBCA522C4AC7700979E5E /* Error+RandomUserError.swift in Sources */,
+				06FFBCAA22C4B94B00979E5E /* RandomUserListViewController.swift in Sources */,
+				06FFBCB522C4BE2F00979E5E /* RandomUserListInteractor.swift in Sources */,
+				067F63E322C497E90023E31B /* AppDelegate+UITestConfig.swift in Sources */,
+				0624E5F322C5F1610009CA85 /* RandomUserAPIWorker.swift in Sources */,
+				06FFBCC422C4DE0300979E5E /* RandomUserFilter.swift in Sources */,
+				06FFBC9F22C4A31B00979E5E /* RandomUserLocation.swift in Sources */,
+				0624E62822C68EB30009CA85 /* RandomUserDetailInteractor.swift in Sources */,
+				0624E60222C60C300009CA85 /* RandomUsersAPIUrlBuilder.swift in Sources */,
+				0624E60022C6015A0009CA85 /* HttpClientBuilder.swift in Sources */,
+				0624E62A22C68EBE0009CA85 /* RandomUserDetailPresenter.swift in Sources */,
+				06FFBCB022C4BC0D00979E5E /* RandomUserListProtocols.swift in Sources */,
+				0624E5F522C5F17D0009CA85 /* RandomUserFilterWorker.swift in Sources */,
+				06FFBCD222C508FE00979E5E /* Extensions+UIViewController.swift in Sources */,
+				06FFBCB722C4BE6000979E5E /* RandomUserListPresenter.swift in Sources */,
+				0624E61022C6758E0009CA85 /* PlistEditorProtocol.swift in Sources */,
+				0624E60A22C667FC0009CA85 /* PlistEditor.swift in Sources */,
 				06CBAF1F22C493A600EE45DF /* AppDelegate.swift in Sources */,
+				06FFBC9B22C4A1B300979E5E /* RandomUser.swift in Sources */,
+				06FFBCC022C4CA7300979E5E /* RandomUserFilterCategory.swift in Sources */,
+				0624E5F722C5F19C0009CA85 /* RandomUserPersistenceWorker.swift in Sources */,
+				0624E60422C615380009CA85 /* APIRandomUser.swift in Sources */,
+				06FFBCCB22C4EF1600979E5E /* RandomUserCell.swift in Sources */,
+				06FFBCAE22C4B98D00979E5E /* UIInstantiable.swift in Sources */,
+				0621039522C7F08E00EC9CCC /* InfiniteTableViewController.swift in Sources */,
+				0621038822C7D6DF00EC9CCC /* RandomUserListRouter.swift in Sources */,
+				06FFBCB922C4BF4C00979E5E /* Error+APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +798,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0624E61B22C68A600009CA85 /* TestRandomUserListPresenter.swift in Sources */,
+				0624E61422C678630009CA85 /* RandomUserStub.swift in Sources */,
 				06CBAF3722C493A700EE45DF /* RandomUserChallengeTests.swift in Sources */,
+				0624E61F22C68AA00009CA85 /* TestDataPersistance.swift in Sources */,
+				0624E5FD22C5F7200009CA85 /* RandomUserFilterWorkerTest.swift in Sources */,
+				0624E61922C67FB80009CA85 /* RandomUserListInteractorTests.swift in Sources */,
+				06FFBCA122C4A44F00979E5E /* RandomUserTests.swift in Sources */,
+				0624E61D22C68A820009CA85 /* TestAPIWorker.swift in Sources */,
+				0624E61222C677140009CA85 /* RandomUserPersistenceWorkerTests.swift in Sources */,
+				0624E61622C67A390009CA85 /* TestPlistEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +816,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06CBAF4222C493A700EE45DF /* RandomUserChallengeUITests.swift in Sources */,
+				061CE43022C89D7E00D3ABC8 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,14 +836,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		06CBAF2222C493A600EE45DF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06CBAF2322C493A600EE45DF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		06CBAF2A22C493A700EE45DF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -817,19 +1127,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		06CBAF2522C493A600EE45DF /* RandomUserChallenge.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				06CBAF2622C493A600EE45DF /* RandomUserChallenge.xcdatamodel */,
-			);
-			currentVersion = 06CBAF2622C493A600EE45DF /* RandomUserChallenge.xcdatamodel */;
-			path = RandomUserChallenge.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 06CBAF1322C493A600EE45DF /* Project object */;
 }

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>RandomUserListInteractor Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/RandomUserListInteractor" class="dashAnchor"></a>
+    <a title="RandomUserListInteractor Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (23% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        RandomUserListInteractor Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HttpClientBuilder.html">HttpClientBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HttpClientBuilder/Error.html">– Error</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HttpClientBuilder/HttpProtocol.html">– HttpProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InfiniteTableViewController.html">InfiniteTableViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InfiniteTableViewController/Constants.html">– Constants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserAPIWorker.html">RandomUserAPIWorker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserCell.html">RandomUserCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserCell/Constants.html">– Constants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserDetailInteractor.html">RandomUserDetailInteractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserDetailPresenter.html">RandomUserDetailPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserDetailViewController.html">RandomUserDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserFilterWorker.html">RandomUserFilterWorker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserListInteractor.html">RandomUserListInteractor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserListPresenter.html">RandomUserListPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserListRouter.html">RandomUserListRouter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserListViewController.html">RandomUserListViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RandomUserPersistenceWorker.html">RandomUserPersistenceWorker</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/APIError.html">APIError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RandomUserError.html">RandomUserError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RandomUserFilterCategory.html">RandomUserFilterCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RandomUserListError.html">RandomUserListError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImageView.html">UIImageView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/APIWorkerProtocol.html">APIWorkerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/DataPersistanceProtocol.html">DataPersistanceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/InfiniteTableViewControllerDelegate.html">InfiniteTableViewControllerDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PlistEditorProtocol.html">PlistEditorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:19RandomUserChallenge0aB24DetailInteractorProtocolP">RandomUserDetailInteractorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:19RandomUserChallenge0aB23DetailPresenterProtocolP">RandomUserDetailPresenterProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:19RandomUserChallenge0aB28DetailViewControllerProtocolP">RandomUserDetailViewControllerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RandomUserListInteractorProtocol.html">RandomUserListInteractorProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RandomUserListPresenterProcotol.html">RandomUserListPresenterProcotol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RandomUserListRouterProcotol.html">RandomUserListRouterProcotol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RandomUserListViewControllerProtocol.html">RandomUserListViewControllerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UIInstantiable.html">UIInstantiable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/VIPConfigurable.html">VIPConfigurable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/APIRandomUser.html">APIRandomUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIRandomUser/Name.html">– Name</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIRandomUser/Location.html">– Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIRandomUser/Login.html">– Login</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIRandomUser/Registered.html">– Registered</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/APIRandomUser/Picture.html">– Picture</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Globals.html">Globals</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Globals/LaunchArgument.html">– LaunchArgument</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Globals/Persistance.html">– Persistance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Globals/Image.html">– Image</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PlistEditor.html">PlistEditor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RandomUser.html">RandomUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RandomUserFilter.html">RandomUserFilter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RandomUserLocation.html">RandomUserLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RandomUsersAPIUrlBuilder.html">RandomUsersAPIUrlBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/RandomUsersAPIUrlBuilder/RandomUsersProperties.html">– RandomUsersProperties</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>RandomUserListInteractor</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">class</span> <span class="kt">RandomUserListInteractor</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/RandomUserListInteractorProtocol.html">RandomUserListInteractorProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB14ListInteractorC9presenterAA0abD17PresenterProcotol_pvp"></a>
+                    <a name="//apple_ref/swift/Property/presenter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB14ListInteractorC9presenterAA0abD17PresenterProcotol_pvp">presenter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">presenter</span><span class="p">:</span> <span class="kt"><a href="../Protocols/RandomUserListPresenterProcotol.html">RandomUserListPresenterProcotol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB22ListInteractorProtocolP14resultsPerPageSivp"></a>
+                    <a name="//apple_ref/swift/Property/resultsPerPage" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB22ListInteractorProtocolP14resultsPerPageSivp">resultsPerPage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">resultsPerPage</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB14ListInteractorC06randomB9ApiWorkerAA17APIWorkerProtocol_pvp"></a>
+                    <a name="//apple_ref/swift/Property/randomUserApiWorker" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB14ListInteractorC06randomB9ApiWorkerAA17APIWorkerProtocol_pvp">randomUserApiWorker</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">randomUserApiWorker</span><span class="p">:</span> <span class="kt"><a href="../Protocols/APIWorkerProtocol.html">APIWorkerProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB14ListInteractorC21dataPersistanceWorkerAA04DataG8Protocol_pvp"></a>
+                    <a name="//apple_ref/swift/Property/dataPersistanceWorker" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB14ListInteractorC21dataPersistanceWorkerAA04DataG8Protocol_pvp">dataPersistanceWorker</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dataPersistanceWorker</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DataPersistanceProtocol.html">DataPersistanceProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB14ListInteractorC13resultsToLoad9presenter9apiWorker015dataPersistanceK0ACSi_AA0abD17PresenterProcotol_pAA17APIWorkerProtocol_pAA04DatamQ0_ptcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(resultsToLoad:presenter:apiWorker:dataPersistanceWorker:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB14ListInteractorC13resultsToLoad9presenter9apiWorker015dataPersistanceK0ACSi_AA0abD17PresenterProcotol_pAA17APIWorkerProtocol_pAA04DatamQ0_ptcfc">init(resultsToLoad:presenter:apiWorker:dataPersistanceWorker:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="n">resultsToLoad</span> <span class="nv">perPageResults</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="nv">presenter</span><span class="p">:</span> <span class="kt"><a href="../Protocols/RandomUserListPresenterProcotol.html">RandomUserListPresenterProcotol</a></span><span class="p">,</span> <span class="nv">apiWorker</span><span class="p">:</span> <span class="kt"><a href="../Protocols/APIWorkerProtocol.html">APIWorkerProtocol</a></span><span class="p">,</span> <span class="nv">dataPersistanceWorker</span><span class="p">:</span> <span class="kt"><a href="../Protocols/DataPersistanceProtocol.html">DataPersistanceProtocol</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB14ListInteractorC07doFetchA5Users_7forPageySayAA0aB0VG_SitF"></a>
+                    <a name="//apple_ref/swift/Method/doFetchRandomUsers(_:forPage:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB14ListInteractorC07doFetchA5Users_7forPageySayAA0aB0VG_SitF">doFetchRandomUsers(_:forPage:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetches random users for the given page.</p>
+
+<p>After fetching the data, the results will be filtered to avoid duplicities and remove the permanently
+deleted random users.</p>
+
+<p>If an error occurs the resulting page should be the previous one to indicate the current page.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">doFetchRandomUsers</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentUsers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RandomUser.html">RandomUser</a></span><span class="p">],</span> <span class="n">forPage</span> <span class="nv">nextPage</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>currentUsers</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The current users sequence to be updated with the new downloaded ones.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>nextPage</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The page to be fetched.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB22ListInteractorProtocolP08doFilterA5Users_04withH0ySayAA0aB0VG_AA0abH0VtF"></a>
+                    <a name="//apple_ref/swift/Method/doFilterRandomUsers(_:withFilter:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB22ListInteractorProtocolP08doFilterA5Users_04withH0ySayAA0aB0VG_AA0abH0VtF">doFilterRandomUsers(_:withFilter:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">doFilterRandomUsers</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentUsers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RandomUser.html">RandomUser</a></span><span class="p">],</span> <span class="n">withFilter</span> <span class="nv">filter</span><span class="p">:</span> <span class="kt"><a href="../Structs/RandomUserFilter.html">RandomUserFilter</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:19RandomUserChallenge0aB22ListInteractorProtocolP08doRemoveaB0_9fromUsersyAA0aB0V_SayAGGtF"></a>
+                    <a name="//apple_ref/swift/Method/doRemoveRandomUser(_:fromUsers:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:19RandomUserChallenge0aB22ListInteractorProtocolP08doRemoveaB0_9fromUsersyAA0aB0V_SayAGGtF">doRemoveRandomUser(_:fromUsers:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">doRemoveRandomUser</span><span class="p">(</span><span class="n">_</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Structs/RandomUser.html">RandomUser</a></span><span class="p">,</span> <span class="n">fromUsers</span> <span class="nv">currentUsers</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/RandomUser.html">RandomUser</a></span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-06-30)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.10.0</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

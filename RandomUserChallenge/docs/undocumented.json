@@ -1,0 +1,1265 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/AppDelegate/AppDelegate+UITestConfig.swift",
+      "line": 13,
+      "symbol": "AppDelegate.configureUITestStubs(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/AppDelegate/AppDelegate.swift",
+      "line": 12,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/AppDelegate/AppDelegate.swift",
+      "line": 12,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/AppDelegate/AppDelegate.swift",
+      "line": 14,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/AppDelegate/AppDelegate.swift",
+      "line": 16,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 9,
+      "symbol": "APIRandomUser",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 11,
+      "symbol": "APIRandomUser.Name",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 12,
+      "symbol": "APIRandomUser.Name.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 13,
+      "symbol": "APIRandomUser.Name.first",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 14,
+      "symbol": "APIRandomUser.Name.last",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 17,
+      "symbol": "APIRandomUser.Location",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 18,
+      "symbol": "APIRandomUser.Location.street",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 19,
+      "symbol": "APIRandomUser.Location.city",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 20,
+      "symbol": "APIRandomUser.Location.state",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 23,
+      "symbol": "APIRandomUser.Login",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 24,
+      "symbol": "APIRandomUser.Login.uuid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 27,
+      "symbol": "APIRandomUser.Registered",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 28,
+      "symbol": "APIRandomUser.Registered.date",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 31,
+      "symbol": "APIRandomUser.Picture",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 32,
+      "symbol": "APIRandomUser.Picture.large",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 33,
+      "symbol": "APIRandomUser.Picture.medium",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 34,
+      "symbol": "APIRandomUser.Picture.thumbnail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 37,
+      "symbol": "APIRandomUser.gender",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 38,
+      "symbol": "APIRandomUser.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 39,
+      "symbol": "APIRandomUser.location",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 40,
+      "symbol": "APIRandomUser.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 41,
+      "symbol": "APIRandomUser.login",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 42,
+      "symbol": "APIRandomUser.registered",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 43,
+      "symbol": "APIRandomUser.phone",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/APIRandomUser.swift",
+      "line": 44,
+      "symbol": "APIRandomUser.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/Errors/Error+APIError.swift",
+      "line": 9,
+      "symbol": "APIError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/Errors/Error+APIError.swift",
+      "line": 11,
+      "symbol": "APIError.unableToBuildCall",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/Errors/Error+APIError.swift",
+      "line": 12,
+      "symbol": "APIError.serviceCallFailed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/Errors/Error+APIError.swift",
+      "line": 13,
+      "symbol": "APIError.unexpectedServiceAnswerFormat",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/Errors/Error+RandomUserError.swift",
+      "line": 9,
+      "symbol": "RandomUserError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/Errors/Error+RandomUserError.swift",
+      "line": 10,
+      "symbol": "RandomUserError.invalidUUID(wrongIdentifier:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/Errors/Error+RandomUserListError.swift",
+      "line": 10,
+      "symbol": "RandomUserListError",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/Errors/Error+RandomUserListError.swift",
+      "line": 11,
+      "symbol": "RandomUserListError.anyUserFound(userMessage:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/Errors/Error+RandomUserListError.swift",
+      "line": 12,
+      "symbol": "RandomUserListError.unableToLoadUsers(userMessage:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/Errors/Error+RandomUserListError.swift",
+      "line": 13,
+      "symbol": "RandomUserListError.noMoreUsersToLoad(userMessage:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUser.swift",
+      "line": 11,
+      "symbol": "RandomUser",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUser.swift",
+      "line": 12,
+      "symbol": "RandomUser.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUser.swift",
+      "line": 13,
+      "symbol": "RandomUser.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUser.swift",
+      "line": 14,
+      "symbol": "RandomUser.surname",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUser.swift",
+      "line": 15,
+      "symbol": "RandomUser.gender",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUser.swift",
+      "line": 16,
+      "symbol": "RandomUser.location",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUser.swift",
+      "line": 17,
+      "symbol": "RandomUser.phoneNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUser.swift",
+      "line": 18,
+      "symbol": "RandomUser.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUser.swift",
+      "line": 19,
+      "symbol": "RandomUser.thumbnail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUser.swift",
+      "line": 20,
+      "symbol": "RandomUser.picture",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUser.swift",
+      "line": 21,
+      "symbol": "RandomUser.registeredDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUser.swift",
+      "line": 23,
+      "symbol": "RandomUser.init(id:name:surname:gender:street:city:state:phoneNumber:email:thumbnail:picture:registeredDate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUserFilter.swift",
+      "line": 9,
+      "symbol": "RandomUserFilter",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUserFilter.swift",
+      "line": 10,
+      "symbol": "RandomUserFilter.category",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUserFilter.swift",
+      "line": 11,
+      "symbol": "RandomUserFilter.searchValue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUserFilterCategory.swift",
+      "line": 9,
+      "symbol": "RandomUserFilterCategory",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUserFilterCategory.swift",
+      "line": 10,
+      "symbol": "RandomUserFilterCategory.email",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUserFilterCategory.swift",
+      "line": 10,
+      "symbol": "RandomUserFilterCategory.name",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUserFilterCategory.swift",
+      "line": 10,
+      "symbol": "RandomUserFilterCategory.surname",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUserLocation.swift",
+      "line": 9,
+      "symbol": "RandomUserLocation",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUserLocation.swift",
+      "line": 10,
+      "symbol": "RandomUserLocation.street",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUserLocation.swift",
+      "line": 11,
+      "symbol": "RandomUserLocation.city",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Entities/RandomUserLocation.swift",
+      "line": 12,
+      "symbol": "RandomUserLocation.state",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Infrasturcture/Globals.swift",
+      "line": 9,
+      "symbol": "Globals",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Infrasturcture/Globals.swift",
+      "line": 12,
+      "symbol": "Globals.LaunchArgument",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Infrasturcture/Globals.swift",
+      "line": 13,
+      "symbol": "Globals.LaunchArgument.uiTestLaunching",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Infrasturcture/Globals.swift",
+      "line": 14,
+      "symbol": "Globals.LaunchArgument.resetPersistanceKey",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Infrasturcture/Globals.swift",
+      "line": 17,
+      "symbol": "Globals.Persistance",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Infrasturcture/Globals.swift",
+      "line": 18,
+      "symbol": "Globals.Persistance.plistName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Infrasturcture/Globals.swift",
+      "line": 21,
+      "symbol": "Globals.Image",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Infrasturcture/Globals.swift",
+      "line": 22,
+      "symbol": "Globals.Image.placeholder",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Infrasturcture/VIPConfigurator.swift",
+      "line": 15,
+      "symbol": "VIPConfigurable.configureVIP()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Infrasturcture/VIPConfigurator.swift",
+      "line": 19,
+      "symbol": "VIPConfigurable.configureVIP()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Infrasturcture/VIPConfigurator.swift",
+      "line": 34,
+      "symbol": "VIPConfigurable.configureVIP()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserDetail/RandomUserDetailInteractor.swift",
+      "line": 9,
+      "symbol": "RandomUserDetailInteractor",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserDetail/RandomUserDetailInteractor.swift",
+      "line": 12,
+      "symbol": "RandomUserDetailInteractor.init(presenter:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserDetail/RandomUserDetailPresenter.swift",
+      "line": 9,
+      "symbol": "RandomUserDetailPresenter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserDetail/RandomUserDetailPresenter.swift",
+      "line": 12,
+      "symbol": "RandomUserDetailPresenter.init(presentable:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserDetail/RandomUserDetailViewController.swift",
+      "line": 11,
+      "symbol": "RandomUserDetailViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserDetail/RandomUserDetailViewController.swift",
+      "line": 17,
+      "symbol": "RandomUserDetailViewController.randomUser",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserDetail/RandomUserDetailViewController.swift",
+      "line": 18,
+      "symbol": "RandomUserDetailViewController.interactor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserDetail/RandomUserDetailViewController.swift",
+      "line": 20,
+      "symbol": "RandomUserDetailViewController.userImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserDetail/RandomUserDetailViewController.swift",
+      "line": 21,
+      "symbol": "RandomUserDetailViewController.userGender",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserDetail/RandomUserDetailViewController.swift",
+      "line": 22,
+      "symbol": "RandomUserDetailViewController.userRegistrationDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserDetail/RandomUserDetailViewController.swift",
+      "line": 23,
+      "symbol": "RandomUserDetailViewController.userLocation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserDetail/RandomUserDetailViewController.swift",
+      "line": 24,
+      "symbol": "RandomUserDetailViewController.userEmail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserDetail/RandomUserDetailViewController.swift",
+      "line": 26,
+      "symbol": "RandomUserDetailViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListInteractor.swift",
+      "line": 11,
+      "symbol": "RandomUserListInteractor",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListInteractor.swift",
+      "line": 13,
+      "symbol": "RandomUserListInteractor.presenter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListInteractor.swift",
+      "line": 15,
+      "symbol": "RandomUserListInteractor.randomUserApiWorker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListInteractor.swift",
+      "line": 16,
+      "symbol": "RandomUserListInteractor.dataPersistanceWorker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListInteractor.swift",
+      "line": 18,
+      "symbol": "RandomUserListInteractor.init(resultsToLoad:presenter:apiWorker:dataPersistanceWorker:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListPresenter.swift",
+      "line": 9,
+      "symbol": "RandomUserListPresenter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListPresenter.swift",
+      "line": 11,
+      "symbol": "RandomUserListPresenter.viewController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListPresenter.swift",
+      "line": 13,
+      "symbol": "RandomUserListPresenter.init(presentable:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListRouter.swift",
+      "line": 11,
+      "symbol": "RandomUserListRouter",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListRouter.swift",
+      "line": 13,
+      "symbol": "RandomUserListRouter.viewController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListRouter.swift",
+      "line": 15,
+      "symbol": "RandomUserListRouter.init(viewController:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 11,
+      "symbol": "RandomUserListViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 15,
+      "symbol": "RandomUserListViewController.interactor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 16,
+      "symbol": "RandomUserListViewController.router",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 25,
+      "symbol": "RandomUserListViewController.usersTableViewContainer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 26,
+      "symbol": "RandomUserListViewController.searchBar",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 27,
+      "symbol": "RandomUserListViewController.filterSegmentedControl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 28,
+      "symbol": "RandomUserListViewController.activityIndicator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 32,
+      "symbol": "RandomUserListViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 40,
+      "symbol": "RandomUserListViewController.viewWillDisappear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 81,
+      "symbol": "RandomUserListViewController.categoryFilterChanged(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 203,
+      "symbol": "RandomUserListViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 204,
+      "symbol": "RandomUserListViewController.dataSourceCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 208,
+      "symbol": "RandomUserListViewController.getCellDataForRowAt(indexPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 212,
+      "symbol": "RandomUserListViewController.deleteUserAtRow(indexPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 220,
+      "symbol": "RandomUserListViewController.loadMoreData()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 225,
+      "symbol": "RandomUserListViewController.selectedCellAt(indexPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 233,
+      "symbol": "RandomUserListViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 235,
+      "symbol": "RandomUserListViewController.searchBarTextDidBeginEditing(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 241,
+      "symbol": "RandomUserListViewController.searchBarSearchButtonClicked(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Scenes/RandomUserList/RandomUserListViewController.swift",
+      "line": 246,
+      "symbol": "RandomUserListViewController.searchBarCancelButtonClicked(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/HttpClientBuilder.swift",
+      "line": 12,
+      "symbol": "HttpClientBuilder",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/HttpClientBuilder.swift",
+      "line": 14,
+      "symbol": "HttpClientBuilder.Error",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/HttpClientBuilder.swift",
+      "line": 15,
+      "symbol": "HttpClientBuilder.Error.callFailed(debugDescription:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/HttpClientBuilder.swift",
+      "line": 16,
+      "symbol": "HttpClientBuilder.Error.malformedData",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/HttpClientBuilder.swift",
+      "line": 19,
+      "symbol": "HttpClientBuilder.HttpProtocol",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/HttpClientBuilder.swift",
+      "line": 20,
+      "symbol": "HttpClientBuilder.HttpProtocol.get",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/HttpClientBuilder.swift",
+      "line": 22,
+      "symbol": "HttpClientBuilder.HttpProtocol.toAlamofireMethod()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/HttpClientBuilder.swift",
+      "line": 29,
+      "symbol": "HttpClientBuilder.build(headers:method:url:parameters:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 11,
+      "symbol": "RandomUsersAPIUrlBuilder",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 13,
+      "symbol": "RandomUsersAPIUrlBuilder.RandomUsersProperties",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 14,
+      "symbol": "RandomUsersAPIUrlBuilder.RandomUsersProperties.cell",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 14,
+      "symbol": "RandomUsersAPIUrlBuilder.RandomUsersProperties.dob",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 14,
+      "symbol": "RandomUsersAPIUrlBuilder.RandomUsersProperties.email",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 14,
+      "symbol": "RandomUsersAPIUrlBuilder.RandomUsersProperties.gender",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 14,
+      "symbol": "RandomUsersAPIUrlBuilder.RandomUsersProperties.id",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 14,
+      "symbol": "RandomUsersAPIUrlBuilder.RandomUsersProperties.location",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 14,
+      "symbol": "RandomUsersAPIUrlBuilder.RandomUsersProperties.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 14,
+      "symbol": "RandomUsersAPIUrlBuilder.RandomUsersProperties.name",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 14,
+      "symbol": "RandomUsersAPIUrlBuilder.RandomUsersProperties.nat",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 14,
+      "symbol": "RandomUsersAPIUrlBuilder.RandomUsersProperties.phone",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 14,
+      "symbol": "RandomUsersAPIUrlBuilder.RandomUsersProperties.picture",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 14,
+      "symbol": "RandomUsersAPIUrlBuilder.RandomUsersProperties.registered",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 19,
+      "symbol": "RandomUsersAPIUrlBuilder.requestMetadata",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 20,
+      "symbol": "RandomUsersAPIUrlBuilder.page",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 21,
+      "symbol": "RandomUsersAPIUrlBuilder.results",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Services/RandomUsersAPIUrlBuilder.swift",
+      "line": 22,
+      "symbol": "RandomUsersAPIUrlBuilder.includedProperties",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewController.swift",
+      "line": 11,
+      "symbol": "InfiniteTableViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewController.swift",
+      "line": 13,
+      "symbol": "InfiniteTableViewController.Constants",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewController.swift",
+      "line": 14,
+      "symbol": "InfiniteTableViewController.Constants.cellIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewController.swift",
+      "line": 15,
+      "symbol": "InfiniteTableViewController.Constants.rowHeight",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewController.swift",
+      "line": 18,
+      "symbol": "InfiniteTableViewController.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewController.swift",
+      "line": 20,
+      "symbol": "InfiniteTableViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewController.swift",
+      "line": 28,
+      "symbol": "InfiniteTableViewController.tableView(_:heightForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewController.swift",
+      "line": 32,
+      "symbol": "InfiniteTableViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewController.swift",
+      "line": 36,
+      "symbol": "InfiniteTableViewController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewController.swift",
+      "line": 60,
+      "symbol": "InfiniteTableViewController.tableView(_:canEditRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewController.swift",
+      "line": 64,
+      "symbol": "InfiniteTableViewController.tableView(_:commit:forRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewController.swift",
+      "line": 70,
+      "symbol": "InfiniteTableViewController.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewControllerDelegate.swift",
+      "line": 11,
+      "symbol": "InfiniteTableViewControllerDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewControllerDelegate.swift",
+      "line": 12,
+      "symbol": "InfiniteTableViewControllerDelegate.dataSourceCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewControllerDelegate.swift",
+      "line": 14,
+      "symbol": "InfiniteTableViewControllerDelegate.getCellDataForRowAt(indexPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewControllerDelegate.swift",
+      "line": 15,
+      "symbol": "InfiniteTableViewControllerDelegate.deleteUserAtRow(indexPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewControllerDelegate.swift",
+      "line": 16,
+      "symbol": "InfiniteTableViewControllerDelegate.loadMoreData()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/ViewControllers/InfiniteTableViewController/InfiniteTableViewControllerDelegate.swift",
+      "line": 17,
+      "symbol": "InfiniteTableViewControllerDelegate.selectedCellAt(indexPath:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/Views/RandomUserCell/RandomUserCell.swift",
+      "line": 11,
+      "symbol": "RandomUserCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/Views/RandomUserCell/RandomUserCell.swift",
+      "line": 13,
+      "symbol": "RandomUserCell.Constants",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/Views/RandomUserCell/RandomUserCell.swift",
+      "line": 14,
+      "symbol": "RandomUserCell.Constants.placeholderImage",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/Views/RandomUserCell/RandomUserCell.swift",
+      "line": 19,
+      "symbol": "RandomUserCell.userThumbnail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/Views/RandomUserCell/RandomUserCell.swift",
+      "line": 20,
+      "symbol": "RandomUserCell.userNameAndSurname",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/Views/RandomUserCell/RandomUserCell.swift",
+      "line": 21,
+      "symbol": "RandomUserCell.userEmail",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/Views/RandomUserCell/RandomUserCell.swift",
+      "line": 22,
+      "symbol": "RandomUserCell.userPhoneNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/Views/RandomUserCell/RandomUserCell.swift",
+      "line": 24,
+      "symbol": "RandomUserCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/UIComponents/Views/RandomUserCell/RandomUserCell.swift",
+      "line": 28,
+      "symbol": "RandomUserCell.bindWithRandomUserAt(indexPath:name:surname:email:phoneNumber:thumbnail:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Utils/PlistEditor.swift",
+      "line": 11,
+      "symbol": "PlistEditor",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Utils/PlistEditor.swift",
+      "line": 37,
+      "symbol": "PlistEditor.clearPlist(named:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Utils/UIInstantiable.swift",
+      "line": 15,
+      "symbol": "UIInstantiable.instiantate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Utils/UIInstantiable.swift",
+      "line": 19,
+      "symbol": "UIInstantiable.instiantate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Workers/RandomUserAPIWorker.swift",
+      "line": 11,
+      "symbol": "RandomUserAPIWorker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Workers/RandomUserFilterWorker.swift",
+      "line": 11,
+      "symbol": "RandomUserFilterWorker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Workers/RandomUserFilterWorker.swift",
+      "line": 45,
+      "symbol": "RandomUserFilterWorker.removeRepetitions(fromUsers:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Workers/RandomUserPersistenceWorker.swift",
+      "line": 11,
+      "symbol": "RandomUserPersistenceWorker",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge/RandomUserChallenge/Workers/RandomUserPersistenceWorker.swift",
+      "line": 15,
+      "symbol": "RandomUserPersistenceWorker.init(plistEditor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/mtarrago/Developer/Workshops/Marta/RandomUserChallenge"
+}
