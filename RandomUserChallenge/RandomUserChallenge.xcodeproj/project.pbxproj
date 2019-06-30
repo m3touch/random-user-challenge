@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		061CE42C22C880F400D3ABC8 /* fetch_random_users.json in Resources */ = {isa = PBXBuildFile; fileRef = 0621039822C7F3E800EC9CCC /* fetch_random_users.json */; };
+		061CE42E22C8995A00D3ABC8 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061CE42D22C8995A00D3ABC8 /* Globals.swift */; };
+		061CE43022C89D7E00D3ABC8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061CE42F22C89D7E00D3ABC8 /* Utils.swift */; };
 		0621038822C7D6DF00EC9CCC /* RandomUserListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621038722C7D6DF00EC9CCC /* RandomUserListRouter.swift */; };
 		0621038F22C7E5C900EC9CCC /* VIPConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621038E22C7E5C900EC9CCC /* VIPConfigurator.swift */; };
 		0621039522C7F08E00EC9CCC /* InfiniteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621039322C7F08E00EC9CCC /* InfiniteTableViewController.swift */; };
@@ -35,7 +38,7 @@
 		0624E62622C68EA40009CA85 /* RandomUserDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E62522C68EA40009CA85 /* RandomUserDetailProtocols.swift */; };
 		0624E62822C68EB30009CA85 /* RandomUserDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E62722C68EB30009CA85 /* RandomUserDetailInteractor.swift */; };
 		0624E62A22C68EBE0009CA85 /* RandomUserDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0624E62922C68EBE0009CA85 /* RandomUserDetailPresenter.swift */; };
-		067F63E322C497E90023E31B /* AppDelegate+AppLifeCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F63E222C497E90023E31B /* AppDelegate+AppLifeCycle.swift */; };
+		067F63E322C497E90023E31B /* AppDelegate+UITestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067F63E222C497E90023E31B /* AppDelegate+UITestConfig.swift */; };
 		06CBAF1F22C493A600EE45DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CBAF1E22C493A600EE45DF /* AppDelegate.swift */; };
 		06CBAF2922C493A700EE45DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CBAF2822C493A700EE45DF /* Assets.xcassets */; };
 		06CBAF2C22C493A700EE45DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06CBAF2A22C493A700EE45DF /* LaunchScreen.storyboard */; };
@@ -81,10 +84,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		061CE42D22C8995A00D3ABC8 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		061CE42F22C89D7E00D3ABC8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		0621038722C7D6DF00EC9CCC /* RandomUserListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserListRouter.swift; sourceTree = "<group>"; };
 		0621038E22C7E5C900EC9CCC /* VIPConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPConfigurator.swift; sourceTree = "<group>"; };
 		0621039322C7F08E00EC9CCC /* InfiniteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteTableViewController.swift; sourceTree = "<group>"; };
 		0621039422C7F08E00EC9CCC /* InfiniteTableViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteTableViewControllerDelegate.swift; sourceTree = "<group>"; };
+		0621039822C7F3E800EC9CCC /* fetch_random_users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = fetch_random_users.json; sourceTree = "<group>"; };
 		0624E5EF22C5ECDE0009CA85 /* Extensions+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+UIImageView.swift"; sourceTree = "<group>"; };
 		0624E5F222C5F1610009CA85 /* RandomUserAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserAPIWorker.swift; sourceTree = "<group>"; };
 		0624E5F422C5F17D0009CA85 /* RandomUserFilterWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserFilterWorker.swift; sourceTree = "<group>"; };
@@ -109,7 +115,7 @@
 		0624E62522C68EA40009CA85 /* RandomUserDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDetailProtocols.swift; sourceTree = "<group>"; };
 		0624E62722C68EB30009CA85 /* RandomUserDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDetailInteractor.swift; sourceTree = "<group>"; };
 		0624E62922C68EBE0009CA85 /* RandomUserDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDetailPresenter.swift; sourceTree = "<group>"; };
-		067F63E222C497E90023E31B /* AppDelegate+AppLifeCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+AppLifeCycle.swift"; sourceTree = "<group>"; };
+		067F63E222C497E90023E31B /* AppDelegate+UITestConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+UITestConfig.swift"; sourceTree = "<group>"; };
 		06CBAF1B22C493A600EE45DF /* RandomUserChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUserChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CBAF1E22C493A600EE45DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06CBAF2822C493A700EE45DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -190,8 +196,17 @@
 			isa = PBXGroup;
 			children = (
 				0621038E22C7E5C900EC9CCC /* VIPConfigurator.swift */,
+				061CE42D22C8995A00D3ABC8 /* Globals.swift */,
 			);
 			path = Infrasturcture;
+			sourceTree = "<group>";
+		};
+		0621039722C7F3B500EC9CCC /* StubFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0621039822C7F3E800EC9CCC /* fetch_random_users.json */,
+			);
+			path = StubFiles;
 			sourceTree = "<group>";
 		};
 		0624E5F122C5F1300009CA85 /* Workers */ = {
@@ -243,7 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				06CBAF1E22C493A600EE45DF /* AppDelegate.swift */,
-				067F63E222C497E90023E31B /* AppDelegate+AppLifeCycle.swift */,
+				067F63E222C497E90023E31B /* AppDelegate+UITestConfig.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -282,6 +297,7 @@
 				06FFBCB122C4BDB700979E5E /* UIComponents */,
 				067F63E622C497FB0023E31B /* AppDelegate */,
 				06CBAF2822C493A700EE45DF /* Assets.xcassets */,
+				0621039722C7F3B500EC9CCC /* StubFiles */,
 				06CBAF2A22C493A700EE45DF /* LaunchScreen.storyboard */,
 				06CBAF2D22C493A700EE45DF /* Info.plist */,
 			);
@@ -307,6 +323,7 @@
 			children = (
 				06CBAF4122C493A700EE45DF /* RandomUserChallengeUITests.swift */,
 				06CBAF4322C493A700EE45DF /* Info.plist */,
+				061CE42F22C89D7E00D3ABC8 /* Utils.swift */,
 			);
 			path = RandomUserChallengeUITests;
 			sourceTree = "<group>";
@@ -548,6 +565,7 @@
 				06FFBCAB22C4B94C00979E5E /* RandomUserListViewController.xib in Resources */,
 				06FFBCCC22C4EF1600979E5E /* RandomUserCell.xib in Resources */,
 				06CBAF2C22C493A700EE45DF /* LaunchScreen.storyboard in Resources */,
+				061CE42C22C880F400D3ABC8 /* fetch_random_users.json in Resources */,
 				06CBAF2922C493A700EE45DF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,6 +615,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-tests-RandomUserChallengeUITests/Pods-tests-RandomUserChallengeUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -604,6 +623,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -621,6 +641,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-tests-RandomUserChallengeTests/Pods-tests-RandomUserChallengeTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -628,6 +649,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -667,6 +689,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-defaults-RandomUserChallenge/Pods-defaults-RandomUserChallenge-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -674,6 +697,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -739,10 +763,11 @@
 				0624E62622C68EA40009CA85 /* RandomUserDetailProtocols.swift in Sources */,
 				0621038F22C7E5C900EC9CCC /* VIPConfigurator.swift in Sources */,
 				0624E60622C6374A0009CA85 /* APIWorkerProtocol.swift in Sources */,
+				061CE42E22C8995A00D3ABC8 /* Globals.swift in Sources */,
 				06FFBCA522C4AC7700979E5E /* Error+RandomUserError.swift in Sources */,
 				06FFBCAA22C4B94B00979E5E /* RandomUserListViewController.swift in Sources */,
 				06FFBCB522C4BE2F00979E5E /* RandomUserListInteractor.swift in Sources */,
-				067F63E322C497E90023E31B /* AppDelegate+AppLifeCycle.swift in Sources */,
+				067F63E322C497E90023E31B /* AppDelegate+UITestConfig.swift in Sources */,
 				0624E5F322C5F1610009CA85 /* RandomUserAPIWorker.swift in Sources */,
 				06FFBCC422C4DE0300979E5E /* RandomUserFilter.swift in Sources */,
 				06FFBC9F22C4A31B00979E5E /* RandomUserLocation.swift in Sources */,
@@ -791,6 +816,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06CBAF4222C493A700EE45DF /* RandomUserChallengeUITests.swift in Sources */,
+				061CE43022C89D7E00D3ABC8 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

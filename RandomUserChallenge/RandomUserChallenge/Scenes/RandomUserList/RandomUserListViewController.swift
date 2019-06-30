@@ -46,9 +46,8 @@ class RandomUserListViewController: UIViewController, RandomUserListViewControll
 
     func displayFetchRandomUsers(_ updatedUsers: [RandomUser], currentPage: Int, error: RandomUserListError?) {
         guard error == nil else {
-            if let errorMessage = error?.userMessage {
-                showAlertTiteled(nil, text: errorMessage, dismissButtonText: "Dismiss")
-            }
+            hideLoadingIndicator()
+            showErrorAlert(error)
             return
         }
 
@@ -117,6 +116,28 @@ class RandomUserListViewController: UIViewController, RandomUserListViewControll
 
     private func hideEmptyScreen() {
         usersTableViewContainer.isHidden = false
+    }
+
+    private func showErrorAlert(_ error: RandomUserListError?) {
+        guard let randomUserListError = error else { return }
+
+        switch randomUserListError {
+        case .anyUserFound(userMessage: let message):
+            showError(message: message, title: "Any user found")
+        case .noMoreUsersToLoad(userMessage: let message):
+            showError(message: message, title: "No more users")
+        case .unableToLoadUsers(userMessage: let message):
+            showError(message: message, title: "")
+        }
+    }
+
+    private func showError(message: String?, title: String) {
+        guard
+            let errorMessage = message,
+            !(errorMessage.isEmpty)
+        else { return }
+
+        showAlertTiteled(nil, text: errorMessage, dismissButtonText: "Dismiss")
     }
 
     private func showRemovedUserAlert(userData: RandomUser) {

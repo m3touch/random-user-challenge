@@ -29,7 +29,7 @@ final class RandomUserListPresenter: RandomUserListPresenterProcotol {
     func presentRemoveRandomUser(_ removedUser: RandomUser, updatedUsers: [RandomUser]) {
         viewController?.displayRemoveRandomUser(
             removedUser,
-            updatedUsers: updatedUsers.count > 0 ? updatedUsers.dropLast() : []
+            updatedUsers: updatedUsers
         )
     }
 

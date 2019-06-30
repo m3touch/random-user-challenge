@@ -33,4 +33,13 @@ struct PlistEditor: PlistEditorProtocol {
         let data = NSArray(array: allPlistStrings)
         data.write(toFile: writePath, atomically: false)
     }
+
+    func clearPlist(named plistName: String) {
+        let documentsDirectory = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0]
+        let deletePath = "\(documentsDirectory)/\(plistName).plist"
+
+        guard FileManager.default.isDeletableFile(atPath: deletePath) else { return }
+
+        try? FileManager.default.removeItem(atPath: deletePath)
+    }
 }
